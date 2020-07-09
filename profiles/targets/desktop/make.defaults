@@ -1,7 +1,7 @@
 # Ususal desktop hardware
 USE="$USE bluetooth pulseaudio"    # Audio+Bluetooth managers
 USE="$USE scanner printsupport"    # HP printer
-SANE_BACKENDS="hp net"
+SANE_BACKENDS="-* hp net"
 
 USE="$USE bluray bdplus aacs cddb" # Disks
 USE="$USE xinerama"                # Multi-Monitor
