@@ -1,13 +1,18 @@
 # Ususal desktop hardware
 USE="$USE bluetooth pulseaudio"    # Audio+Bluetooth managers
 USE="$USE scanner printsupport"    # HP printer
-SANE_BACKENDS="-* hp net"
-
 USE="$USE bluray bdplus aacs cddb" # Disks
 USE="$USE xinerama"                # Multi-Monitor
+USE="$USE vaapi vdpau"             # HW Video
 
 # Multimedia formats
 USE="$USE opus"   # WhatsApp Audio
 USE="$USE heif"   # Apple Photos
 USE="$USE mtp"    # VLC Streaming
 USE="$USE ffmpeg" # Support for auto-format conversions
+
+# My default software support
+USE="$USE gimp tk java"
+
+
+SANE_BACKENDS="-* hp net"

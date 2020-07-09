@@ -1,5 +1,12 @@
 USE="$USE -gnome -gpm -device-mapper -gnome-online-accounts"
+USE="$USE -btrfs -jfs -reiserfs"
 USE="$USE logrotate"
+
+# Some Compatibility
+USE="$USE samba snmp ntfs"
+
+# Some defaults (I like them)
+USE="$USE git lua luajit sqlite python"
 
 PORTAGE_NICENESS=19
 PORTAGE_IONICE_COMMAND="ionice -c 3 -p \${PID}"
@@ -11,3 +18,5 @@ FCFLAGS="${COMMON_CFLAGS}"
 FFLAGS="${COMMON_CFLAGS}"
 
 LC_MESSAGES=C
+
+EMERGE_DEFAULT_OPTS="--autounmask-write n"
