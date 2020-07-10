@@ -3,7 +3,7 @@ USE="$USE bluetooth pulseaudio"    # Audio+Bluetooth managers
 USE="$USE scanner printsupport"    # HP printer
 USE="$USE bluray bdplus aacs cddb" # Disks
 USE="$USE xinerama"                # Multi-Monitor
-USE="$USE vaapi vdpau"             # HW Video
+USE="$USE vaapi vdpau xvmc vulkan" # HW Video
 
 # Multimedia formats
 USE="$USE opus"   # WhatsApp Audio
@@ -11,8 +11,11 @@ USE="$USE heif"   # Apple Photos
 USE="$USE mtp"    # VLC Streaming
 USE="$USE ffmpeg" # Support for auto-format conversions
 
-# My default software support
-USE="$USE gimp tk java"
+# File systems
+USE="$USE fat hfs ntfs udf"
 
+# My default software support
+USE="$USE gimp java ocr"
+USE="$USE oauth"  # Cloud auth (MS+Google)
 
 SANE_BACKENDS="-* hp net"

@@ -3,10 +3,11 @@ USE="$USE -btrfs -jfs -reiserfs"
 USE="$USE logrotate"
 
 # Some Compatibility
-USE="$USE samba snmp ntfs"
+USE="$USE samba snmp"
 
 # Some defaults (I like them)
 USE="$USE git lua luajit sqlite python"
+USE="$USE cacert"
 
 PORTAGE_NICENESS=19
 PORTAGE_IONICE_COMMAND="ionice -c 3 -p \${PID}"
