@@ -1,4 +1,5 @@
-USE="$USE -gnome -gpm -device-mapper -gnome-online-accounts"
+USE="$USE -gnome -gpm -device-mapper -gnome-online-accounts -ldap"
+USE="$USE -mysql"
 USE="$USE -btrfs -jfs -reiserfs"
 USE="$USE logrotate"
 
@@ -6,7 +7,7 @@ USE="$USE logrotate"
 USE="$USE samba snmp"
 
 # Some defaults (I like them)
-USE="$USE git lua luajit sqlite python"
+USE="$USE git sqlite -mysql"
 USE="$USE cacert"
 
 PORTAGE_NICENESS=19
