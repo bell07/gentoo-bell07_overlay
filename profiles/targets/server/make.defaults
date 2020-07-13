@@ -2,9 +2,10 @@ USE="$USE -gnome -gpm -device-mapper -gnome-online-accounts -ldap"
 USE="$USE -mysql"
 USE="$USE -btrfs -jfs -reiserfs"
 USE="$USE logrotate"
+USE="$USE threads"
 
 # Some Compatibility
-USE="$USE samba snmp"
+USE="$USE samba snmp avahi zeroconf mdnsresponder-compat"
 
 # Some defaults (I like them)
 USE="$USE git sqlite -mysql"

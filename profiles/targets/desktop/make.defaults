@@ -1,15 +1,18 @@
 # Ususal desktop hardware
 USE="$USE bluetooth pulseaudio"    # Audio+Bluetooth managers
 USE="$USE scanner printsupport"    # HP printer
-USE="$USE bluray bdplus aacs cddb" # Disks
+USE="$USE bluray bdplus aacs"      # Bluray disks
+USE="$USE cddb css cover"          # CD/DVD Disks
 USE="$USE xinerama"                # Multi-Monitor
 USE="$USE vaapi vdpau xvmc"        # HW Video
+USE="$USE wiimote"                 # WII remote
+USE="$USE v4l"                     # Webcam
 
 # Multimedia formats
-USE="$USE opus"   # WhatsApp Audio
-USE="$USE heif"   # Apple Photos
-USE="$USE mtp"    # VLC Streaming
-USE="$USE ffmpeg" # Support for auto-format conversions
+USE="$USE opus"         # WhatsApp Audio
+USE="$USE heif"         # Apple Photos
+USE="$USE mtp rtmp mms" # Streaming
+USE="$USE ffmpeg"       # Support for auto-format conversions
 
 # File systems
 USE="$USE fat hfs ntfs udf"
