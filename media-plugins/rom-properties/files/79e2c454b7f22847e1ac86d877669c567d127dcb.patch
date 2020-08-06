@@ -1,0 +1,89 @@
+From 79e2c454b7f22847e1ac86d877669c567d127dcb Mon Sep 17 00:00:00 2001
+From: David Korth <gerbilsoft@gerbilsoft.com>
+Date: Sun, 2 Aug 2020 14:32:02 -0400
+Subject: [PATCH] Prepend ${CMAKE_INSTALL_PREFIX} to ${CMAKE_INSTALL_LIBDIR}
+ for extensions directory fallbacks.
+
+Otherwise, the symlinks will point to a relative path, which won't be
+correct on most systems.
+
+Workaround: Ensure the required -dev packages are installed.
+
+This should fix issue #244: Broken Thunarx-3 symlink.
+Reported by @bell07.
+---
+ src/gtk/gtk3/CMakeLists.txt      | 8 ++++----
+ src/gtk/xfce/CMakeLists.txt      | 2 +-
+ src/libunixcommon/CMakeLists.txt | 4 ++--
+ 3 files changed, 7 insertions(+), 7 deletions(-)
+
+diff --git a/src/gtk/gtk3/CMakeLists.txt b/src/gtk/gtk3/CMakeLists.txt
+index 2cd04c22..36123e8c 100644
+--- a/src/gtk/gtk3/CMakeLists.txt
++++ b/src/gtk/gtk3/CMakeLists.txt
+@@ -27,28 +27,28 @@ IF(GLib2_FOUND AND GObject2_FOUND AND GIO_FOUND AND Cairo_FOUND AND GTK3_FOUND)
+ 	FIND_PACKAGE(LibNautilusExtension 3.0.0)
+ 	IF(NOT LibNautilusExtension_FOUND)
+ 		MESSAGE(STATUS "LibNautilusExtension not found. Using the default extensions directory.")
+-		SET(LibNautilusExtension_EXTENSION_DIR "${CMAKE_INSTALL_LIBDIR}/nautilus/extensions-3.0")
++		SET(LibNautilusExtension_EXTENSION_DIR "${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_LIBDIR}/nautilus/extensions-3.0")
+ 	ENDIF(NOT LibNautilusExtension_FOUND)
+ 
+ 	# Caja (MATE)
+ 	FIND_PACKAGE(LibCajaExtension 1.18.0)
+ 	IF(NOT LibCajaExtension_FOUND)
+ 		MESSAGE(STATUS "LibCajaExtension not found. Using the default extensions directory.")
+-		SET(LibCajaExtension_EXTENSION_DIR "${CMAKE_INSTALL_LIBDIR}/caja/extensions-2.0")
++		SET(LibCajaExtension_EXTENSION_DIR "${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_LIBDIR}/caja/extensions-2.0")
+ 	ENDIF(NOT LibCajaExtension_FOUND)
+ 
+ 	# Nemo (Cinnamon)
+ 	FIND_PACKAGE(LibNemoExtension)
+ 	IF(NOT LibNemoExtension_FOUND)
+ 		MESSAGE(STATUS "LibNemoExtension not found. Using the default extensions directory.")
+-		SET(LibNemoExtension_EXTENSION_DIR "${CMAKE_INSTALL_LIBDIR}/nemo/extensions-3.0")
++		SET(LibNemoExtension_EXTENSION_DIR "${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_LIBDIR}/nemo/extensions-3.0")
+ 	ENDIF(NOT LibNemoExtension_FOUND)
+ 
+ 	# ThunarX3 (XFCE)
+ 	FIND_PACKAGE(ThunarX3)
+ 	IF(NOT ThunarX3_FOUND)
+ 		MESSAGE(STATUS "ThunarX3 not found. Using the default extensions directory.")
+-		SET(ThunarX3_EXTENSIONS_DIR "${CMAKE_INSTALL_LIBDIR}/thunarx-3")
++		SET(ThunarX3_EXTENSIONS_DIR "${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_LIBDIR}/thunarx-3")
+ 	ENDIF(NOT ThunarX3_FOUND)
+ ELSE(GLib2_FOUND AND GObject2_FOUND AND GIO_FOUND AND Cairo_FOUND AND GTK3_FOUND)
+ 	# GTK+ 3.x (or required dependencies) were not found.
+diff --git a/src/gtk/xfce/CMakeLists.txt b/src/gtk/xfce/CMakeLists.txt
+index 8a97c031..fb1c56c4 100644
+--- a/src/gtk/xfce/CMakeLists.txt
++++ b/src/gtk/xfce/CMakeLists.txt
+@@ -33,7 +33,7 @@ IF(GLib2_FOUND AND GObject2_FOUND AND GIO_FOUND AND GdkPixbuf2_FOUND AND GTK2_FO
+ 	FIND_PACKAGE(ThunarX2)
+ 	IF(NOT ThunarX2_FOUND)
+ 		MESSAGE(STATUS "ThunarX2 not found. Using the default extensions directory.")
+-		SET(ThunarX2_EXTENSIONS_DIR "${CMAKE_INSTALL_LIBDIR}/thunarx-2")
++		SET(ThunarX2_EXTENSIONS_DIR "${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_LIBDIR}/thunarx-2")
+ 	ENDIF(NOT ThunarX2_FOUND)
+ ELSE(GLib2_FOUND AND GObject2_FOUND AND GIO_FOUND AND GdkPixbuf2_FOUND AND GTK2_FOUND)
+ 	# GTK+ 2.x (or required dependencies) were not found.
+diff --git a/src/libunixcommon/CMakeLists.txt b/src/libunixcommon/CMakeLists.txt
+index ab2659a2..e5925afd 100644
+--- a/src/libunixcommon/CMakeLists.txt
++++ b/src/libunixcommon/CMakeLists.txt
+@@ -60,14 +60,14 @@ IF(BUILD_GTK2)
+ 	# Thunar (XFCE)
+ 	FIND_PACKAGE(ThunarX2)
+ 	IF(NOT ThunarX2_FOUND)
+-		SET(ThunarX2_EXTENSIONS_DIR "${CMAKE_INSTALL_LIBDIR}/thunarx-2")
++		SET(ThunarX2_EXTENSIONS_DIR "${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_LIBDIR}/thunarx-2")
+ 	ENDIF(NOT ThunarX2_FOUND)
+ ENDIF(BUILD_GTK2)
+ IF(BUILD_GTK3)
+ 	# Nautilus (GNOME)
+ 	FIND_PACKAGE(LibNautilusExtension 3.0.0)
+ 	IF(NOT LibNautilusExtension_FOUND)
+-		SET(LibNautilusExtension_EXTENSION_DIR "${CMAKE_INSTALL_LIBDIR}/nautilus/extensions-3.0")
++		SET(LibNautilusExtension_EXTENSION_DIR "${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_LIBDIR}/nautilus/extensions-3.0")
+ 	ENDIF(NOT LibNautilusExtension_FOUND)
+ ENDIF(BUILD_GTK3)
