@@ -11,7 +11,8 @@ HOMEPAGE="https://github.com/GerbilSoft/rom-properties"
 SRC_URI="https://github.com/GerbilSoft/rom-properties/archive/v${PV}.zip -> ${P}.zip"
 LICENSE="GPL-2"
 
-DEPEND=""
+IUSE="thunar"
+DEPEND="thunar? ( xfce-extra/tumbler[curl] )"
 
 PATCHES=(
 	"${FILESDIR}"/79e2c454b7f22847e1ac86d877669c567d127dcb.patch
