@@ -1,0 +1,2 @@
+# Set kernel symlink automatically
+sys-kernel/gentoo-sources symlink

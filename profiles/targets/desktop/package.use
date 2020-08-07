@@ -1,0 +1,15 @@
+# xfce support for rom-properties
+media-plugins/rom-properties thunar
+xfce-extra/tumbler curl
+
+xfce-extra/xfce4-sensors-plugin hddtemp lm_sensors
+
+# Gui "gitk"
+dev-vcs/git tk
+
+# Keepassxc plugins
+app-admin/keepassxc autotype browser
+
+# Samba client part
+net-fs/samba client
+
