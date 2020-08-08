@@ -7,7 +7,7 @@ USE="$USE xinerama"                # Multi-Monitor
 USE="$USE vaapi vdpau xvmc"        # HW Video
 USE="$USE wiimote"                 # WII remote
 USE="$USE v4l"                     # Webcam
-USE="$USE thunar"                  # XFCE file manager
+USE="$USE hddtemp lm-sensors"      # Sensors
 
 # Multimedia formats
 USE="$USE opus"         # WhatsApp Audio
@@ -22,5 +22,6 @@ USE="$USE fat hfs ntfs udf"
 USE="$USE gimp java ocr"
 USE="$USE oauth"             # Cloud auth (MS+Google)
 USE="$USE lua luajit python" # Scripting
+USE="$USE thunar"            # XFCE file manager
 
 SANE_BACKENDS="-* hp net"
