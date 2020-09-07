@@ -8,6 +8,7 @@ USE="$USE vaapi vdpau xvmc"        # HW Video
 USE="$USE wiimote"                 # WII remote
 USE="$USE v4l"                     # Webcam
 USE="$USE hddtemp lm-sensors"      # Sensors
+USE="$USE vulkan"                  # The feature for gaming and multimedia
 
 # Multimedia formats
 USE="$USE opus"         # WhatsApp Audio
