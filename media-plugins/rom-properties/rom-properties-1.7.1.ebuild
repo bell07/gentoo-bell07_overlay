@@ -8,7 +8,7 @@ LICENSE="GPL-2"
 
 SLOT="0"
 
-IUSE="thunar"
+IUSE="thunar seccomp_debug"
 DEPEND="thunar? ( xfce-extra/tumbler[curl] )"
 
 if [[ ${PV} == *9999 ]] ; then
@@ -19,6 +19,9 @@ else
 	KEYWORDS="~amd64"
 fi
 
-if [[ ${PV} == 1.6.1 ]] ; then
-	PATCHES=( "${FILESDIR}"/79e2c454b7f22847e1ac86d877669c567d127dcb.patch )
-fi
+src_configure() {
+	if use seccomp_debug; then
+		local mycmakeargs=( -DENABLE_SECCOMP_DEBUG=1 )
+	fi
+	cmake-utils_src_configure
+}
