@@ -15,6 +15,7 @@ USE="$USE opus"         # WhatsApp Audio
 USE="$USE heif"         # Apple Photos
 USE="$USE mtp rtmp mms" # Streaming
 USE="$USE ffmpeg"       # Support for auto-format conversions
+USE="$USE gstreamer"    # another auto-conversions
 
 # File systems
 USE="$USE fat hfs ntfs udf"
