@@ -1,2 +1,6 @@
 # Go along with fast browser plugin updates
 app-admin/keepassxc
+
+# No stable version anymore because of python cleanup
+=media-tv/kodi-19.0* ~amd64
+=dev-libs/libudfread-1.1.1 ~amd64
