@@ -1,6 +1,7 @@
 USE="$USE -gnome -gpm -device-mapper -gnome-online-accounts -ldap"
 USE="$USE -mysql"
 USE="$USE -btrfs -jfs -reiserfs"
+USE="$USE -subversion" # git is enough in most cases
 USE="$USE logrotate"
 USE="$USE threads"
 
