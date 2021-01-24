@@ -1,2 +1,3 @@
 amd64 my_desktop stable
 amd64 my_server stable
+amd64 my_selinux_server stable
