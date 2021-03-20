@@ -16,6 +16,8 @@ USE="$USE heif"         # Apple Photos
 USE="$USE mtp rtmp mms" # Streaming
 USE="$USE ffmpeg"       # Support for auto-format conversions
 USE="$USE gstreamer"    # another auto-conversions
+USE="$USE jpeg2k openexr postscript webp wmf xpmopenexr" # Misc rare formats, supported by gimp
+USE="$USE widevine"     # DRM
 
 # File systems
 USE="$USE fat hfs ntfs udf"
