@@ -26,7 +26,7 @@ DEPEND="dev-qt/qtsql:5
 	dev-qt/qtconcurrent:5
 	dev-qt/qtmultimedia:5[widgets]
 	dev-qt/qtscript:5
-	dev-libs/quazip"
+	=dev-libs/quazip-0.9*"
 
 src_configure() {
 	local mycmakeargs=( "-DUSE_EXTERN_QUAZIP=ON" )
