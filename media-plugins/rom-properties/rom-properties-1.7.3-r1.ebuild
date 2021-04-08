@@ -22,8 +22,8 @@ else
 fi
 
 src_configure() {
-	mycmakeargs=( -DINSTALL_DEBUG=0 )
-
+	sed -i 's:SET(DIR_INSTALL_DOC "share/doc/${PACKAGE_NAME}"):SET(DIR_INSTALL_DOC "'share/doc/${PF}'"):g' "${S}"/cmake/macros/DirInstallPaths.cmake 
+	local mycmakeargs=( -DSPLIT_DEBUG=0 )
 	cmake-utils_src_configure
 }
 
