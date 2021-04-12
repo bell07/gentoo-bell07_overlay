@@ -12,7 +12,7 @@ USE="$USE vulkan"                  # The feature for gaming and multimedia
 
 # Multimedia formats
 USE="$USE opus"         # WhatsApp Audio
-USE="$USE heif"         # Apple Photos
+USE="$USE heif x265"    # Neuer Standard - Apple nutzt das für Photos
 USE="$USE mtp rtmp mms" # Streaming
 USE="$USE ffmpeg"       # Support for auto-format conversions
 USE="$USE gstreamer"    # another auto-conversions
