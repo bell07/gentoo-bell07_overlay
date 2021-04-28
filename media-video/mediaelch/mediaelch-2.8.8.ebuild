@@ -12,7 +12,8 @@ HOMEPAGE="http://www.mediaelch.de/"
 
 SLOT="0"
 LICENSE="GPL-3"
-KEYWORDS="amd64"
+# Broken: See https://github.com/Komet/MediaElch/issues/1298
+#KEYWORDS="amd64"
 
 DEPEND="dev-qt/qtsql:5
 	dev-qt/qtscript:5
