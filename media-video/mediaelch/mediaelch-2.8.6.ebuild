@@ -1,6 +1,5 @@
 EAPI=7
 inherit qmake-utils cmake
-inherit cmake
 
 MY_PN=MediaElch
 S=$WORKDIR/$MY_PN-$PV
@@ -11,7 +10,7 @@ SRC_URI="https://github.com/Komet/$MY_PN/archive/v${PV}.tar.gz -> $P.tar.gz"
 HOMEPAGE="http://www.mediaelch.de/"
 
 SLOT="0"
-LICENSE="GPL-3"
+LICENSE="LGPL-3"
 KEYWORDS="amd64"
 
 DEPEND="=dev-libs/quazip-0.9*
