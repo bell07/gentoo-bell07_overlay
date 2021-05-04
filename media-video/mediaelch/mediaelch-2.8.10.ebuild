@@ -15,19 +15,18 @@ LICENSE="GPL-3"
 # See bug https://github.com/Komet/MediaElch/issues/1315
 #KEYWORDS="amd64"
 
-DEPEND="dev-qt/qtsql:5
-	dev-qt/qtscript:5
+DEPEND="=dev-libs/quazip-0.9*
+	dev-qt/qtconcurrent:5
+	dev-qt/qtmultimedia:5[widgets]
+	dev-qt/qtsql:5
+	dev-qt/qtsvg:5
 	dev-qt/qtquickcontrols:5
 	dev-qt/qtxmlpatterns:5
 	dev-qt/qtcore:5
 	dev-qt/qtgui:5
 	media-video/mediainfo
 	media-libs/libzen
-	media-libs/phonon
-	dev-qt/qtconcurrent:5
-	dev-qt/qtmultimedia:5[widgets]
-	dev-qt/qtscript:5
-	=dev-libs/quazip-0.9*"
+	media-libs/phonon"
 
 src_configure() {
 	local mycmakeargs=( "-DUSE_EXTERN_QUAZIP=ON" )
