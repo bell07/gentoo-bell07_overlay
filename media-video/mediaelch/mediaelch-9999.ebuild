@@ -11,21 +11,19 @@ IUSE="debug"
 
 if [[ ${PV} == *9999 ]] ; then
 	EGIT_REPO_URI="https://github.com/Komet/MediaElch"
-	EGIT_REPO_BRANCH="master"
+	EGIT_BRANCH="master"
 	EGIT_SUBMODULES=()
 	inherit git-r3
 	S="${WORKDIR}/mediaelch-9999"
 else
 	RESTRICT="mirror"
 	SRC_URI="https://github.com/Komet/$MY_PN/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="~amd64"
+	KEYWORDS="amd64"
 fi
 
 
 SLOT="0"
 LICENSE="LGPL-3"
-# See bug https://github.com/Komet/MediaElch/issues/1315
-#KEYWORDS="amd64"
 
 DEPEND="=dev-libs/quazip-0.9*
 	dev-qt/qtconcurrent:5
