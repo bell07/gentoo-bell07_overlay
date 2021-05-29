@@ -25,7 +25,7 @@ fi
 SLOT="0"
 LICENSE="LGPL-3"
 
-DEPEND="=dev-libs/quazip-0.9*
+DEPEND="dev-libs/quazip
 	dev-qt/qtconcurrent:5
 	dev-qt/qtmultimedia:5[widgets]
 	dev-qt/qtsql:5
