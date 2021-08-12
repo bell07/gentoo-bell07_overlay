@@ -26,7 +26,7 @@ USE="$USE fat hfs ntfs udf"
 USE="$USE gimp java ocr"
 USE="$USE oauth"             # Cloud auth (MS+Google)
 USE="$USE lua luajit python" # Scripting
-USE="$USE thunar"            # XFCE file manager
+USE="$USE thunar xfce"       # XFCE
 USE="$USE gtk3"              # XFCE-4.16 is fully gtk3. Prefer it for now
 
 
