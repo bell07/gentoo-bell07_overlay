@@ -1,0 +1,12 @@
+diff --git a/tsc/scrdg/scrdg.cpp b/tsc/scrdg/scrdg.cpp
+index 0b44f680e..0ef25a543 100644
+--- a/scrdg/scrdg.cpp
++++ b/scrdg/scrdg.cpp
+@@ -15,6 +15,7 @@
+ */
+ 
+ #include "scrdg.hpp"
++#include <algorithm>
+ #include <iostream>
+ #include <sstream>
+ #include <cstdio>
