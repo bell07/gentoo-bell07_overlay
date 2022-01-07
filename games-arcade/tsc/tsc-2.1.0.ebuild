@@ -13,7 +13,7 @@ KEYWORDS="~amd64 ~x86"
 
 
 DEPEND="media-libs/libsfml
-	dev-games/cegui[opengl]
+	dev-games/cegui[opengl,devil]
 	media-libs/libpng
 	dev-libs/libpcre
 	dev-cpp/libxmlpp
