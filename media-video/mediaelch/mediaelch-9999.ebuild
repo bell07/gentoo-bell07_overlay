@@ -48,9 +48,3 @@ src_configure() {
 
 	cmake_src_configure
 }
-
-src_install() {
-	cmake_src_install
-	cd "${BUILD_DIR}"/src
-	dolib.so liblibmediaelch.so
-}

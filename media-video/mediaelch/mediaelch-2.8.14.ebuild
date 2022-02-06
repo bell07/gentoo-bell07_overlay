@@ -25,7 +25,7 @@ fi
 SLOT="0"
 LICENSE="LGPL-3"
 
-DEPEND="=dev-libs/quazip-0.9*
+DEPEND="dev-libs/quazip
 	dev-qt/qtconcurrent:5
 	dev-qt/qtmultimedia:5[widgets]
 	dev-qt/qtsql:5
@@ -47,10 +47,4 @@ src_configure() {
 	fi
 
 	cmake_src_configure
-}
-
-src_install() {
-	cmake_src_install
-	cd "${BUILD_DIR}"/src
-	dolib.so liblibmediaelch.so
 }
