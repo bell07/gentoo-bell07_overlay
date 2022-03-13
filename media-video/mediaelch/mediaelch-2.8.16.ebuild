@@ -38,11 +38,6 @@ DEPEND="dev-libs/quazip
 	media-libs/libzen
 	media-libs/phonon"
 
-PATCHES=(
-	"${FILESDIR}"/2.8.12-6f9d61569750fd6e3a5dd78985fea20e069c1a1d.patch
-	"${FILESDIR}"/2.8.12-3b81667a19be2767d21ac0d50c79c678b8e923e9.patch
-)
-
 src_configure() {
 	local mycmakeargs=("-DUSE_EXTERN_QUAZIP=ON")
 	if use debug; then
@@ -52,10 +47,4 @@ src_configure() {
 	fi
 
 	cmake_src_configure
-}
-
-src_install() {
-	cmake_src_install
-	cd "${BUILD_DIR}"/src
-	dolib.so liblibmediaelch.so
 }
