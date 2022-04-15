@@ -1,5 +1,5 @@
 # Disable useless things
-USE="$USE -gnome -gpm -device-mapper -gnome-online-accounts -ldap"
+USE="$USE -gnome -device-mapper -gnome-online-accounts -ldap"
 USE="$USE -mysql"
 USE="$USE -btrfs -jfs -reiserfs"
 USE="$USE -subversion" # git is enough in most cases
