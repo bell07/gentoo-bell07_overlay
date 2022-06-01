@@ -22,10 +22,12 @@ USE="$USE widevine"     # DRM
 # File systems
 USE="$USE fat hfs ntfs udf"
 
+# Some AI
+USE="$USE opencv"
+
 # My default software support
 USE="$USE gimp java ocr"
 USE="$USE oauth"             # Cloud auth (MS+Google)
-USE="$USE lua luajit python" # Scripting
 USE="$USE thunar xfce"       # XFCE
 USE="$USE gtk3"              # XFCE-4.16 is fully gtk3. Prefer it for now
 
