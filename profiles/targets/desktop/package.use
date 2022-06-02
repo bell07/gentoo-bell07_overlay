@@ -19,3 +19,5 @@ sys-fs/squashfs-tools lzo
 ## Needed for xauth to generate auth files correctly
 x11-base/xorg-server xcsecurity
 
+# required for net-print/hplip
+net-dns/avahi python
