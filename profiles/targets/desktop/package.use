@@ -21,3 +21,6 @@ x11-base/xorg-server xcsecurity
 
 # required for net-print/hplip
 net-dns/avahi python
+
+# at-most-one-of qt5 gtk3. I prefer gtk
+media-libs/opencv -qt5 -opengl
