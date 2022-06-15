@@ -5,12 +5,15 @@ EAPI=7
 
 DESCRIPTION="The Secret Chronicles of Dr. M."
 HOMEPAGE="https://secretchronicles.org/"
-SRC_URI="https://ftp.secretchronicles.org/releases/TSC-${PV}.tar.gz"
+
+EGIT_REPO_URI="https://github.com/Secretchronicles/TSC"
+EGIT_BRANCH="devel"
+inherit git-r3
+
 
 LICENSE="GPL-3"
 SLOT="0"
-#KEYWORDS="~amd64 ~x86" # Does not build anymore
-
+KEYWORDS="~amd64 ~x86"
 
 DEPEND="media-libs/libsfml
 	dev-games/cegui[opengl,devil]
@@ -19,11 +22,7 @@ DEPEND="media-libs/libsfml
 	dev-cpp/libxmlpp
 	dev-libs/boost"
 
-S="${WORKDIR}/TSC-${PV}/tsc"
-
-PATCHES=(
-        "${FILESDIR}/missing_include-2.1.0.patch"
-)
+S="${WORKDIR}/tsc-${PV}/tsc"
 
 inherit cmake
 
@@ -35,12 +34,13 @@ src_configure() {
 src_install() {
 	cmake_src_install
 	rm -r "${D}/usr/share/appdata/"
+	rm -r "${D}/usr/share/doc/tsc/"
 }
 
 pkg_postinst() {
-        xdg_icon_cache_update
+	xdg_icon_cache_update
 }
 
 pkg_postrm() {
-        xdg_icon_cache_update
+	xdg_icon_cache_update
 }
