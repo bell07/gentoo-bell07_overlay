@@ -30,6 +30,7 @@ USE="$USE gimp java ocr"
 USE="$USE oauth"             # Cloud auth (MS+Google)
 USE="$USE thunar xfce"       # XFCE
 USE="$USE gtk3"              # XFCE-4.16 is fully gtk3. Prefer it for now
+USE="$USE connman"           # My preferred network manager on desktop
 
 
 SANE_BACKENDS="-* hp net"
