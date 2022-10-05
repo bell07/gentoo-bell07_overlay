@@ -24,3 +24,7 @@ net-dns/avahi python
 
 # at-most-one-of qt5 gtk3. I prefer gtk
 media-libs/opencv -qt5 -opengl
+
+# Pipewire sound server by default
+media-video/pipewire sound-server
+media-sound/pulseaudio -daemon

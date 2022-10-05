@@ -1,5 +1,6 @@
 # Ususal desktop hardware
-USE="$USE bluetooth pulseaudio"    # Audio+Bluetooth managers
+USE="$USE pulseaudio pipewire"     # Audio managers
+USE="$USE bluetooth"               # Bluetooth
 USE="$USE scanner printsupport"    # HP printer
 USE="$USE bluray bdplus aacs"      # Bluray disks
 USE="$USE cddb css cover"          # CD/DVD Disks
