@@ -2,7 +2,7 @@ EAPI="7"
 KEYWORDS="amd64"
 SLOT="0"
 
-IUSE="admin xfce"
+IUSE="admin pulseaudio xfce"
 HOMEPAGE="https://github.com/bell07/gentoo-bell07_overlay"
 
 DESCRIPTION="My favorite software preselection - meta package"
@@ -66,18 +66,19 @@ RDEPEND+=" xfce? (
 app-arch/xarchiver
 app-editors/leafpad
 dev-util/meld
-media-fonts/corefonts
-media-fonts/fontawesome
+media-fonts/fonts-meta
 media-gfx/ristretto
 media-sound/pavucontrol
 net-wireless/blueman
 sci-calculators/galculator
 sys-apps/baobab
+x11-apps/xinput
 x11-apps/xrandr
 x11-base/xorg-server
 x11-misc/autorandr
 x11-misc/menulibre
 x11-themes/xfwm4-themes
+x11-themes/light-themes
 xfce-base/thunar
 xfce-base/xfce4-meta
 xfce-extra/thunar-archive-plugin
@@ -94,4 +95,10 @@ xfce-extra/xfce4-sensors-plugin
 xfce-extra/xfce4-taskmanager
 xfce-extra/xfce4-volumed-pulse
 xfce-extra/xfce4-whiskermenu-plugin
+)"
+
+# Audio packages for desktop
+RDEPEND+=" pulseaudio? (
+media-sound/alsa-utils
+media-sound/pavucontrol
 )"
