@@ -16,7 +16,7 @@ sys-kernel/gentoo-sources symlink
 # Usuall compression
 sys-fs/squashfs-tools lzo
 
-## Needed for xauth to generate auth files correctly
+# Needed for xauth to generate auth files correctly
 x11-base/xorg-server xcsecurity
 
 # required for net-print/hplip
@@ -28,3 +28,6 @@ media-libs/opencv -qt5 -opengl
 # Pipewire sound server by default
 media-video/pipewire sound-server
 media-sound/pulseaudio -daemon
+
+# Microsoft fonts still useful
+media-fonts/fonts-meta ms
