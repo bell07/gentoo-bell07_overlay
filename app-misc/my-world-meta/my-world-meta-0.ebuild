@@ -12,6 +12,7 @@ RDEPEND+="
 app-admin/logrotate
 app-admin/sudo
 app-admin/syslog-ng
+sys-apps/mlocate
 app-arch/p7zip
 app-arch/unrar
 app-arch/unzip
@@ -25,6 +26,8 @@ app-portage/eix
 app-portage/genlop
 app-portage/gentoolkit
 app-portage/smart-live-rebuild
+app-text/dos2unix
+dev-util/strace
 dev-vcs/git
 net-analyzer/nettop
 sys-apps/pciutils
@@ -35,6 +38,7 @@ sys-fs/exfatprogs
 sys-fs/ntfs3g
 sys-kernel/gentoo-kernel
 sys-kernel/linux-firmware
+sys-power/powertop
 sys-process/htop
 sys-process/iotop
 sys-process/lsof
@@ -73,10 +77,15 @@ net-wireless/blueman
 sci-calculators/galculator
 sys-apps/baobab
 x11-apps/xinput
+x11-apps/xkill
 x11-apps/xrandr
 x11-base/xorg-server
 x11-misc/autorandr
 x11-misc/menulibre
+x11-misc/wmctrl
+x11-misc/xdotool
+x11-terms/xterm
+x11-themes/elementary-xfce-icon-theme
 x11-themes/xfwm4-themes
 x11-themes/light-themes
 xfce-base/thunar
