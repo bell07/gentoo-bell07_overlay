@@ -19,7 +19,7 @@ DEPEND="media-libs/libsfml
 	dev-games/cegui[opengl,devil]
 	media-libs/libpng
 	dev-libs/libpcre
-	dev-cpp/libxmlpp
+	dev-cpp/libxmlpp:2.6
 	dev-libs/boost"
 
 S="${WORKDIR}/tsc-${PV}/tsc"
@@ -27,7 +27,7 @@ S="${WORKDIR}/tsc-${PV}/tsc"
 inherit cmake
 
 src_configure() {
-	local mycmakeargs=("-DUSE_LIBXMLPP3=ON")
+	local mycmakeargs=("-DUSE_LIBXMLPP3=OFF")
 	cmake_src_configure
 }
 
