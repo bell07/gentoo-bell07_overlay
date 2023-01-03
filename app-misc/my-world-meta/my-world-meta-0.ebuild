@@ -33,6 +33,7 @@ net-analyzer/nettop
 sys-apps/lm-sensors
 sys-apps/pciutils
 sys-apps/usbutils
+sys-auth/rtkit
 sys-boot/efibootmgr
 sys-fs/dosfstools
 sys-fs/exfatprogs
@@ -45,7 +46,7 @@ sys-process/iotop
 sys-process/lsof
 "
 
-# System and network analysis and monitoring tools
+# System and network analysis, monitoring and recovery tools
 RDEPEND+=" admin? (
 app-admin/testdisk
 app-antivirus/clamav
@@ -69,7 +70,7 @@ sys-apps/memtest86+
 sys-fs/ddrescue
 )"
 
-# Desktop applications
+# Desktop applications for usual Workstation
 RDEPEND+=" desktop? (
 app-admin/keepassxc
 app-cdr/xfburn
@@ -81,17 +82,15 @@ media-video/cheese
 media-video/vlc
 net-print/hplip
 net-print/hplip-plugin
-|| ( www-client/firefox www-client/firefox-bin )
 )"
 
-# XFCE packages
+# X and XFCE base packages, that should be on any device with graphical interface
 RDEPEND+=" xfce? (
 app-arch/xarchiver
 app-editors/leafpad
 dev-util/meld
 media-fonts/fonts-meta
 media-gfx/ristretto
-media-sound/pavucontrol
 net-wireless/blueman
 sci-calculators/galculator
 sys-apps/baobab
@@ -117,15 +116,20 @@ xfce-extra/xfce4-mount-plugin
 xfce-extra/xfce4-netload-plugin
 xfce-extra/xfce4-notifyd
 xfce-extra/xfce4-panel-profiles
-xfce-extra/xfce4-pulseaudio-plugin
 xfce-extra/xfce4-screenshooter
 xfce-extra/xfce4-sensors-plugin
 xfce-extra/xfce4-taskmanager
-xfce-extra/xfce4-volumed-pulse
 xfce-extra/xfce4-whiskermenu-plugin
+|| ( www-client/firefox www-client/firefox-bin )
+
+pulseaudio? (
+xfce-extra/xfce4-pulseaudio-plugin
+xfce-extra/xfce4-volumed-pulse
+)
+
 )"
 
-# Audio packages for desktop
+# Advanced Audio setup
 RDEPEND+=" pulseaudio? (
 media-sound/alsa-utils
 media-sound/pavucontrol
