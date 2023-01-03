@@ -2,7 +2,7 @@ EAPI="7"
 KEYWORDS="amd64"
 SLOT="0"
 
-IUSE="admin pulseaudio xfce"
+IUSE="admin desktop pulseaudio xfce"
 HOMEPAGE="https://github.com/bell07/gentoo-bell07_overlay"
 
 DESCRIPTION="My favorite software preselection - meta package"
@@ -30,6 +30,7 @@ app-text/dos2unix
 dev-util/strace
 dev-vcs/git
 net-analyzer/nettop
+sys-apps/lm-sensors
 sys-apps/pciutils
 sys-apps/usbutils
 sys-boot/efibootmgr
@@ -46,11 +47,13 @@ sys-process/lsof
 
 # System and network analysis and monitoring tools
 RDEPEND+=" admin? (
+app-admin/testdisk
 app-antivirus/clamav
 app-antivirus/fangfrisch
 app-crypt/chntpw
 app-crypt/fcrackzip
 net-analyzer/nmap
+net-analyzer/traceroute
 net-analyzer/wireshark
 net-dialup/minicom
 net-ftp/filezilla
@@ -59,11 +62,27 @@ sys-apps/gptfdisk
 sys-apps/gsmartcontrol
 sys-apps/memtest86+
 sys-block/gparted
+sys-block/partimage
 sys-boot/unetbootin
 sys-boot/woeusb
+sys-apps/memtest86+
 sys-fs/ddrescue
 )"
 
+# Desktop applications
+RDEPEND+=" desktop? (
+app-admin/keepassxc
+app-cdr/xfburn
+|| ( app-office/libreoffice app-office/libreoffice-bin )
+app-text/qpdfview
+media-gfx/gimp
+media-sound/grip
+media-video/cheese
+media-video/vlc
+net-print/hplip
+net-print/hplip-plugin
+|| ( www-client/firefox www-client/firefox-bin )
+)"
 
 # XFCE packages
 RDEPEND+=" xfce? (
