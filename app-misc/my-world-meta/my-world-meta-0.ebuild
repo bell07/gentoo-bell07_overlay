@@ -53,6 +53,7 @@ app-antivirus/clamav
 app-antivirus/fangfrisch
 app-crypt/chntpw
 app-crypt/fcrackzip
+media-video/cheese
 net-analyzer/nmap
 net-analyzer/traceroute
 net-analyzer/wireshark
@@ -78,10 +79,14 @@ app-cdr/xfburn
 app-text/qpdfview
 media-gfx/gimp
 media-sound/grip
-media-video/cheese
 media-video/vlc
 net-print/hplip
 net-print/hplip-plugin
+)"
+
+# Advanced Audio setup
+RDEPEND+=" pulseaudio? (
+media-sound/alsa-utils
 )"
 
 # X and XFCE base packages, that should be on any device with graphical interface
@@ -123,14 +128,9 @@ xfce-extra/xfce4-whiskermenu-plugin
 || ( www-client/firefox www-client/firefox-bin )
 
 pulseaudio? (
+media-sound/pavucontrol
 xfce-extra/xfce4-pulseaudio-plugin
 xfce-extra/xfce4-volumed-pulse
 )
 
-)"
-
-# Advanced Audio setup
-RDEPEND+=" pulseaudio? (
-media-sound/alsa-utils
-media-sound/pavucontrol
 )"

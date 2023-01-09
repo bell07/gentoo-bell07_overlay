@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>web.alexander@web.de</email>
+    <name>Alexander Weber</name>
+  </maintainer>
+  <longdescription>Meta-Package for my software preferences</longdescription>
+  <use>
+    <flag name="admin">Install system and network analysis, monitoring and recovery tools</flag>
+    <flag name="desktop">Install office desktop workstation software</flag>
+    <flag name="pulseaudio">System with audio output </flag>
+    <flag name="xfce">Use XFCE as window manager</flag>
+  </use>
+</pkgmetadata>
