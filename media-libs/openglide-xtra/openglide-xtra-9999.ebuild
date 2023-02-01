@@ -39,10 +39,6 @@ MULTILIB_WRAPPED_HEADERS=(
 	/usr/include/openglide/sdk2_unix.h
 )
 
-PATCHES=(
-	"${FILESDIR}"/gentoo-build.patch
-)
-
 src_prepare() {
 	default
 	eautoreconf
