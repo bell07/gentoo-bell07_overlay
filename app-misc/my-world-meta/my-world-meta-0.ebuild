@@ -76,7 +76,7 @@ RDEPEND+=" desktop? (
 app-admin/keepassxc
 app-cdr/xfburn
 || ( app-office/libreoffice app-office/libreoffice-bin )
-app-text/qpdfview
+app-text/evince
 media-gfx/gimp
 media-sound/grip
 media-video/vlc
