@@ -39,6 +39,7 @@ sys-fs/dosfstools
 sys-fs/exfatprogs
 sys-fs/ntfs3g
 sys-kernel/gentoo-kernel
+sys-kernel/kernel-cfg
 sys-kernel/linux-firmware
 sys-power/powertop
 sys-process/htop
@@ -91,6 +92,7 @@ media-sound/alsa-utils
 
 # X and XFCE base packages, that should be on any device with graphical interface
 RDEPEND+=" xfce? (
+app-benchmarks/glmark2
 app-arch/xarchiver
 app-editors/leafpad
 dev-util/meld
