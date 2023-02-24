@@ -1,33 +1,36 @@
-# Gui "gitk"
-dev-vcs/git tk
-
 # Keepassxc plugins
 app-admin/keepassxc autotype browser
-
-# Samba client part
-net-fs/samba client
 
 # Prefer xarchiver UI
 app-arch/p7zip  -wxwidgets
 
-# Set kernel symlink by default
-sys-kernel/gentoo-sources symlink
+# Gui "gitk"
+dev-vcs/git tk
 
-# Usuall compression
-sys-fs/squashfs-tools lzo
-
-# Needed for xauth to generate auth files correctly
-x11-base/xorg-server xcsecurity
-
-# required for net-print/hplip
-net-dns/avahi python
+# Microsoft fonts still useful
+media-fonts/fonts-meta ms
 
 # at-most-one-of qt5 gtk3. I prefer gtk
 media-libs/opencv -qt5 -opengl
 
 # Pipewire sound server by default
-media-video/pipewire sound-server
 media-sound/pulseaudio -daemon
+media-video/pipewire sound-server
 
-# Microsoft fonts still useful
-media-fonts/fonts-meta ms
+# ffmpeg? ( extra )
+media-video/pipewire extra
+
+# required for net-print/hplip
+net-dns/avahi python
+
+# Samba client part
+net-fs/samba client
+
+# Usuall compression
+sys-fs/squashfs-tools lzo
+
+# Set kernel symlink by default
+sys-kernel/gentoo-sources symlink
+
+# Needed for xauth to generate auth files correctly
+x11-base/xorg-server xcsecurity
