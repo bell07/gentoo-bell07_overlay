@@ -12,7 +12,6 @@ RDEPEND+="
 app-admin/logrotate
 app-admin/sudo
 app-admin/syslog-ng
-sys-apps/mlocate
 app-arch/p7zip
 app-arch/unrar
 app-arch/unzip
@@ -31,9 +30,9 @@ dev-util/strace
 dev-vcs/git
 net-analyzer/nettop
 sys-apps/lm-sensors
+sys-apps/mlocate
 sys-apps/pciutils
 sys-apps/usbutils
-sys-auth/rtkit
 sys-boot/efibootmgr
 sys-fs/dosfstools
 sys-fs/exfatprogs
@@ -101,6 +100,7 @@ media-gfx/ristretto
 net-wireless/blueman
 sci-calculators/galculator
 sys-apps/baobab
+sys-auth/rtkit
 x11-apps/xinput
 x11-apps/xkill
 x11-apps/xrandr
