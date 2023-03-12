@@ -15,6 +15,8 @@ USE="$USE dist-kernel"
 USE="$USE logrotate"
 USE="$USE threads"
 
+USE="$USE lto pgo" # Profile guided optimizations and link time optimizations
+
 PORTAGE_NICENESS=19
 PORTAGE_IONICE_COMMAND="ionice -c 3 -p \${PID}"
 
