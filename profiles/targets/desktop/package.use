@@ -32,5 +32,9 @@ sys-fs/squashfs-tools lzo
 # Set kernel symlink by default
 sys-kernel/gentoo-sources symlink
 
+# LTO support dependency
+www-client/chromium libcxx
+
 # Needed for xauth to generate auth files correctly
 x11-base/xorg-server xcsecurity
+
