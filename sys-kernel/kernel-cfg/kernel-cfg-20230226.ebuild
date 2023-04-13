@@ -6,7 +6,9 @@ HOMEPAGE="https://github.com/bell07/bashscripts-kernel_cfg"
 DESCRIPTION='Kernel configuration snippets (eselect version)'
 
 COMMIT="64f153f0845c3acf9a359fc585faac863a34a9c4"
-SRC_URI="https://github.com/bell07/bashscripts-kernel_cfg/archive/${COMMIT}.zip -> kernel-cfg-${PV}.zip"
+SRC_URI="${HOMEPAGE}/archive/${COMMIT}.zip -> ${P}.zip"
+
+RESTRICT="mirror"
 
 S="${WORKDIR}/bashscripts-kernel_cfg-${COMMIT}"
 
