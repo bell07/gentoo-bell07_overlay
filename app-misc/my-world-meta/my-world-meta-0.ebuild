@@ -2,7 +2,7 @@ EAPI="7"
 KEYWORDS="amd64"
 SLOT="0"
 
-IUSE="admin desktop pulseaudio xfce"
+IUSE="admin desktop pulseaudio vulkan wayland xfce"
 HOMEPAGE="https://github.com/bell07/gentoo-bell07_overlay"
 
 DESCRIPTION="My favorite software preselection - meta package"
@@ -77,11 +77,16 @@ app-admin/keepassxc
 app-cdr/xfburn
 || ( app-office/libreoffice app-office/libreoffice-bin )
 app-text/evince
+app-text/coolreader
+app-text/pdfarranger
 media-gfx/gimp
 media-sound/grip
 media-video/vlc
 net-print/hplip
 net-print/hplip-plugin
+media-gfx/simple-scan
+media-gfx/xsane
+media-sound/easytag
 )"
 
 # Advanced Audio setup
@@ -93,7 +98,7 @@ media-sound/alsa-utils
 RDEPEND+=" xfce? (
 app-benchmarks/glmark2
 app-arch/xarchiver
-app-editors/leafpad
+app-editors/mousepad
 dev-util/meld
 media-fonts/fonts-meta
 media-gfx/ristretto
@@ -136,3 +141,13 @@ xfce-extra/xfce4-volumed-pulse
 )
 
 )"
+
+
+# Wayland desktop (WIP)
+RDEPEND+=" wayland? (
+gui-apps/wf-shell
+gui-wm/wayfire
+)"
+
+# Vulkan tools for vulkan
+RDEPEND+=" vulkan? ( dev-util/vulkan-tools )"
