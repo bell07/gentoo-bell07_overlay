@@ -1,26 +1,26 @@
 # Ususal desktop hardware
 USE="$USE pulseaudio pipewire"     # Audio managers
 USE="$USE bluetooth"               # Bluetooth
-USE="$USE scanner printsupport"    # HP printer
+USE="$USE scanner printsupport"    # Printer and scanner
 USE="$USE bluray bdplus aacs"      # Bluray disks
 USE="$USE cddb css cover"          # CD/DVD Disks
 USE="$USE xinerama xrandr"         # Multi-Monitor
 USE="$USE vaapi vdpau xvmc"        # HW Video
-USE="$USE wiimote gamepad"         # HW Gaming
+USE="$USE wiimote gamepad joystick" # HW Gaming
 USE="$USE v4l"                     # Webcam
 USE="$USE hddtemp lm-sensors"      # Sensors
 USE="$USE vulkan"                  # The feature for gaming and multimedia
-USE="$USE joystick"
 
 # Multimedia formats
 USE="$USE opus"         # WhatsApp Audio
-USE="$USE heif x265"    # Neuer Standard - Apple nutzt das für Photos
+USE="$USE heif x265"    # New Standard - Apple use it for photos already
 USE="$USE mtp rtmp mms" # Streaming
 USE="$USE ffmpeg"       # Support for auto-format conversions
 USE="$USE gstreamer"    # another auto-conversions
 USE="$USE jpeg2k openexr postscript webp wmf xpmopenexr" # Misc rare formats, supported by gimp
 USE="$USE widevine"     # DRM
 USE="$USE midi fluidsynth" # Some old games
+USE="$USE vpx"          # required to play some HTML5 videos
 
 # File systems
 USE="$USE fat hfs ntfs udf"
@@ -30,7 +30,7 @@ USE="$USE opencv"
 
 # My default software support
 USE="$USE gimp java ocr"
-USE="$USE oauth"             # Cloud auth (MS+Google)
+USE="$USE oauth"             # Cloud auth
 USE="$USE thunar xfce"       # XFCE
 USE="$USE gtk3"              # XFCE-4.16 is fully gtk3. Prefer it for now
 USE="$USE connman"           # My preferred network manager on desktop
