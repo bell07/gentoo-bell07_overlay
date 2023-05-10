@@ -5,7 +5,8 @@ SLOT="0"
 HOMEPAGE="https://github.com/bell07/bashscripts-kernel_cfg"
 DESCRIPTION='Kernel configuration snippets (eselect version)'
 
-COMMIT="64f153f0845c3acf9a359fc585faac863a34a9c4"
+COMMIT="a060b7f7f7b1eaf5d14cdddf77005382755ec8fc"
+
 SRC_URI="${HOMEPAGE}/archive/${COMMIT}.zip -> ${P}.zip"
 
 RESTRICT="mirror"
@@ -18,8 +19,17 @@ src_install() {
 		doins "$i"
 	done
 
+	insinto /usr/share/kernel_cfg
+	doins -r "${S}"/distro
+
+	dosbin "${S}"/kernel_cfg.sh
+	dosbin "${S}"/kernel_build.sh
+
 	insinto /usr/share/eselect/modules
 	doins "${S}"/kernel-cfg.eselect
+
+	insinto /etc
+	newins settings.env.example kernel-cfg.env
 
 	dodoc "${S}"/README.md
 }
