@@ -1,3 +1,4 @@
 gentoo:default/linux/amd64/17.1/desktop
-../targets/server
+../base
+../devices/amd64
 ../targets/desktop
