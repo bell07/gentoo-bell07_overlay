@@ -1,0 +1,25 @@
+# Adjust meta settings
+sys-apps/nintendo-switch-meta bootstack kernel-bin wifi -dock-script
+
+# required by www-client/firefox
+media-libs/libvpx postproc
+
+# Retroarch - as needed
+games-emulation/retroarch -sdl ozone
+games-emulation/retroarch-assets ozone xmb
+dev-qt/qtwebchannel qml
+sys-libs/zlib minizip
+
+# required by media-tv/kodi
+media-libs/freetype harfbuzz
+media-video/ffmpeg openssl
+net-misc/curl http2
+
+# required by xfce-base/xfce4-panel
+dev-libs/libdbusmenu gtk3
+
+# Avoid crash with start as user
+x11-base/xorg-server suid
+
+# Do not use any modems anymore
+net-misc/networkmanager -ppp -modemmanager -bluetooth -gtk-doc

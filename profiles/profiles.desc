@@ -1,3 +1,4 @@
 amd64 my_desktop stable
 amd64 my_server stable
 amd64 my_selinux_server stable
+arm64 my_switch_binhost stable

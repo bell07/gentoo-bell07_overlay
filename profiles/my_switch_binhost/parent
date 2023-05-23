@@ -1,0 +1,4 @@
+switch:nintendo_switch/17.0/desktop/
+../base
+../targets/desktop
+../devices/switch

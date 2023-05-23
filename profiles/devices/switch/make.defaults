@@ -1,0 +1,18 @@
+USE="$USE bindist"        # License restrictions by default, but you can rebuild byself
+USE="$USE initramfs"      # Build initramfs by default
+USE="$USE -pipewire"      # Does not build currently
+
+PORTAGE_BINHOST="http://bell.7u.org/pub/gentoo-switch/packages/"
+FEATURES="getbinpkg"
+EMERGE_DEFAULT_OPTS="$EMERGE_DEFAULT_OPTS --rebuilt-binaries y"
+
+EMERGE_DEFAULT_OPTS="$EMERGE_DEFAULT_OPTS --buildpkg-exclude acct-group/* --buildpkg-exclude acct-user/* --buildpkg-exclude virtual/* --buildpkg-exclude */*-meta"
+
+# Required for non-free kernel and firmware blobs
+ACCEPT_LICENSE="$ACCEPT_LICENSE linux-firmware linux-fw-redistributable no-source-code"
+
+# License for some bh-fonts, required for x11-base/xorg-x11 with USE=fonts
+ACCEPT_LICENSE="$ACCEPT_LICENSE bh-luxi"
+
+# My preferred languages. Ask me if you nee additional languages in my precompiled packages
+L10N="en de"
