@@ -37,3 +37,21 @@ x11-base/xorg-server xcsecurity
 
 # Do not use any modems anymore
 net-misc/networkmanager -ppp -modemmanager -bluetooth -gtk-doc
+
+# Retroarch defaults
+games-emulation/retroarch -sdl ozone
+games-emulation/retroarch-assets ozone xmb
+
+# Required by misc gaming software
+dev-qt/qtwebchannel qml
+sys-libs/zlib minizip
+
+# Required by www-client/firefox
+media-libs/libvpx postproc
+
+# Required by media-tv/kodi
+media-video/ffmpeg openssl libxml2
+net-misc/curl http2
+
+# Required by net-ftp/filezilla
+dev-libs/libpcre2 pcre32

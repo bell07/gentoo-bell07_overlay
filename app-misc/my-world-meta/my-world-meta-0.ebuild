@@ -2,7 +2,7 @@ EAPI="7"
 KEYWORDS="amd64 arm64"
 SLOT="0"
 
-IUSE="admin desktop minimal networkmanager pulseaudio vulkan wayland xfce"
+IUSE="admin desktop minimal mediacenter networkmanager pulseaudio vulkan wayland xfce"
 HOMEPAGE="https://github.com/bell07/gentoo-bell07_overlay"
 
 DESCRIPTION="My favorite software preselection - meta package"
@@ -50,6 +50,7 @@ RDEPEND+="
 	dev-util/strace
 	app-text/dos2unix
 	dev-vcs/git
+	games-util/joystick
 	sys-apps/lm-sensors
 	sys-apps/mlocate
 	sys-kernel/linux-firmware
@@ -68,18 +69,23 @@ RDEPEND+="
 	sys-fs/ddrescue
 	sys-fs/ext4magic
 
-	 amd64? (
+	amd64? (
 		sys-apps/memtest86+
+		!minimal? (
+			sys-boot/woeusb
+			app-crypt/chntpw
+		)
+
+		xfce? (
+			sys-boot/unetbootin
+		)
 	)
 
 	!minimal? (
 		app-antivirus/clamav
 		app-antivirus/fangfrisch
-		app-crypt/chntpw
-		app-crypt/fcrackzip
 		net-analyzer/nmap
 		net-dialup/minicom
-		sys-boot/woeusb
 	)
 
 	minimal? (
@@ -91,7 +97,6 @@ RDEPEND+="
 		net-analyzer/wireshark
 		net-ftp/filezilla
 		sys-apps/gsmartcontrol
-		sys-boot/unetbootin
 		sys-block/gparted
 	)
 )"
@@ -101,6 +106,7 @@ RDEPEND+="
  desktop? (
 	app-admin/keepassxc
 	app-cdr/xfburn
+	app-crypt/fcrackzip
 	|| ( app-office/libreoffice app-office/libreoffice-bin )
 	app-text/evince
 	app-text/coolreader
@@ -120,6 +126,18 @@ RDEPEND+="
  pulseaudio? (
 	media-sound/alsa-utils
 )"
+
+# Media Center
+RDEPEND+="
+ mediacenter? (
+	media-tv/kodi
+	media-plugins/kodi-inputstream-adaptive
+	media-plugins/kodi-inputstream-ffmpegdirect
+	media-plugins/kodi-inputstream-rtmp
+	media-plugins/kodi-peripheral-joystick
+	media-plugins/kodi-pvr-hts
+ )
+"
 
 # X and XFCE base packages, that should be on any device with graphical interface
 RDEPEND+="

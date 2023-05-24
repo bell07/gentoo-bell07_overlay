@@ -3,18 +3,28 @@
 
 # Misc utils
 =app-admin/testdisk-7.1-r2 *
+=app-antivirus/fangfrisch-1.6.1 *
+=app-arch/unrar-6.2.6 ~arm64
+=app-arch/xarchiver-0.5.4.21 ~arm64
 =app-benchmarks/glmark2-2021.12 ~arm64
+=app-crypt/fcrackzip-1.0 ~*
 =app-misc/evtest-1.35 ~arm64
+=dev-libs/libfilezilla-0.42.2 ~arm64
 =games-util/joystick-1.8.1 ~*
+=net-analyzer/nettop-0.2.3-r2 ~arm64
+=net-ftp/filezilla-3.64.0 ~arm64
+=sys-apps/gsmartcontrol-1.1.4-r1 *
+=sys-block/gparted-1.5.0-r1 ~arm64
+=sys-block/partimage-0.6.9-r4 ~arm64
+=sys-fs/exfatprogs-1.2.1 ~arm64
+=sys-power/powertop-2.15 ~arm64
 =sys-fs/ddrescue-1.27 *
 =sys-fs/ext4magic-0.3.2-r1 *
+=x11-misc/autorandr-1.13.3 *
 
 # Onscreen keyboard
 =app-accessibility/onboard-1.4.1.7 ~arm64
 =dev-python/python-distutils-extra-2.47 ~arm64
-
-# Network
-=net-misc/connman-gtk-1.1.1-r1 *
 
 # Audio
 =media-sound/pavucontrol-5.0-r1 ~arm64
@@ -22,9 +32,20 @@
 # Login Manager
 =gui-libs/greetd-0.8.0 *
 
-# Some XFCE additional packages
+# XFCE
 =app-editors/mousepad-0.6.0 ~arm64
+=dev-util/meld-3.22.0-r2 ~arm64
+=media-gfx/ristretto-0.13.0 ~arm64
 =media-video/parole-4.18.0 *
+=sci-calculators/galculator-2.1.4-r2 *
+=x11-misc/menulibre-2.2.3 *
+=x11-themes/elementary-xfce-icon-theme-0.17 ~*
+=x11-themes/gtk-engines-murrine-0.98.2-r3 ~arm64
+=x11-themes/light-themes-20.10-r2 *
+=x11-themes/murrine-themes-0.98.11-r1 ~arm64
+=x11-themes/xfwm4-themes-4.10.0-r2 *
+=xfce-extra/thunar-archive-plugin-0.5.1 ~arm64
+=xfce-extra/thunar-media-tags-plugin-0.4.0 *
 =xfce-extra/xfce4-cpufreq-plugin-1.2.8 ~arm64
 =xfce-extra/xfce4-cpugraph-plugin-1.2.7 ~arm64
 =xfce-extra/xfce4-mount-plugin-1.1.5 *
@@ -33,11 +54,14 @@
 =xfce-extra/xfce4-sensors-plugin-1.4.4 *
 =xfce-extra/xfce4-volumed-pulse-0.2.3 ~arm64
 =xfce-extra/xfce4-whiskermenu-plugin-2.7.2 ~arm64
+=xfce-extra/xfce4-netload-plugin-1.4.0 *
+=xfce-extra/xfce4-panel-profiles-1.0.13 ~*
+=xfce-extra/xfce4-taskmanager-1.5.5 ~arm64
 
 # Games launcher
 =games-util/gamehub-0.16.3.2 ~arm64
 
-# Some games
+# Games
 =games-arcade/supertux-0.6.3-r2 ~arm64
 =dev-games/physfs-3.0.2-r1 ~arm64
 
@@ -54,3 +78,25 @@
 =games-emulation/libretro-database-1_pre20210504-r1 ~arm64
 =games-emulation/libretro-info-1_pre20210428-r1 ~arm64
 =games-emulation/retroarch-assets-1_pre20210422-r1 ~arm64
+
+# Fonts
+=media-fonts/courier-prime-1.203 *
+=media-fonts/crosextrafonts-caladea-20130214 *
+=media-fonts/crosextrafonts-carlito-20130920 *
+=media-fonts/fonts-meta-3 *
+=media-fonts/oldstandard-2.2 *
+=media-fonts/open-sans-1-r1 ~arm64
+=media-fonts/powerline-symbols-20170508 *
+=media-fonts/quivira-4.1 *
+=media-fonts/signika-1.001 *
+=media-fonts/ubuntu-font-family-0.83-r1 ~arm64
+
+# Kodi
+=media-plugins/kodi-inputstream-adaptive-19.0.0 ~*
+=media-plugins/kodi-inputstream-ffmpegdirect-19.0.0  ~arm64
+=media-plugins/kodi-inputstream-rtmp-19.0.0 ~*
+=media-plugins/kodi-peripheral-joystick-19.0.0 ~*
+=media-plugins/kodi-pvr-hts-8.4.0 ~*
+
+
+

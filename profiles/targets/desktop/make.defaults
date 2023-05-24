@@ -22,6 +22,7 @@ USE="$USE jpeg2k openexr postscript webp wmf xpmopenexr" # Misc rare formats, su
 USE="$USE widevine"     # DRM
 USE="$USE midi fluidsynth" # Some old games
 USE="$USE vpx"          # required to play some HTML5 videos
+USE="$USE theora"       # Webcam
 
 # File systems
 USE="$USE fat hfs ntfs udf"

@@ -1,0 +1,15 @@
+# Desktop
+=app-benchmarks/glmark2-2021.12 ~amd64
+=xfce-extra/xfce4-panel-profiles-1.0.13 ~amd64
+=x11-themes/elementary-xfce-icon-theme-0.17 ~amd64
+=app-crypt/fcrackzip-1.0 ~amd64
+
+# Media center
+=media-plugins/kodi-game-libretro-19.0.0 ~amd64
+=media-plugins/kodi-game-libretro-snes9x-1.60.0.20 ~amd64
+=media-plugins/kodi-inputstream-adaptive-19.0.0 ~amd64
+=media-plugins/kodi-inputstream-ffmpegdirect-19.0.0 ~amd64
+=media-plugins/kodi-inputstream-rtmp-19.0.0 ~amd64
+=media-plugins/kodi-peripheral-joystick-19.0.0 ~amd64
+=media-plugins/kodi-pvr-hts-8.4.0 ~amd64
+
