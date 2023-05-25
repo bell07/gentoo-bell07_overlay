@@ -50,7 +50,6 @@ RDEPEND+="
 	dev-util/strace
 	app-text/dos2unix
 	dev-vcs/git
-	games-util/joystick
 	sys-apps/lm-sensors
 	sys-apps/mlocate
 	sys-kernel/linux-firmware
@@ -146,6 +145,7 @@ RDEPEND+="
 	app-arch/xarchiver
 	app-editors/mousepad
 	dev-util/meld
+	games-util/joystick
 	media-fonts/fonts-meta
 	media-gfx/ristretto
 	net-wireless/blueman
