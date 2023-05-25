@@ -1,0 +1,2 @@
+# Do not need mails
+app-admin/sudo -sendmail
