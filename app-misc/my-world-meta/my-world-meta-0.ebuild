@@ -37,7 +37,6 @@ RDEPEND+="
 RDEPEND+="
  !minimal? (
 	app-admin/logrotate
-	app-admin/sudo
 	app-admin/syslog-ng
 	app-arch/unrar
 	app-eselect/eselect-repository
@@ -67,6 +66,7 @@ RDEPEND+="
 	sys-block/partimage
 	sys-fs/ddrescue
 	sys-fs/ext4magic
+	www-client/lynx
 
 	amd64? (
 		sys-apps/memtest86+
@@ -87,10 +87,6 @@ RDEPEND+="
 		net-dialup/minicom
 	)
 
-	minimal? (
-		www-client/lynx
-	)
-
 	xfce? (
 		media-video/cheese
 		net-analyzer/wireshark
@@ -100,7 +96,7 @@ RDEPEND+="
 	)
 )"
 
-# Desktop applications for usual Workstation
+# Desktop applications for usual Office Workstation
 RDEPEND+="
  desktop? (
 	app-admin/keepassxc
@@ -142,6 +138,7 @@ RDEPEND+="
 RDEPEND+="
  xfce? (
 	app-benchmarks/glmark2
+	app-admin/sudo
 	app-arch/xarchiver
 	app-editors/mousepad
 	dev-util/meld
@@ -190,7 +187,8 @@ RDEPEND+="
 )"
 
 
-# Wayland desktop (WIP)
+# Wayland base packages, that should be on any device with graphical interface
+# (WIP)
 RDEPEND+="
  wayland? (
 	gui-apps/wf-shell
