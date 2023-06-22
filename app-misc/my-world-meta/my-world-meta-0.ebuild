@@ -182,7 +182,6 @@ RDEPEND+="
 	pulseaudio? (
 		media-sound/pavucontrol
 		xfce-extra/xfce4-pulseaudio-plugin
-		xfce-extra/xfce4-volumed-pulse
 	)
 )"
 
