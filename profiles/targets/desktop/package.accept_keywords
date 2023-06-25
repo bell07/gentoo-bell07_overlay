@@ -1,2 +1,11 @@
 # Go along with fast browser plugin updates
 app-admin/keepassxc
+
+# required by games-action/supertuxkart
+=dev-libs/angelscript-2.36.0
+
+# required by games-emulation/dosbox-staging
+=media-libs/iir1-1.9.4
+
+# required by games-emulation/mupen64plus
+=dev-python/PySDL2-0.9.13

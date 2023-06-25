@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>web.alexander@web.de</email>
+    <name>Alexander Weber</name>
+  </maintainer>
+  <longdescription>My preferred configuration files</longdescription>
+  <use>
+    <flag name="portage">Some portage files that cannot be placed in profile</flag>
+  </use>
+</pkgmetadata>

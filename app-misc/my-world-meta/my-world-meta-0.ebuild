@@ -2,7 +2,7 @@ EAPI="7"
 KEYWORDS="amd64 arm64"
 SLOT="0"
 
-IUSE="admin desktop minimal mediacenter networkmanager pulseaudio vulkan wayland xfce"
+IUSE="admin +bell07-config desktop minimal mediacenter networkmanager pulseaudio vulkan wayland xfce"
 HOMEPAGE="https://github.com/bell07/gentoo-bell07_overlay"
 
 DESCRIPTION="My favorite software preselection - meta package"
@@ -24,6 +24,9 @@ RDEPEND+="
 	sys-process/iotop
 	sys-process/lsof
 "
+
+# My configuration files
+RDEPEND+=" bell07-config? ( app-misc/my-gentoo-config )"
 
 # amd64 only base packages
 RDEPEND+="
