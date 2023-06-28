@@ -2,7 +2,7 @@ EAPI="7"
 KEYWORDS="amd64 arm64"
 SLOT="0"
 
-IUSE="+limits +portage"
+IUSE="limits +portage"
 HOMEPAGE="https://gitlab.com/bell07/my-gentoo-config"
 
 DESCRIPTION="My configuration files with preferred settings"

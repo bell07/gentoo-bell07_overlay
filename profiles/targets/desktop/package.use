@@ -1,3 +1,6 @@
+# Enhance user limits for desktops
+app-misc/my-gentoo-config limits
+
 # Keepassxc plugins
 app-admin/keepassxc autotype browser
 
