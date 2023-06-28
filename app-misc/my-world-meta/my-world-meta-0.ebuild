@@ -54,6 +54,7 @@ RDEPEND+="
 	dev-vcs/git
 	sys-apps/lm-sensors
 	sys-apps/mlocate
+	sys-apps/system-chroot
 	sys-kernel/linux-firmware
 	sys-power/powertop
 )"
