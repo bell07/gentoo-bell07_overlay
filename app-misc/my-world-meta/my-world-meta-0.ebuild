@@ -54,7 +54,6 @@ RDEPEND+="
 	dev-vcs/git
 	sys-apps/lm-sensors
 	sys-apps/mlocate
-	sys-apps/system-chroot
 	sys-kernel/linux-firmware
 	sys-power/powertop
 )"
@@ -68,6 +67,7 @@ RDEPEND+="
 	net-misc/whois
 	sys-apps/gptfdisk
 	sys-block/partimage
+	sys-apps/system-chroot
 	sys-fs/ddrescue
 	sys-fs/ext4magic
 	www-client/lynx
