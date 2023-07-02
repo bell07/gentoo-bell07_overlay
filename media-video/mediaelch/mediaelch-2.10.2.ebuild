@@ -30,10 +30,10 @@ DEPEND="dev-libs/quazip
 	dev-qt/qtmultimedia:5[widgets]
 	dev-qt/qtsql:5
 	dev-qt/qtsvg:5
-	dev-qt/qtquickcontrols:5
 	dev-qt/qtxmlpatterns:5
 	dev-qt/qtcore:5
 	dev-qt/qtgui:5
+	dev-util/cmake
 	media-video/mediainfo
 	media-libs/libzen
 	media-libs/phonon"
