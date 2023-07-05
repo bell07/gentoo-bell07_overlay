@@ -6,9 +6,11 @@ EAPI=7
 DESCRIPTION="Simple Wine manager for Gentoo"
 HOMEPAGE="https://gitlab.com/bell07/winemgr"
 
-EGIT_REPO_URI="https://gitlab.com/bell07/winemgr"
-EGIT_BRANCH="master"
-inherit git-r3
+COMMIT="28740f8d15eb2bcccc5e7e65915cddf57f103da8"
+
+SRC_URI="${HOMEPAGE}/-/archive/${COMMIT}/winemgr-${COMMIT}.zip -> ${P}.zip"
+RESTRICT="mirror"
+S="${WORKDIR}/winemgr-${COMMIT}"
 
 LICENSE="GPL-3"
 SLOT="0"
