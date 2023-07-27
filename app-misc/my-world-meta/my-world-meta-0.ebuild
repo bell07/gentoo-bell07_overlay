@@ -15,6 +15,7 @@ RDEPEND+="
 	app-misc/mc
 	app-misc/screen
 	net-analyzer/nettop
+	net-misc/iperf
 	sys-apps/pciutils
 	sys-apps/usbutils
 	sys-fs/dosfstools
