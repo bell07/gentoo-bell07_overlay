@@ -4,7 +4,7 @@
 # Misc utils
 =app-admin/testdisk-7.1-r2 *
 =app-antivirus/fangfrisch-1.6.1 *
-=app-arch/unrar-6.2.6 ~arm64
+=app-arch/unrar-6.2.8 ~arm64
 =app-arch/xarchiver-0.5.4.21 ~arm64
 =app-benchmarks/glmark2-2021.12 ~arm64
 =app-crypt/fcrackzip-1.0 ~*
@@ -33,7 +33,7 @@
 =gui-libs/greetd-0.8.0 *
 
 # XFCE
-=app-editors/mousepad-0.6.0 ~arm64
+=app-editors/mousepad-0.6.1 ~arm64
 =dev-util/meld-3.22.0-r2 ~arm64
 =media-gfx/ristretto-0.13.0 ~arm64
 =media-video/parole-4.18.0 *
