@@ -1,5 +1,5 @@
-# Enhance user limits for desktops
-app-misc/my-gentoo-config limits
+# Enhance user limits for gaming
+app-misc/my-gentoo-config gaming
 
 # Keepassxc plugins
 app-admin/keepassxc autotype browser

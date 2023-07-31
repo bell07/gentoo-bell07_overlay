@@ -7,7 +7,7 @@
   </maintainer>
   <longdescription>My preferred configuration files</longdescription>
   <use>
-    <flag name="limits">Set more relaxed limits for users</flag>
+    <flag name="gaming">Set more relaxed limits for gaming optimizations</flag>
     <flag name="portage">Some portage files that cannot be placed in profile</flag>
   </use>
 </pkgmetadata>
