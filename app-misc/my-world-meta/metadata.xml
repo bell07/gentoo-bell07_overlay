@@ -9,6 +9,7 @@
   <use>
     <flag name="admin">Install system and network analysis, monitoring and recovery tools</flag>
     <flag name="bell07-config">Additional config files by bell07</flag>
+    <flag name="multiuser">No autologin because multiple user in system</flag>
     <flag name="desktop">Install office desktop workstation software</flag>
     <flag name="pulseaudio">System with audio output </flag>
     <flag name="xfce">Use XFCE as window manager</flag>

@@ -2,7 +2,7 @@ EAPI="7"
 KEYWORDS="amd64 arm64"
 SLOT="0"
 
-IUSE="admin +bell07-config desktop minimal mediacenter networkmanager pulseaudio vulkan wayland xfce"
+IUSE="admin +bell07-config desktop minimal mediacenter multiuser networkmanager pulseaudio vulkan wayland xfce"
 HOMEPAGE="https://github.com/bell07/gentoo-bell07_overlay"
 
 DESCRIPTION="My favorite software preselection - meta package"
@@ -188,6 +188,14 @@ RDEPEND+="
 		media-sound/pavucontrol
 		xfce-extra/xfce4-pulseaudio-plugin
 	)
+
+	multiuser? (
+		x11-misc/lightdm
+	)
+
+	!multiuser? (
+		gui-libs/greetd
+	)
 )"
 
 
@@ -197,6 +205,10 @@ RDEPEND+="
  wayland? (
 	gui-apps/wf-shell
 	gui-wm/wayfire
+
+	!multiuser? (
+		gui-libs/greetd
+	)
 )"
 
 # Vulkan tools for vulkan
