@@ -1,5 +1,5 @@
 # Use the new installkernel
-=sys-kernel/installkernel-gentoo-999 ~arm64
+=sys-kernel/installkernel-gentoo-999-r2 ~arm64
 
 # Misc utils
 =app-admin/testdisk-7.1-r2 *
@@ -27,7 +27,7 @@
 =dev-python/python-distutils-extra-2.47 ~arm64
 
 # Audio
-=media-sound/pavucontrol-5.0-r1 ~arm64
+=media-sound/pavucontrol-5.0-r2 ~arm64
 
 # Login Manager
 =gui-libs/greetd-0.8.0 *
