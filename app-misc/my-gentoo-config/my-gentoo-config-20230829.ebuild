@@ -24,7 +24,9 @@ src_install() {
 		doins -r portage
 	fi
 
-	exeinto /usr/share/my-session-scripts
-	use xfce && doexe session-scripts/my-xfce-session.sh
-	use wayland && doexe session-scripts/my-wayland-session.sh
+	if use xfce || use wayland; then
+		exeinto /usr/share/my-session-scripts
+		use xfce && doexe session-scripts/my-xfce-session.sh
+		use wayland && doexe session-scripts/my-wayland-session.sh
+	fi
 }
