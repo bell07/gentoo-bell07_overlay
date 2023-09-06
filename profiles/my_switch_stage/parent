@@ -1,0 +1,4 @@
+switch:nintendo_switch/17.0
+../base/portage
+../targets/buildhost
+../devices/switch
