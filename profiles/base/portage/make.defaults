@@ -1,0 +1,6 @@
+PORTAGE_NICENESS=19
+PORTAGE_IONICE_COMMAND="ionice -c 3 -p \${PID}"
+
+LC_MESSAGES=C
+
+EMERGE_DEFAULT_OPTS="--autounmask-write n"
