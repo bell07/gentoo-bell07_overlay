@@ -1,6 +1,6 @@
-USE="bindist"        # License restrictions by default, but you can rebuild byself
+FEATURES="binpkg-multi-instance buildpkg"
 
-FEATURES="getbinpkg"
+USE="bindist"        # License restrictions by default, but you can rebuild byself
 
 EMERGE_DEFAULT_OPTS="--rebuilt-binaries y"
 

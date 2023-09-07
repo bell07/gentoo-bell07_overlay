@@ -2,10 +2,3 @@ USE="initramfs"           # Build initramfs by default
 USE="$USE -pipewire"      # Does not build currently
 
 PORTAGE_BINHOST="http://bell.7u.org/pub/gentoo-switch/packages/"
-
-
-# Required for non-free kernel and firmware blobs
-ACCEPT_LICENSE="$ACCEPT_LICENSE linux-firmware linux-fw-redistributable no-source-code"
-
-# License for some bh-fonts, required for x11-base/xorg-x11 with USE=fonts
-ACCEPT_LICENSE="$ACCEPT_LICENSE bh-luxi"

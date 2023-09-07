@@ -1,5 +1,5 @@
 switch:nintendo_switch/17.0/desktop/
 ../base
 ../targets/desktop
-../targets/binhost
+../targets/buildhost
 ../devices/switch

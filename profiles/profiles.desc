@@ -1,5 +1,17 @@
+# My default settings for devices with graphical interface, like workstation or gaming device
 amd64 my_desktop stable
-amd64 my_server stable
+
+# My selinux secured server
 amd64 my_selinux_server stable
+
+# Server basis profile
+amd64 my_server stable
+
+# Nintendo Switch gaming device profile. Requres switch overlay
 arm64 my_switch_desktop stable
+
+# Build binary packages in qemu-chroot for Switch
+arm64 my_switch_desktop_buildhost stable
+
+# Build minimal stage3 for Switch
 arm64 my_switch_stage stable

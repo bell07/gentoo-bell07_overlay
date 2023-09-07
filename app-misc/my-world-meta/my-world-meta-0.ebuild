@@ -14,7 +14,6 @@ RDEPEND+="
 	app-editors/nano
 	app-misc/mc
 	app-misc/screen
-	net-analyzer/nettop
 	net-misc/iperf
 	sys-apps/pciutils
 	sys-apps/usbutils
@@ -53,6 +52,7 @@ RDEPEND+="
 	dev-util/strace
 	app-text/dos2unix
 	dev-vcs/git
+	net-analyzer/nettop
 	sys-apps/lm-sensors
 	sys-apps/mlocate
 	sys-kernel/linux-firmware

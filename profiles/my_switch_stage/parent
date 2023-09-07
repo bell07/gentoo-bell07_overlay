@@ -1,4 +1,6 @@
 switch:nintendo_switch/17.0
 ../base/portage
+../targets/binhost
 ../targets/buildhost
+../targets/qemu
 ../devices/switch
