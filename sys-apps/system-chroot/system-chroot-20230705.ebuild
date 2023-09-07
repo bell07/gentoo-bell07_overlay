@@ -1,5 +1,5 @@
 EAPI=7
-KEYWORDS="amd64"
+KEYWORDS="amd64 arm64"
 SLOT="0"
 
 HOMEPAGE="https://github.com/bell07/bashscripts-system_chroot"
