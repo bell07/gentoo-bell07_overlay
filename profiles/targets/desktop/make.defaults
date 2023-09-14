@@ -10,7 +10,7 @@ USE="$USE wiimote gamepad joystick" # HW Gaming
 USE="$USE v4l"                     # Webcam
 USE="$USE hddtemp lm-sensors"      # Sensors
 USE="$USE vulkan"                  # The future for gaming and multimedia
-USE="$USE networkmanager -modemmanager -ppp" # connect on the way
+USE="$USE networkmanager -modemmanager -ppp -netifrc" # connect on the way
 
 # Multimedia formats
 USE="$USE opus"         # WhatsApp Audio

@@ -13,9 +13,6 @@ EMERGE_DEFAULT_OPTS="$EMERGE_DEFAULT_OPTS \
 --buildpkg-exclude virtual/* \
 --buildpkg-exclude */*-meta"
 
-# My preferred languages. Ask me if you nee additional languages in my precompiled packages
-L10N="en de"
-
 BINPKG_FORMAT="gpkg"
 
 MAKEOPTS="-j6"                         # Useful for local distcc (I think so)
