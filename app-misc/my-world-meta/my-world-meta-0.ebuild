@@ -14,6 +14,7 @@ RDEPEND+="
 	app-editors/nano
 	app-misc/mc
 	app-misc/screen
+	net-fs/cifs-utils
 	net-misc/iperf
 	net-misc/openssh
 	sys-apps/pciutils
