@@ -2,3 +2,8 @@
 # Please let me know if you still need the ebuild or copy them in your local overlay.
 # Removal in some months (If I look again into this file)
 net-wireless/rtw88
+
+
+# 15.09.2023 Since qt6 is stable, I changed back to the 9999 version from guru overlay
+# Removal in some months (If I look again into this file), after https://bugs.gentoo.org/912996 is solved
+=games-emulation/duckstation-20220708
