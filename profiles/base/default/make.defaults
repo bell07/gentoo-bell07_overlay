@@ -16,4 +16,4 @@ USE="$USE -subversion" # git is enough in most cases
 USE="$USE -gnome -gnome-online-accounts -ldap"
 
 # My preferred languages. Ask me if you nee additional languages in my precompiled packages
-L10N="en de"
+L10N="-* en de"
