@@ -1,0 +1,4 @@
+# 15.09.2023 I do not use it anymore since Steam Deck wifi work well with Kernel 6.4 builtin driver
+# Please let me know if you still need the ebuild or copy them in your local overlay.
+# Removal in some months (If I look again into this file)
+net-wireless/rtw88
