@@ -19,6 +19,7 @@ RDEPEND="dev-qt/qtgraphicaleffects
 dev-qt/qtmultimedia:5[qml]
 dev-qt/qtsvg:5
 dev-qt/qtsql[sqlite]
+media-plugins/gst-plugins-soup
 "
 
 src_prepare()  {
