@@ -112,7 +112,7 @@ RDEPEND+="
 	app-crypt/fcrackzip
 	|| ( app-office/libreoffice app-office/libreoffice-bin )
 	app-text/evince
-	app-text/coolreader
+	app-text/crqt-ng
 	app-text/pdfarranger
 	media-gfx/gimp
 	media-sound/grip
