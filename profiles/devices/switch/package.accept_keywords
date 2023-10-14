@@ -47,13 +47,13 @@
 =xfce-extra/thunar-archive-plugin-0.5.1 ~arm64
 =xfce-extra/thunar-media-tags-plugin-0.4.0 *
 =xfce-extra/xfce4-cpufreq-plugin-1.2.8 ~arm64
-=xfce-extra/xfce4-cpugraph-plugin-1.2.7 ~arm64
+=xfce-extra/xfce4-cpugraph-plugin-1.2.8 ~arm64
 =xfce-extra/xfce4-mount-plugin-1.1.6 *
 =xfce-extra/xfce4-screensaver-4.18.1 ~arm64
 =xfce-extra/xfce4-screenshooter-1.10.4 ~arm64
 =xfce-extra/xfce4-sensors-plugin-1.4.4 *
 =xfce-extra/xfce4-volumed-pulse-0.2.3-r1 ~arm64
-=xfce-extra/xfce4-whiskermenu-plugin-2.7.3 ~arm64
+=xfce-extra/xfce4-whiskermenu-plugin-2.8.0 ~arm64
 =xfce-extra/xfce4-netload-plugin-1.4.1 *
 =xfce-extra/xfce4-panel-profiles-1.0.13 ~*
 =xfce-extra/xfce4-taskmanager-1.5.5 ~arm64
