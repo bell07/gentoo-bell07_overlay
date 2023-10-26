@@ -2,7 +2,7 @@ EAPI="7"
 KEYWORDS="amd64 arm64"
 SLOT="0"
 
-IUSE="admin +bell07-config desktop minimal mediacenter multiuser networkmanager pulseaudio vulkan wayland xfce wifi"
+IUSE="admin +bell07-config desktop minimal mediacenter multiuser networkmanager pulseaudio vulkan wayland X xfce wifi"
 HOMEPAGE="https://github.com/bell07/gentoo-bell07_overlay"
 
 DESCRIPTION="My favorite software preselection - meta package"
@@ -216,6 +216,8 @@ RDEPEND+="
 	!multiuser? (
 		gui-libs/greetd
 	)
+
+	X? ( x11-apps/xeyes )
 )"
 
 # Vulkan tools for vulkan
