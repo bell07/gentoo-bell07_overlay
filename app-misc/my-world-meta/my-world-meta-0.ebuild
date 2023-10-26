@@ -34,6 +34,7 @@ RDEPEND+=" bell07-config? ( app-misc/my-gentoo-config )"
 # amd64 only base packages
 RDEPEND+="
  amd64? (
+	app-misc/resolve-march-native
 	sys-boot/efibootmgr
 	sys-kernel/gentoo-kernel
 	sys-kernel/kernel-cfg
@@ -70,6 +71,7 @@ RDEPEND+="
 	net-analyzer/traceroute
 	net-misc/whois
 	sys-apps/gptfdisk
+	sys-block/f3
 	sys-block/partimage
 	sys-apps/system-chroot
 	sys-fs/ddrescue
@@ -206,9 +208,10 @@ RDEPEND+="
 # (WIP)
 RDEPEND+="
  wayland? (
+	gui-apps/mako
 	gui-apps/wf-shell
-	gui-wm/wayfire
 	gui-apps/wcm
+	gui-wm/wayfire
 
 	!multiuser? (
 		gui-libs/greetd
