@@ -208,6 +208,7 @@ RDEPEND+="
  wayland? (
 	gui-apps/wf-shell
 	gui-wm/wayfire
+	gui-apps/wcm
 
 	!multiuser? (
 		gui-libs/greetd
