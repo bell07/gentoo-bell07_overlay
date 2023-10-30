@@ -21,6 +21,7 @@ RDEPEND+="
 	sys-apps/usbutils
 	sys-fs/dosfstools
 	sys-fs/exfatprogs
+	sys-fs/f2fs-tools
 	sys-fs/ntfs3g
 	sys-libs/gpm
 	sys-process/htop
@@ -208,7 +209,6 @@ RDEPEND+="
 # (WIP)
 RDEPEND+="
  wayland? (
-	gui-apps/mako
 	gui-apps/wf-shell
 	gui-apps/wcm
 	gui-wm/wayfire
