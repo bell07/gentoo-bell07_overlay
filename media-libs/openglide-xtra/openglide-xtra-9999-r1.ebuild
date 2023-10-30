@@ -3,25 +3,25 @@
 
 EAPI=7
 
-inherit autotools multilib-minimal
+inherit autotools
 
 DESCRIPTION="Glide to OpenGL wrapper (Qemu-xtra version)"
 HOMEPAGE="http://openglide.sourceforge.net https://github.com/kjliew/qemu-xtra" 
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64"
 IUSE="+sdl static-libs"
 
-RDEPEND="virtual/glu[${MULTILIB_USEDEP}]
-	virtual/opengl[${MULTILIB_USEDEP}]
+RDEPEND="virtual/glu
+	virtual/opengl
 	sdl? (
-		media-libs/libsdl[${MULTILIB_USEDEP}]
+		media-libs/libsdl
 	)
 	!sdl? (
-		x11-libs/libICE[${MULTILIB_USEDEP}]
-		x11-libs/libSM[${MULTILIB_USEDEP}]
-		x11-libs/libXxf86vm[${MULTILIB_USEDEP}]
+		x11-libs/libICE
+		x11-libs/libSM
+		x11-libs/libXxf86vm
 	)
 	!media-libs/openglide"
 
@@ -35,16 +35,13 @@ S="${WORKDIR}/${PN}-9999/openglide"
 
 ECONF_SOURCE="${S}"
 
-MULTILIB_WRAPPED_HEADERS=(
-	/usr/include/openglide/sdk2_unix.h
-)
 
 src_prepare() {
 	default
 	eautoreconf
 }
 
-multilib_src_configure() {
+src_configure() {
 	econf \
 		--enable-shared \
 		--disable-sdltest \
@@ -52,10 +49,10 @@ multilib_src_configure() {
 		$(use_enable static-libs static)
 }
 
-multilib_src_install_all() {
-	# Drop the libtool file *if* it exists
-	# bug #778266
+src_install() {
+	default
+#	# Drop the libtool file *if* it exists
+#	# bug #778266
 	find "${ED}" -name '*.la' -delete || die
 
-	einstalldocs
 }
