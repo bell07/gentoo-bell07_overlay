@@ -220,6 +220,15 @@ RDEPEND+="
 	X? ( x11-apps/xeyes )
 )"
 
+# Bug https://bugs.gentoo.org/916431
+RDEPEND+="
+ wayland? (
+	app-doc/doxygen
+	sys-auth/seatd
+	dev-cpp/nlohmann_json
+)"
+
+
 # Vulkan tools for vulkan
 RDEPEND+="
  vulkan? ( dev-util/vulkan-tools )"

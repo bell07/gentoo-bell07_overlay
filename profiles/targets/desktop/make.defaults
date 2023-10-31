@@ -39,5 +39,6 @@ USE="$USE gdk-pixbuf"        # Image loading for GTK+
 USE="$USE egl gles2 wayland xwayland" # Slowly move into new world
 USE="$USE xvfb"              # Virtual X for some mainly for firefox PGO/LTO build
 USE="$USE widgets"           # hplip and some other QT software requires it
+USE="$USE appindicator"      # Wayfire tray
 
 SANE_BACKENDS="-* hp net"

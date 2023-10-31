@@ -4,6 +4,13 @@
 =x11-themes/elementary-xfce-icon-theme-0.17 ~amd64
 =app-crypt/fcrackzip-1.0 ~amd64
 
+# Wayland / Wayfire desktop - Currently WIP
+=gui-apps/wcm-9999 **
+=gui-apps/wf-shell-9999 **
+=gui-wm/wayfire-9999 **
+=gui-libs/wf-config-9999 **
+
+
 # Media center
 =media-plugins/kodi-game-libretro-19.0.0 ~amd64
 =media-plugins/kodi-game-libretro-snes9x-1.60.0.20 ~amd64
@@ -14,3 +21,4 @@
 =media-plugins/kodi-pvr-hts-8.4.0 ~amd64
 
 =games-util/joystick-1.8.1 ~amd64
+
