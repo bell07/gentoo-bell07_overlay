@@ -2,9 +2,8 @@ FEATURES="binpkg-multi-instance buildpkg"
 
 USE="bindist"        # License restrictions by default, but you can rebuild byself
 
-EMERGE_DEFAULT_OPTS="--rebuilt-binaries y"
-
 EMERGE_DEFAULT_OPTS="$EMERGE_DEFAULT_OPTS \
+--rebuilt-binaries y --binpkg-respect-use y \
 --buildpkg-exclude acct-group/* \
 --buildpkg-exclude acct-user/* \
 --buildpkg-exclude app-alternatives/* \

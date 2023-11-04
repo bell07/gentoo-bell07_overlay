@@ -3,6 +3,6 @@ PORTAGE_IONICE_COMMAND="ionice -c 3 -p \${PID}"
 
 LC_MESSAGES=C
 
-EMERGE_DEFAULT_OPTS="--autounmask-write n"
+EMERGE_DEFAULT_OPTS="$EMERGE_DEFAULT_OPTS --autounmask --autounmask-write n --autounmask-backtrack y"
 
 ACCEPT_LICENSE="@BINARY-REDISTRIBUTABLE MSttfEULA"
