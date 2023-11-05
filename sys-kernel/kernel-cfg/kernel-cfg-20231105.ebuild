@@ -1,11 +1,11 @@
-EAPI=7
+EAPI=8
 KEYWORDS="amd64"
 SLOT="0"
 
 HOMEPAGE="https://github.com/bell07/bashscripts-kernel_cfg"
 DESCRIPTION='Kernel configuration snippets (eselect version)'
 
-COMMIT="36ad31b6b86ba25c2ff77771a793cdc8a84e3b7a"
+COMMIT="f8f2bd54da85ec06933447d0a25b9b008bf4c2a0"
 
 SRC_URI="${HOMEPAGE}/archive/${COMMIT}.zip -> ${P}.zip"
 
