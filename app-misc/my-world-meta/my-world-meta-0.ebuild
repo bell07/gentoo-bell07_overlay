@@ -212,6 +212,7 @@ RDEPEND+="
 	gui-apps/wf-shell
 	gui-apps/wcm
 	gui-wm/wayfire
+	sys-power/acpilight
 
 	!multiuser? (
 		gui-libs/greetd
