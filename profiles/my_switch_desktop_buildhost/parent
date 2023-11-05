@@ -1,6 +1,8 @@
 switch:nintendo_switch/17.0/desktop/
 ../base
 ../targets/desktop
+../targets/desktop/xfce
+../targets/desktop/wayfire
 ../targets/buildhost
 ../targets/qemu
 ../devices/switch

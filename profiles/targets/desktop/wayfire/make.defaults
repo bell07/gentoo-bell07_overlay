@@ -1,0 +1,3 @@
+# Wayland related settings
+USE="$USE egl gles2 wayland xwayland"
+USE="$USE appindicator"      # Wayfire tray

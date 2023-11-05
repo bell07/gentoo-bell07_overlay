@@ -35,9 +35,6 @@ sys-fs/squashfs-tools lzo
 # Set kernel symlink by default
 sys-kernel/gentoo-sources symlink
 
-# Needed for xauth to generate auth files correctly
-x11-base/xorg-server xcsecurity
-
 # Bluetooth means connection trough modem. I do not use any modems anymore
 net-misc/networkmanager -bluetooth -gtk-doc
 

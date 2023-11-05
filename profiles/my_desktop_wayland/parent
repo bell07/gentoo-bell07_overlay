@@ -1,6 +1,5 @@
 gentoo:default/linux/amd64/17.1/desktop
 ../base
 ../targets/desktop
-../targets/desktop/xfce
-../targets/desktop/wayfire
+../targets/desktop/wayland
 ../devices/amd64

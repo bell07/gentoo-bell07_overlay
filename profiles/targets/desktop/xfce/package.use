@@ -1,0 +1,2 @@
+# Needed for xauth to generate auth files correctly
+x11-base/xorg-server xcsecurity
