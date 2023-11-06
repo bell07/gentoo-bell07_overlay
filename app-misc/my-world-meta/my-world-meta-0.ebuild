@@ -134,13 +134,16 @@ RDEPEND+="
 	app-editors/mousepad
 	dev-util/meld
 	games-util/joystick
+	gui-libs/display-manager-init
 	media-fonts/fonts-meta
 	media-gfx/ristretto
 	net-wireless/blueman
 	sci-calculators/galculator
 	sys-apps/baobab
 	sys-auth/rtkit
+	x11-terms/xfce4-terminal
 	xfce-base/thunar
+	xfce-base/thunar-volman
 	xfce-extra/thunar-archive-plugin
 	xfce-extra/thunar-media-tags-plugin
 	|| ( www-client/firefox www-client/firefox-bin )
