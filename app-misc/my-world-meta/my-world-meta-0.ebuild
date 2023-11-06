@@ -2,7 +2,7 @@ EAPI="7"
 KEYWORDS="amd64 arm64"
 SLOT="0"
 
-IUSE="admin +bell07-config desktop minimal mediacenter multiuser networkmanager pulseaudio vulkan wayland X xfce wifi"
+IUSE="admin +bell07-config gui minimal mediacenter multiuser networkmanager pulseaudio vulkan wayland workstation X xfce wifi"
 HOMEPAGE="https://github.com/bell07/gentoo-bell07_overlay"
 
 DESCRIPTION="My favorite software preselection - meta package"
@@ -28,9 +28,6 @@ RDEPEND+="
 	sys-process/iotop
 	sys-process/lsof
 "
-
-# My configuration files
-RDEPEND+=" bell07-config? ( app-misc/my-gentoo-config )"
 
 # amd64 only base packages
 RDEPEND+="
@@ -63,6 +60,10 @@ RDEPEND+="
 	sys-kernel/linux-firmware
 	sys-power/powertop
 )"
+
+# My configuration files
+RDEPEND+=" bell07-config? ( app-misc/my-gentoo-config )"
+
 
 # System and network analysis, monitoring and recovery tools
 RDEPEND+="
@@ -98,33 +99,13 @@ RDEPEND+="
 		net-dialup/minicom
 	)
 
-	xfce? (
+	gui? (
 		media-video/cheese
 		net-analyzer/wireshark
 		net-ftp/filezilla
 		sys-apps/gsmartcontrol
 		sys-block/gparted
 	)
-)"
-
-# Desktop applications for usual Office Workstation
-RDEPEND+="
- desktop? (
-	app-admin/keepassxc
-	app-cdr/xfburn
-	app-crypt/fcrackzip
-	|| ( app-office/libreoffice app-office/libreoffice-bin )
-	app-text/evince
-	app-text/crqt-ng
-	app-text/pdfarranger
-	media-gfx/gimp
-	media-sound/grip
-	media-video/vlc
-	net-print/hplip
-	net-print/hplip-plugin
-	media-gfx/simple-scan
-	media-gfx/xsane
-	media-sound/easytag
 )"
 
 # Advanced Audio setup
@@ -145,11 +126,10 @@ RDEPEND+="
  )
 "
 
-# X and XFCE base packages, that should be on any device with graphical interface
+# Base GUI, xfce or wayland/wayfire
 RDEPEND+="
- xfce? (
+ gui? ( 
 	app-benchmarks/glmark2
-	app-admin/sudo
 	app-arch/xarchiver
 	app-editors/mousepad
 	dev-util/meld
@@ -160,6 +140,27 @@ RDEPEND+="
 	sci-calculators/galculator
 	sys-apps/baobab
 	sys-auth/rtkit
+	xfce-base/thunar
+	xfce-extra/thunar-archive-plugin
+	xfce-extra/thunar-media-tags-plugin
+	|| ( www-client/firefox www-client/firefox-bin )
+
+	networkmanager? ( gnome-extra/nm-applet )
+
+	pulseaudio? (
+		media-sound/pavucontrol
+		xfce-extra/xfce4-pulseaudio-plugin
+	)
+
+	!multiuser? (
+		gui-libs/greetd
+	)
+)"
+
+# X and XFCE base packages, that should be on any device with graphical interface
+RDEPEND+="
+ xfce? (
+	app-admin/sudo
 	x11-apps/xinput
 	x11-apps/xkill
 	x11-apps/xrandr
@@ -172,10 +173,7 @@ RDEPEND+="
 	x11-themes/elementary-xfce-icon-theme
 	x11-themes/xfwm4-themes
 	x11-themes/light-themes
-	xfce-base/thunar
 	xfce-base/xfce4-meta
-	xfce-extra/thunar-archive-plugin
-	xfce-extra/thunar-media-tags-plugin
 	xfce-extra/xfce4-cpufreq-plugin
 	xfce-extra/xfce4-cpugraph-plugin
 	xfce-extra/xfce4-mount-plugin
@@ -186,21 +184,13 @@ RDEPEND+="
 	xfce-extra/xfce4-sensors-plugin
 	xfce-extra/xfce4-taskmanager
 	xfce-extra/xfce4-whiskermenu-plugin
-	|| ( www-client/firefox www-client/firefox-bin )
-
-	networkmanager? ( gnome-extra/nm-applet )
 
 	pulseaudio? (
-		media-sound/pavucontrol
 		xfce-extra/xfce4-pulseaudio-plugin
 	)
 
 	multiuser? (
 		x11-misc/lightdm
-	)
-
-	!multiuser? (
-		gui-libs/greetd
 	)
 )"
 
@@ -214,10 +204,6 @@ RDEPEND+="
 	gui-wm/wayfire
 	sys-power/acpilight
 
-	!multiuser? (
-		gui-libs/greetd
-	)
-
 	X? ( x11-apps/xeyes )
 )"
 
@@ -227,6 +213,26 @@ RDEPEND+="
 	app-doc/doxygen
 	sys-auth/seatd
 	dev-cpp/nlohmann_json
+)"
+
+# Office Workstation
+RDEPEND+="
+ workstation? (
+	app-admin/keepassxc
+	app-cdr/xfburn
+	app-crypt/fcrackzip
+	|| ( app-office/libreoffice app-office/libreoffice-bin )
+	app-text/evince
+	app-text/crqt-ng
+	app-text/pdfarranger
+	media-gfx/gimp
+	media-sound/grip
+	media-video/vlc
+	net-print/hplip
+	net-print/hplip-plugin
+	media-gfx/simple-scan
+	media-gfx/xsane
+	media-sound/easytag
 )"
 
 
