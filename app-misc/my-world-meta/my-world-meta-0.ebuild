@@ -152,7 +152,6 @@ RDEPEND+="
 
 	pulseaudio? (
 		media-sound/pavucontrol
-		xfce-extra/xfce4-pulseaudio-plugin
 	)
 
 	!multiuser? (
@@ -198,10 +197,12 @@ RDEPEND+="
 )"
 
 
-# Wayland base packages, that should be on any device with graphical interface
-# (WIP)
+## Wayland base packages, that should be on any device with graphical interface (WIP)
+## Mako required to fulfill virtual/notification-daemon. The wf-shell panel provide own notification client
+## xeyes is for testing apps if wayland native or xwayland
 RDEPEND+="
  wayland? (
+	gui-apps/mako
 	gui-apps/wf-shell
 	gui-apps/wcm
 	gui-wm/wayfire

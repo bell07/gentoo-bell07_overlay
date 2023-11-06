@@ -1,0 +1,2 @@
+# Remove xfce desktop dependencies
+xfce-base/thunar -trash-panel-plugin
