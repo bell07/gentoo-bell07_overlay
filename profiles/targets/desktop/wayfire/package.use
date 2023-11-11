@@ -1,2 +1,5 @@
 # Remove xfce desktop dependencies
 xfce-base/thunar -trash-panel-plugin
+
+# Required for wayfire
+gui-libs/wlroots x11-backend

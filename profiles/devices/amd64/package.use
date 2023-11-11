@@ -1,5 +1,2 @@
 # Set kernel symlink automatically
 sys-kernel/gentoo-sources symlink
-
-# https://bugs.gentoo.org/916431
-=gui-wm/wayfire-9999 -system-wlroots
