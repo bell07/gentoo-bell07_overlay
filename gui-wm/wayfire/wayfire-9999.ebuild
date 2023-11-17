@@ -66,6 +66,7 @@ fi
 
 RDEPEND="
 	${DEPEND}
+	sys-power/upower
 	x11-misc/xkeyboard-config
 "
 
