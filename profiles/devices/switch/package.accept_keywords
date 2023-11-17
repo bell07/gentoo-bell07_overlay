@@ -57,7 +57,7 @@
 =xfce-extra/xfce4-whiskermenu-plugin-2.8.0 ~arm64
 =xfce-extra/xfce4-netload-plugin-1.4.1 *
 =xfce-extra/xfce4-panel-profiles-1.0.13 ~*
-=xfce-extra/xfce4-taskmanager-1.5.5 ~arm64
+=xfce-extra/xfce4-taskmanager-1.5.6-r1 ~arm64
 
 # Games launcher
 =games-util/gamehub-0.16.3.2 ~arm64
