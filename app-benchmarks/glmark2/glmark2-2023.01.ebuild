@@ -12,7 +12,7 @@ SRC_URI="https://github.com/glmark2/glmark2/archive/${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="amd64 ~arm ~x86"
-IUSE="+drm egl gles2 +opengl wayland X"
+IUSE="+drm egl gbm gles2 +opengl wayland X"
 
 RDEPEND="
 	virtual/jpeg:0=
@@ -51,6 +51,11 @@ src_configure() {
 	if use drm; then
 		use opengl && flavors+=("drm-gl")
 		use gles2 && flavors+=("drm-glesv2")
+	fi
+
+	if use gbm; then
+		use opengl && flavors+=("gbm-gl")
+		use gles2 && flavors+=("gbm-glesv2")
 	fi
 
 	if use wayland; then
