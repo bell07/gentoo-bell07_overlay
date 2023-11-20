@@ -202,9 +202,11 @@ RDEPEND+="
 ## xeyes is for testing apps if wayland native or xwayland
 RDEPEND+="
  wayland? (
+	gui-apps/kanshi
 	gui-apps/mako
 	gui-apps/wf-shell
 	gui-apps/wcm
+	gui-apps/wlr-randr
 	gui-wm/wayfire
 	sys-power/acpilight
 
