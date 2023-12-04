@@ -1,5 +1,25 @@
 # Remove xfce desktop dependencies
 xfce-base/thunar -trash-panel-plugin
 
-# Required for wayfire
+# Required by wayfire
 gui-libs/wlroots x11-backend
+
+# required by firefox
+gui-libs/wlroots tinywl
+
+# XWayland
+dev-cpp/cairomm X
+dev-cpp/gtkmm X
+gui-wm/wayfire X
+gui-libs/wlroots X
+media-libs/freetype X
+media-libs/libepoxy X
+media-libs/libglvnd X
+media-libs/mesa X
+x11-libs/cairo X
+x11-libs/gtk+ X
+x11-libs/libxkbcommon X
+
+# X only
+<=dev-qt/qtgui-5.15.11-r2 -accessibility
+<=media-video/vlc-3.0.18-r3 -vaapi

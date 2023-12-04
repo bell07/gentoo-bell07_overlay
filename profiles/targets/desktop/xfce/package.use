@@ -3,3 +3,7 @@ x11-base/xorg-server xcsecurity
 
 # XFCE defaults, disabled for wayland - reenabled for xfce
 xfce-base/thunar trash-panel-plugin
+
+# Disabled in wayfire profile
+dev-qt/qtgui accessibility
+media-video/vlc vaapi

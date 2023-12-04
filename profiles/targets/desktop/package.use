@@ -7,6 +7,9 @@ app-admin/keepassxc autotype browser
 # Prefer xarchiver UI
 app-arch/p7zip -wxwidgets
 
+# Version 1.2.1: curses tty and gtk does not work, qt5 is working but require lot of kde dependencies
+app-crypt/pinentry efl
+
 # Gui "gitk"
 dev-vcs/git tk
 
