@@ -1,3 +1,3 @@
-USE="$USE X xinerama xrandr" # X-Server / Multi-Monitor
+USE="$USE X xcomposite xinerama xrandr" # X-Server / Multi-Monitor
 USE="$USE thunar xfce"       # XFCE
 USE="$USE xvfb"              # Virtual X for some mainly for firefox PGO/LTO build

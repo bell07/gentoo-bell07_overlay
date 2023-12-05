@@ -3,4 +3,4 @@ USE="$USE egl gles2 wayland xwayland"
 USE="$USE appindicator"      # Wayfire tray
 
 # Disable X
-USE="$USE -X"
+USE="$USE -X -xcomposite"
