@@ -7,7 +7,7 @@ HOMEPAGE="https://gitlab.com/bell07/my-gentoo-config"
 
 DESCRIPTION="My configuration files with preferred settings"
 
-COMMIT="d5d4fce76e91722b89c31a0426d6645be04599f2"
+COMMIT="4a3dffc8ee1940340119eeb39c7276d8698905a3"
 
 SRC_URI="${HOMEPAGE}/-/archive/${COMMIT}/my-gentoo-config-${COMMIT}.zip -> ${P}.zip"
 RESTRICT="mirror"
@@ -24,10 +24,21 @@ src_install() {
 		doins -r portage
 	fi
 
-	if use xfce || use wayland; then
-		exeinto /usr/share/my-session-scripts
-		use xfce && doexe session-scripts/my-xfce-session.sh
-		use wayland && doexe session-scripts/my-wayland-session.sh
+	if use xfce; then
+		exeinto /etc/my-session-scripts
+		doexe session-scripts/my-xfce-session.sh
+	fi
+
+	if use wayland; then
+		exeinto /etc/my-session-scripts
+		doexe session-scripts/my-wayland-session.sh
+
+		insinto /usr/share/wayland-sessions/
+		doins session-scripts/my-wayland-session.desktop
+
+		insinto /etc/skel/.config
+		doins wayfire/wayfire.ini
+		doins wayfire/wf-shell.ini
 	fi
 
 	if use X && use l10n_de; then
