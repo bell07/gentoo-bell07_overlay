@@ -23,3 +23,9 @@ x11-libs/libxkbcommon X
 # X only
 <=dev-qt/qtgui-5.15.11-r2 -accessibility
 <=media-video/vlc-3.0.18-r3 -vaapi
+
+# Wine is still not ready for wayland only
+app-emulation/wine-staging X xcomposite xinerama
+app-emulation/wine-proton xcomposite xinerama
+media-libs/vulkan-loader X
+dev-util/vulkan-tools X
