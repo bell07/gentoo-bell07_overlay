@@ -11,9 +11,6 @@ HOMEPAGE="https://github.com/WayfireWM/wayfire"
 if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/WayfireWM/${PN}.git"
-	 # last commit for stable gui-libs/wlroots-0.16
-	 # Commit is after 0.8.0
-	EGIT_COMMIT="1cc998eb192de3f3e4233ccca315916fb80ce409"
 else
 	SRC_URI="https://github.com/WayfireWM/${PN}/releases/download/v${PV}/${P}.tar.xz"
 	KEYWORDS="~amd64 ~arm64 ~riscv ~x86"
@@ -50,7 +47,7 @@ if [[ ${PV} == 9999 ]] ; then
 	DEPEND+="
 		system-wfconfig? ( ~gui-libs/wf-config-9999:= )
 		!system-wfconfig? ( !gui-libs/wf-config )
-		system-wlroots? ( <gui-libs/wlroots-0.17:=[drm(+),libinput(+),x11-backend,X?] )
+		system-wlroots? ( >=gui-libs/wlroots-0.17:=[drm(+),libinput(+),x11-backend,X?] <gui-libs/wlroots-0.18 )
 		!system-wlroots? ( !gui-libs/wlroots )
 	"
 else
