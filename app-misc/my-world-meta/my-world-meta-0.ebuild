@@ -209,6 +209,7 @@ RDEPEND+="
 	gui-apps/wlr-randr
 	gui-wm/wayfire
 	sys-power/acpilight
+	sys-power/upower
 
 	X? ( x11-apps/xeyes )
 )"
