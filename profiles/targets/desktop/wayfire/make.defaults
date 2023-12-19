@@ -4,3 +4,8 @@ USE="$USE appindicator"      # Wayfire tray
 
 # Disable X
 USE="$USE -X -xcomposite"
+
+# wayfire-9999 is only for wlroots 0.17
+EGIT_OVERRIDE_BRANCH_WLROOTS_WLROOTS="0.17"
+# master is updated to wlroots 0.18 already
+EGIT_OVERRIDE_BRANCH_SWAYWM_SWAY="v1.9"

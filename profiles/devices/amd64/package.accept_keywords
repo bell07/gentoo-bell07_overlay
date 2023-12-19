@@ -11,9 +11,10 @@
 =gui-apps/wf-shell-9999 **
 =gui-apps/wlr-randr-0.3.0 ~amd64
 =gui-libs/wf-config-9999 **
-=gui-libs/wlroots-0.17.0 ~amd64
+=gui-libs/wlroots-9999 **
 =gui-wm/sway-9999 **
 =gui-wm/wayfire-9999 **
+=x11-libs/libdrm-2.4.118 ~amd64
 
 # Media center
 =media-plugins/kodi-game-libretro-19.0.0 ~amd64
