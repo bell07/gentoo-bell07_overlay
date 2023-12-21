@@ -55,3 +55,6 @@ net-misc/curl http2
 
 # Required by net-ftp/filezilla
 dev-libs/libpcre2 pcre32
+
+# No qt6 UI available yet
+net-print/hplip qt5
