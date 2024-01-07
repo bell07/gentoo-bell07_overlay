@@ -4,6 +4,7 @@ USE="bindist"        # License restrictions by default, but you can rebuild byse
 
 EMERGE_DEFAULT_OPTS="$EMERGE_DEFAULT_OPTS \
 --rebuilt-binaries y --binpkg-respect-use y \
+--rebuild-if-unbuilt y \
 --buildpkg-exclude acct-group/* \
 --buildpkg-exclude acct-user/* \
 --buildpkg-exclude app-alternatives/* \
