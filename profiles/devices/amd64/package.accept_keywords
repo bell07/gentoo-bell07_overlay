@@ -1,5 +1,4 @@
 # Desktop
-=app-benchmarks/glmark2-2021.12 ~amd64
 =xfce-extra/xfce4-panel-profiles-1.0.13 ~amd64
 =x11-themes/elementary-xfce-icon-theme-0.17 ~amd64
 =app-crypt/fcrackzip-1.0 ~amd64
@@ -14,7 +13,6 @@
 =gui-libs/wlroots-9999 **
 =gui-wm/sway-9999 **
 =gui-wm/wayfire-9999 **
-=x11-libs/libdrm-2.4.118 ~amd64
 
 # Media center
 =media-plugins/kodi-game-libretro-19.0.0 ~amd64
@@ -34,4 +32,4 @@
 =media-libs/iir1-1.9.4 ~amd64
 
 # required by games-emulation/mupen64plus
-=dev-python/PySDL2-0.9.13 ~amd64
+=dev-python/PySDL2-0.9.16 ~amd64
