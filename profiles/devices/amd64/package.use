@@ -1,2 +1,5 @@
 # Set kernel symlink automatically
 sys-kernel/gentoo-sources symlink
+
+# Enable uefi build by default for memtest
+sys-apps/memtest86+ -bios64 uefi64

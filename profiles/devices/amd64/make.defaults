@@ -1,5 +1,5 @@
-USE="lto pgo"                       # Profile guided optimizations and link time optimizations
-USE="$USE dist-kernel -initramfs"   # gentoo-kernel usage
+USE="lto pgo"                               # Profile guided optimizations and link time optimizations
+USE="$USE dist-kernel -initramfs -dracut"   # gentoo-kernel usage
 
 COMMON_CFLAGS="-O2 -march=native -fomit-frame-pointer -pipe"
 CFLAGS="${COMMON_CFLAGS}"
