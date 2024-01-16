@@ -3,6 +3,3 @@ sys-kernel/gentoo-sources symlink
 
 # Enable uefi build by default for memtest
 sys-apps/memtest86+ -bios64 uefi64
-
-# Use binary packages on amd64
-app-misc/my-gentoo-config binary

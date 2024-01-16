@@ -1,0 +1,2 @@
+# Use binary packages on amd64
+app-misc/my-gentoo-config -binary

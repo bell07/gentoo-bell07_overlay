@@ -1,5 +1,6 @@
 gentoo:default/linux/amd64/17.1/desktop
 ../base
+../targets/official-binclient
 ../targets/desktop
 ../targets/desktop/wayfire
 ../targets/desktop/xfce
