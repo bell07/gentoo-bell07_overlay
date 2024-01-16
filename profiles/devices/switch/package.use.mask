@@ -1,0 +1,2 @@
+# Not supported
+app-misc/my-gentoo-config binary
