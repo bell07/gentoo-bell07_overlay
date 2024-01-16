@@ -1,4 +1,4 @@
 gentoo:default/linux/amd64/17.1
 ../base
-../targets/official-binclient
+../targets/binclient/official
 ../devices/amd64

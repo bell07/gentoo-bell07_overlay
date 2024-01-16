@@ -1,0 +1,2 @@
+# https://wiki.gentoo.org/wiki/Binary_package_quickstart
+FEATURES="binpkg-request-signature"

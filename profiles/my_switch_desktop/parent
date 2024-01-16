@@ -3,5 +3,5 @@ switch:nintendo_switch/17.0/desktop/
 ../targets/desktop
 ../targets/desktop/wayfire
 ../targets/desktop/xfce
-../targets/binhost
+../targets/binclient
 ../devices/switch
