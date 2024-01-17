@@ -15,12 +15,17 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-DEPEND="media-libs/libsfml
+RDEPEND="media-libs/libsfml
 	dev-games/cegui[opengl,devil]
 	media-libs/libpng
 	dev-libs/libpcre
-	dev-cpp/libxmlpp:2.6
+	dev-cpp/libxmlpp:2.6"
+
+DEPEND="${RDEPEND}
 	dev-libs/boost"
+
+BDEPEND="sys-devel/bison
+	dev-lang/ruby"
 
 S="${WORKDIR}/tsc-${PV}/tsc"
 
