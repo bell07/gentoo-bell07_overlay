@@ -13,8 +13,10 @@ dev-vcs/git tk
 # Microsoft fonts still useful
 media-fonts/fonts-meta ms
 
-# at-most-one-of qt5 gtk3. I prefer gtk
-media-libs/opencv -qt5 -opengl
+# at-most-one-of qt gtk3. I prefer gtk
+media-libs/opencv -qt5 -qt6 -opengl
+www-client/google-chrome -qt5 -qt6
+www-client/microsoft-edge -qt5 -qt6
 
 # Pipewire sound server by default
 media-sound/pulseaudio -daemon
