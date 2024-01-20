@@ -51,7 +51,7 @@ RDEPEND+="
 	app-portage/gentoolkit
 	app-portage/smart-live-rebuild
 	app-portage/eix
-	dev-util/strace
+	dev-debug/strace
 	app-text/dos2unix
 	dev-vcs/git
 	net-analyzer/nettop
