@@ -2,3 +2,8 @@
 # Please let me know if you still need the ebuild or copy them in your local overlay.
 # Removal in some months (If I look again into this file)
 net-wireless/rtw88
+
+# 23.01.2024 Since kernel 6.6 builtin driver I do not need this anymore
+# Please let me know if you still need the ebuild or copy them in your local overlay.
+# Removal in some months (If I look again into this file)
+net-wireless/rtl88x2bu
