@@ -7,3 +7,7 @@ app-misc/my-world-meta -wayland
 
 # Security hole, but this was default in the past
 x11-base/xorg-server suid
+
+
+# bell07 2024-01-26 Let generate initramfs by dracut
+sys-kernel/installkernel dracut

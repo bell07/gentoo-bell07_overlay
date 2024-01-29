@@ -2,8 +2,9 @@
 USE="pulseaudio pipewire"          # Audio managers
 USE="$USE bluetooth"               # Bluetooth
 USE="$USE scanner printsupport"    # Printer and scanner
-USE="$USE bluray bdplus aacs"      # Bluray disks
-USE="$USE cddb css cover"          # CD/DVD Disks
+USE="$USE bluray bdplus aacs"      # Bluray disks (or images)
+USE="$USE cddb css cover"          # CD/DVD Disks (or images)
+USE="$USE -cdr"                    # No burning anymore
 USE="$USE vaapi"                   # HW Video
 USE="$USE wiimote gamepad joystick" # HW Gaming
 USE="$USE v4l"                     # Webcam

@@ -2,11 +2,12 @@ EAPI="7"
 KEYWORDS="amd64 arm64"
 SLOT="0"
 
-IUSE="admin +bell07-config gui minimal mediacenter multiuser networkmanager pulseaudio vulkan wayland workstation X xfce wifi"
+IUSE="admin +bell07-config cdr gui minimal mediacenter multiuser networkmanager pulseaudio vulkan wayland workstation X xfce wifi"
 HOMEPAGE="https://github.com/bell07/gentoo-bell07_overlay"
 
 DESCRIPTION="My favorite software preselection - meta package"
 
+### Base system ###
 # Base packages that should be on any system
 RDEPEND+="
 	app-arch/p7zip
@@ -38,6 +39,9 @@ RDEPEND+="
 	sys-kernel/kernel-cfg
 )"
 
+# My configuration files
+RDEPEND+=" bell07-config? ( app-misc/my-gentoo-config )"
+
 # Additional packages for non minimal systems
 RDEPEND+="
  !minimal? (
@@ -55,16 +59,28 @@ RDEPEND+="
 	app-text/dos2unix
 	dev-vcs/git
 	net-analyzer/nettop
+	net-misc/chrony
 	sys-apps/lm-sensors
 	sys-apps/mlocate
 	sys-kernel/linux-firmware
 	sys-power/powertop
 )"
 
-# My configuration files
-RDEPEND+=" bell07-config? ( app-misc/my-gentoo-config )"
+# Advanced Audio setup
+RDEPEND+="
+ pulseaudio? (
+	media-sound/alsa-utils
+)"
+
+# Vulkan tools for vulkan
+RDEPEND+="
+ vulkan? ( dev-util/vulkan-tools )"
+
+# Minimal wifi settings
+RDEPEND+=" wifi? ( !networkmanager? ( net-misc/netifrc net-wireless/wpa_supplicant ) )"
 
 
+### By role ###
 # System and network analysis, monitoring and recovery tools
 RDEPEND+="
  admin? (
@@ -100,6 +116,7 @@ RDEPEND+="
 	)
 
 	gui? (
+		app-antivirus/clamtk
 		media-video/cheese
 		net-analyzer/wireshark
 		net-ftp/filezilla
@@ -108,10 +125,15 @@ RDEPEND+="
 	)
 )"
 
-# Advanced Audio setup
+# CD recorder software
 RDEPEND+="
- pulseaudio? (
-	media-sound/alsa-utils
+cdr? (
+	app-cdr/bin2iso
+	app-cdr/cuetools
+	X? (
+		app-cdr/isomaster
+		app-cdr/xfburn
+	)
 )"
 
 # Media Center
@@ -159,6 +181,44 @@ RDEPEND+="
 	)
 )"
 
+# Office Workstation
+RDEPEND+="
+ workstation? (
+	app-admin/keepassxc
+	app-crypt/fcrackzip
+	|| ( app-office/libreoffice app-office/libreoffice-bin )
+	app-text/evince
+	app-text/crqt-ng
+	app-text/pdfarranger
+	media-gfx/gimp
+	media-sound/grip
+	media-video/vlc
+	net-print/hplip
+	net-print/hplip-plugin
+	media-gfx/simple-scan
+	media-gfx/xsane
+	media-sound/easytag
+)"
+
+### By Desktop ###
+## Wayland base packages, that should be on any device with graphical interface (WIP)
+## Mako required to fulfill virtual/notification-daemon. The wf-shell panel provide own notification client
+## xeyes is for testing apps if wayland native or xwayland
+RDEPEND+="
+ wayland? (
+	gui-apps/kanshi
+	gui-apps/mako
+	gui-apps/wf-shell
+	gui-apps/wcm
+	gui-apps/wlr-randr
+	gui-wm/wayfire
+	sys-power/acpilight
+	sys-power/upower
+
+	X? ( x11-apps/xeyes )
+)"
+
+
 # X and XFCE base packages, that should be on any device with graphical interface
 RDEPEND+="
  xfce? (
@@ -195,49 +255,3 @@ RDEPEND+="
 		x11-misc/lightdm
 	)
 )"
-
-
-## Wayland base packages, that should be on any device with graphical interface (WIP)
-## Mako required to fulfill virtual/notification-daemon. The wf-shell panel provide own notification client
-## xeyes is for testing apps if wayland native or xwayland
-RDEPEND+="
- wayland? (
-	gui-apps/kanshi
-	gui-apps/mako
-	gui-apps/wf-shell
-	gui-apps/wcm
-	gui-apps/wlr-randr
-	gui-wm/wayfire
-	sys-power/acpilight
-	sys-power/upower
-
-	X? ( x11-apps/xeyes )
-)"
-
-
-# Office Workstation
-RDEPEND+="
- workstation? (
-	app-admin/keepassxc
-	app-cdr/xfburn
-	app-crypt/fcrackzip
-	|| ( app-office/libreoffice app-office/libreoffice-bin )
-	app-text/evince
-	app-text/crqt-ng
-	app-text/pdfarranger
-	media-gfx/gimp
-	media-sound/grip
-	media-video/vlc
-	net-print/hplip
-	net-print/hplip-plugin
-	media-gfx/simple-scan
-	media-gfx/xsane
-	media-sound/easytag
-)"
-
-
-# Vulkan tools for vulkan
-RDEPEND+="
- vulkan? ( dev-util/vulkan-tools )"
-
-RDEPEND+=" wifi? ( !networkmanager? ( net-misc/netifrc net-wireless/wpa_supplicant ) )"
