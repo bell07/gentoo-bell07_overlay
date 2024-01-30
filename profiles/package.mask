@@ -7,3 +7,6 @@ net-wireless/rtw88
 # Please let me know if you still need the ebuild or copy them in your local overlay.
 # Removal in some months (If I look again into this file)
 net-wireless/rtl88x2bu
+
+# 30.01.2024 Abadoned. See abadon notes in readme and use lutris
+app-emulation/winemgr
