@@ -43,6 +43,7 @@ RDEPEND+="
 RDEPEND+=" bell07-config? ( app-misc/my-gentoo-config )"
 
 # Additional packages for non minimal systems
+# sys-fs/fuse:0 is for AppImage support
 RDEPEND+="
  !minimal? (
 	app-admin/logrotate
@@ -62,6 +63,7 @@ RDEPEND+="
 	net-misc/chrony
 	sys-apps/lm-sensors
 	sys-apps/mlocate
+	sys-fs/fuse:0
 	sys-kernel/linux-firmware
 	sys-power/powertop
 )"
