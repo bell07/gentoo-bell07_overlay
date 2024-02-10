@@ -132,7 +132,7 @@ RDEPEND+="
 cdr? (
 	app-cdr/bin2iso
 	app-cdr/cuetools
-	X? (
+	gui? (
 		app-cdr/isomaster
 		app-cdr/xfburn
 	)
@@ -156,6 +156,7 @@ RDEPEND+="
 	app-benchmarks/glmark2
 	app-arch/xarchiver
 	app-editors/mousepad
+	dev-util/catfish
 	dev-util/meld
 	games-util/joystick
 	gui-libs/display-manager-init

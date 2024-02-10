@@ -60,3 +60,6 @@ dev-libs/libpcre2 pcre32
 
 # No qt6 UI available yet
 net-print/hplip qt5
+
+# Xfce default apps
+xfce4-meta/xfce4-meta archive editor image search
