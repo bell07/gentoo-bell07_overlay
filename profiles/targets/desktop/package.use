@@ -62,4 +62,4 @@ dev-libs/libpcre2 pcre32
 net-print/hplip qt5
 
 # Xfce default apps
-xfce4-meta/xfce4-meta archive editor image search
+xfce-base/xfce4-meta archive editor image search
