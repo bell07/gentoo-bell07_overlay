@@ -8,15 +8,20 @@ HOMEPAGE="https://secretchronicles.org/"
 
 EGIT_REPO_URI="https://github.com/Secretchronicles/TSC"
 EGIT_BRANCH="devel"
+EGIT_SUBMODULES=( '*' '-shared-modules' '-flatpak/shared-modules' )
+
 inherit git-r3
 
 
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
+IUSE="+expat"
 
 RDEPEND="media-libs/libsfml
-	dev-games/cegui[opengl,devil]
+	<dev-games/cegui-0.9[opengl,devil]
+	expat? ( dev-games/cegui[expat] )
+	!expat? ( dev-games/cegui[xml] )
 	media-libs/libpng
 	dev-libs/libpcre
 	dev-cpp/libxmlpp:2.6"
@@ -32,7 +37,10 @@ S="${WORKDIR}/tsc-${PV}/tsc"
 inherit cmake
 
 src_configure() {
-	local mycmakeargs=("-DUSE_LIBXMLPP3=OFF")
+	local mycmakeargs=(
+		-DUSE_LIBXMLPP3=OFF
+		-DCEGUI_USE_EXPAT=$(usex expat)
+	)
 	cmake_src_configure
 }
 
