@@ -7,7 +7,7 @@ USE="$USE logrotate"
 USE="$USE threads"
 USE="$USE git"
 USE="$USE sqlite"
-USE="$USE openrc"
+USE="$USE openrc sysv-utils"
 
 # Disable not useful things
 USE="$USE -systemd"
