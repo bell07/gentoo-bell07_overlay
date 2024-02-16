@@ -1,12 +1,13 @@
 # Some Compatibility to other OS
 USE="samba snmp avahi zeroconf mdnsresponder-compat"
 
-# Some useful things
+# Some useful things and preferences
 USE="$USE cacert"
 USE="$USE logrotate"
 USE="$USE threads"
 USE="$USE git"
 USE="$USE sqlite"
+USE="$USE openrc"
 
 # Disable not useful things
 USE="$USE -systemd"
