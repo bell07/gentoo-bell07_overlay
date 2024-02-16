@@ -2,7 +2,7 @@
 =app-admin/testdisk-7.1-r2 ~arm64
 =app-antivirus/fangfrisch-1.6.1 *
 =app-arch/xarchiver-0.5.4.21 ~arm64
-=app-benchmarks/glmark2-2021.12 ~arm64
+=app-benchmarks/glmark2-2023.01 *
 =app-crypt/fcrackzip-1.0 ~*
 =app-misc/evtest-1.35 ~arm64
 =dev-libs/libfilezilla-0.45.0 ~arm64
@@ -49,7 +49,7 @@
 =xfce-extra/xfce4-screenshooter-1.10.4 ~arm64
 =xfce-extra/xfce4-sensors-plugin-1.4.4 *
 =xfce-extra/xfce4-volumed-pulse-0.2.4 ~arm64
-=xfce-extra/xfce4-whiskermenu-plugin-2.8.2 ~arm64
+=xfce-extra/xfce4-whiskermenu-plugin-2.8.3 ~arm64
 =xfce-extra/xfce4-netload-plugin-1.4.1 *
 =xfce-extra/xfce4-panel-profiles-1.0.13 ~*
 =xfce-extra/xfce4-taskmanager-1.5.6-r1 ~arm64
