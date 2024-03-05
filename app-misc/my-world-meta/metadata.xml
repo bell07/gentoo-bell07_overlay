@@ -9,6 +9,7 @@
   <use>
     <flag name="admin">Install system and network analysis, monitoring and recovery tools</flag>
     <flag name="bell07-config">Additional config files by bell07</flag>
+    <flag name="gaming">Install useful things for gaming</flag>
     <flag name="minimal">Minimal installation, skip some packages</flag>
     <flag name="mediacenter">Install KODI media center</flag>
     <flag name="multiuser">No autologin because multiple user in system</flag>

@@ -2,7 +2,7 @@ EAPI="7"
 KEYWORDS="amd64 arm64"
 SLOT="0"
 
-IUSE="admin +bell07-config cdr gui minimal mediacenter multiuser networkmanager pulseaudio vulkan wayland workstation X xfce wifi"
+IUSE="admin +bell07-config cdr gaming gui minimal mediacenter multiuser networkmanager pulseaudio vaapi video_cards_intel vulkan wayland workstation X xfce wifi"
 HOMEPAGE="https://github.com/bell07/gentoo-bell07_overlay"
 
 DESCRIPTION="My favorite software preselection - meta package"
@@ -31,8 +31,7 @@ RDEPEND+="
 "
 
 # amd64 only base packages
-RDEPEND+="
- amd64? (
+RDEPEND+=" amd64? (
 	app-misc/resolve-march-native
 	sys-boot/efibootmgr
 	sys-kernel/gentoo-kernel
@@ -44,8 +43,7 @@ RDEPEND+=" bell07-config? ( app-misc/my-gentoo-config )"
 
 # Additional packages for non minimal systems
 # sys-fs/fuse:0 is for AppImage support
-RDEPEND+="
- !minimal? (
+RDEPEND+=" !minimal? (
 	app-admin/logrotate
 	app-admin/syslog-ng
 	app-arch/unrar
@@ -60,6 +58,7 @@ RDEPEND+="
 	app-text/dos2unix
 	dev-vcs/git
 	net-analyzer/nettop
+	net-dns/bind-tools
 	net-misc/chrony
 	sys-apps/lm-sensors
 	sys-apps/mlocate
@@ -69,14 +68,12 @@ RDEPEND+="
 )"
 
 # Advanced Audio setup
-RDEPEND+="
- pulseaudio? (
+RDEPEND+=" pulseaudio? (
 	media-sound/alsa-utils
 )"
 
 # Vulkan tools for vulkan
-RDEPEND+="
- vulkan? ( dev-util/vulkan-tools )"
+RDEPEND+=" vulkan? ( dev-util/vulkan-tools )"
 
 # Minimal wifi settings
 RDEPEND+=" wifi? ( !networkmanager? ( net-misc/netifrc net-wireless/wpa_supplicant ) )"
@@ -84,8 +81,7 @@ RDEPEND+=" wifi? ( !networkmanager? ( net-misc/netifrc net-wireless/wpa_supplica
 
 ### By role ###
 # System and network analysis, monitoring and recovery tools
-RDEPEND+="
- admin? (
+RDEPEND+=" admin? (
 	app-admin/testdisk
 	app-misc/evtest
 	net-analyzer/traceroute
@@ -128,8 +124,7 @@ RDEPEND+="
 )"
 
 # CD recorder software
-RDEPEND+="
-cdr? (
+RDEPEND+=" cdr? (
 	app-cdr/bin2iso
 	app-cdr/cuetools
 	gui? (
@@ -138,21 +133,26 @@ cdr? (
 	)
 )"
 
-# Media Center
-RDEPEND+="
- mediacenter? (
-	media-tv/kodi
-	media-plugins/kodi-inputstream-adaptive
-	media-plugins/kodi-inputstream-ffmpegdirect
-	media-plugins/kodi-inputstream-rtmp
-	media-plugins/kodi-peripheral-joystick
-	media-plugins/kodi-pvr-hts
- )
-"
+# Base GUI, xfce or wayland/wayfire
+RDEPEND+=" gaming? (
+	games-arcade/supertux
+	games-action/supertuxkart
+	games-util/lutris
+	amd64? (
+		app-emulation/dxvk
+		app-emulation/vkd3d-proton
+		app-emulation/wine-proton
+		app-emulation/wine-staging
+		app-emulation/winetricks
+		games-emulation/dosbox-staging
+		games-emulation/dosbox-x
+		games-util/gamemode
+		media-libs/openglide-xtra
+	)
+)"
 
 # Base GUI, xfce or wayland/wayfire
-RDEPEND+="
- gui? ( 
+RDEPEND+=" gui? (
 	app-benchmarks/glmark2
 	app-arch/xarchiver
 	app-editors/mousepad
@@ -169,6 +169,7 @@ RDEPEND+="
 	x11-terms/xfce4-terminal
 	xfce-base/thunar
 	xfce-base/thunar-volman
+	xfce-base/tumbler
 	xfce-extra/thunar-archive-plugin
 	xfce-extra/thunar-media-tags-plugin
 	|| ( www-client/firefox www-client/firefox-bin )
@@ -184,9 +185,27 @@ RDEPEND+="
 	)
 )"
 
+# Media Center
+RDEPEND+=" mediacenter? (
+	media-tv/kodi
+	media-plugins/kodi-inputstream-adaptive
+	media-plugins/kodi-inputstream-ffmpegdirect
+	media-plugins/kodi-inputstream-rtmp
+	media-plugins/kodi-peripheral-joystick
+	media-plugins/kodi-pvr-hts
+ )
+"
+
+
+RDEPEND+=" vaapi? (
+	media-video/libva-utils
+	video_cards_intel? (
+		media-libs/libva-intel-media-driver
+	)
+)"
+
 # Office Workstation
-RDEPEND+="
- workstation? (
+RDEPEND+=" workstation? (
 	app-admin/keepassxc
 	app-crypt/fcrackzip
 	|| ( app-office/libreoffice app-office/libreoffice-bin )
@@ -207,8 +226,7 @@ RDEPEND+="
 ## Wayland base packages, that should be on any device with graphical interface (WIP)
 ## Mako required to fulfill virtual/notification-daemon. The wf-shell panel provide own notification client
 ## xeyes is for testing apps if wayland native or xwayland
-RDEPEND+="
- wayland? (
+RDEPEND+=" wayland? (
 	gui-apps/kanshi
 	gui-apps/mako
 	gui-apps/wf-shell
@@ -223,8 +241,7 @@ RDEPEND+="
 
 
 # X and XFCE base packages, that should be on any device with graphical interface
-RDEPEND+="
- xfce? (
+RDEPEND+=" xfce? (
 	app-admin/sudo
 	x11-apps/xinput
 	x11-apps/xkill

@@ -1,6 +1,6 @@
 # Adjust meta settings
 sys-apps/nintendo-switch-meta bootstack kernel-bin wifi
-app-misc/my-world-meta mediacenter
+app-misc/my-world-meta gaming mediacenter
 
 # wlroots does not build currently
 app-misc/my-world-meta -wayland

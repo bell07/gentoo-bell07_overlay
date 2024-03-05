@@ -55,11 +55,19 @@
 =xfce-extra/xfce4-taskmanager-1.5.6-r1 ~arm64
 
 # Games launcher
-=games-util/gamehub-0.16.3.2 ~arm64
+=games-util/lutris-0.5.16-r1 ~*
+=dev-python/pypresence-4.3.0 ~*
+=dev-python/moddb-0.10.0 ~*
+=media-sound/fluid-soundfont-3.1 ~arm64
+=dev-python/evdev-1.7.0 ~arm64
+=dev-python/pyrate-limiter-2.10.0 ~*
 
-# Games
-=games-arcade/supertux-0.6.3-r2 ~arm64
+# required by games-arcade/supertux
 =dev-games/physfs-3.0.2-r1 ~arm64
+
+# required by games-action/supertuxkart
+=dev-cpp/libmcpp-2.7.2_p5-r1 ~arm64
+=dev-libs/angelscript-2.36.1 ~arm64
 
 # WII Emulator games-emulation/dolphin
 =games-emulation/dolphin-5.0_p20220520-r2 ~arm64
