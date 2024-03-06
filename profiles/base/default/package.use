@@ -3,3 +3,6 @@ app-admin/sudo -sendmail
 
 # Do not need wpa_gui. Use NetworkManager or manual wpa_supplicant.conf edit
 net-wireless/wpa_supplicant -qt5
+
+# Do not need "Browse for Zeroconf-enabled * servers" apps
+net-dns/avahi -gtk
