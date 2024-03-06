@@ -1,5 +1,5 @@
 # Some Compatibility to other OS
-USE="samba snmp avahi zeroconf mdnsresponder-compat"
+USE="samba"
 
 # Some useful things and preferences
 USE="$USE cacert"
