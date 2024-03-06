@@ -15,7 +15,7 @@ USE="$USE -mysql"
 USE="$USE -btrfs -jfs -reiserfs"
 USE="$USE -subversion" # git is enough in most cases
 USE="$USE -gnome -gnome-online-accounts -ldap"
-USE="$USE -avahi -zeroconf"
+USE="$USE -avahi -zeroconf -snmp"
 
 
 # My preferred languages. Ask me if you nee additional languages in my precompiled packages

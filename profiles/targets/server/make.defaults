@@ -1,2 +1,2 @@
-# Some Compatibility to other OS
-USE="avahi zeroconf"
+# Network visibility
+USE="avahi zeroconf snmp"
