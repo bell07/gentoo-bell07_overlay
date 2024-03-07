@@ -134,10 +134,12 @@ RDEPEND+=" cdr? (
 )"
 
 # Base GUI, xfce or wayland/wayfire
+# Note:
+# Supertux does not build on switch, therefore excluded from arm64.
+# Lutris requires desktop-portal that requires pipewire that does not build.
+# Use gamehub instead.
 RDEPEND+=" gaming? (
-	games-arcade/supertux
 	games-action/supertuxkart
-	games-util/lutris
 	amd64? (
 		app-emulation/dxvk
 		app-emulation/vkd3d-proton
@@ -148,6 +150,12 @@ RDEPEND+=" gaming? (
 		games-emulation/dosbox-x
 		games-util/gamemode
 		media-libs/openglide-xtra
+
+		games-arcade/supertux
+		games-util/lutris
+	)
+	!amd64? (
+		games-util/gamehub
 	)
 )"
 

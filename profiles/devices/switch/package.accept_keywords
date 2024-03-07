@@ -55,12 +55,7 @@
 =xfce-extra/xfce4-taskmanager-1.5.6-r1 ~arm64
 
 # Games launcher
-=games-util/lutris-0.5.16-r1 ~*
-=dev-python/pypresence-4.3.0 ~*
-=dev-python/moddb-0.10.0 ~*
-=media-sound/fluid-soundfont-3.1 ~arm64
-=dev-python/evdev-1.7.0 ~arm64
-=dev-python/pyrate-limiter-2.10.0 ~*
+=games-util/gamehub-0.16.3.2 ~*
 
 # required by games-arcade/supertux
 =dev-games/physfs-3.0.2-r1 ~arm64
