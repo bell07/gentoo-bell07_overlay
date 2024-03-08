@@ -15,7 +15,7 @@ USE="$USE -mysql"
 USE="$USE -btrfs -jfs -reiserfs"
 USE="$USE -subversion" # git is enough in most cases
 USE="$USE -gnome -gnome-online-accounts -ldap"
-USE="$USE -cups"
+USE="$USE -cups -scanner"
 USE="$USE -xscreensaver" # Only required on workstation with personal data. 
 
 
