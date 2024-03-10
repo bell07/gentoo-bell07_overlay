@@ -2,12 +2,12 @@ EAPI="7"
 KEYWORDS="amd64 arm64"
 SLOT="0"
 
-IUSE="gaming +portage wayland xfce X l10n_de"
+IUSE="binary gaming +portage wayland xfce X l10n_de"
 HOMEPAGE="https://gitlab.com/bell07/my-gentoo-config"
 
 DESCRIPTION="My configuration files with preferred settings"
 
-COMMIT="4a3dffc8ee1940340119eeb39c7276d8698905a3"
+COMMIT="7463d63b050a56fdc04ae27712c5b35e8fbd19c4"
 
 SRC_URI="${HOMEPAGE}/-/archive/${COMMIT}/my-gentoo-config-${COMMIT}.zip -> ${P}.zip"
 RESTRICT="mirror"
@@ -21,7 +21,14 @@ src_install() {
 	fi
 
 	if use portage; then
-		doins -r portage
+		insinto /etc/portage
+		doins portage/package.nowarn
+		insinto /etc/portage/package.accept_keywords
+		doins portage/package.accept_keywords/my-portage-config
+		if use binary; then
+			insinto /etc/portage
+			doins -r portage/binrepos.conf
+		fi
 	fi
 
 	if use xfce; then
