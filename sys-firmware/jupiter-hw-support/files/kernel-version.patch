@@ -1,0 +1,11 @@
+--- a/usr/share/jupiter_bios_updater/driver/Makefile
++++ b/usr/share/jupiter_bios_updater/driver/Makefile
+@@ -3,7 +3,7 @@
+ #
+ MACHINE:=$(shell uname -r)
+ ## Default
+-KERNEL_DIR=/lib/modules/$(MACHINE)/build
++KERNEL_DIR=/usr/src/linux
+ CROSS_COMPILE=
+ ## Specific kernel and compiler
+ # KERNEL_DIR=/home/kanos/Downloads/buildroot-2015.05/output/build/linux-3.12.1

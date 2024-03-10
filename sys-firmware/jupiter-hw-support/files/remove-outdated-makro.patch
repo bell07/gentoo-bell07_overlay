@@ -1,0 +1,8 @@
+--- a/usr/share/jupiter_bios_updater/driver/phy_alloc.c
++++ b/usr/share/jupiter_bios_updater/driver/phy_alloc.c
+@@ -856,5 +856,4 @@
+ MODULE_AUTHOR( DRIVER_AUTHOR );
+ MODULE_DESCRIPTION( DRIVER_DESC );
+ MODULE_VERSION( Drv_VERSION );
+-MODULE_SUPPORTED_DEVICE( "Insyde" );
+ MODULE_LICENSE( "GPL" );
