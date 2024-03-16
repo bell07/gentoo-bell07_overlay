@@ -9,7 +9,7 @@
 =gui-apps/kanshi-1.6.0 ~amd64
 =gui-apps/wcm-9999 **
 =gui-apps/wf-shell-9999 **
-=gui-apps/wlr-randr-0.3.0 ~amd64
+=gui-apps/wlr-randr-0.4.1 ~amd64
 =gui-libs/wf-config-9999 **
 =gui-libs/wlroots-9999 **
 =gui-wm/sway-9999 **
