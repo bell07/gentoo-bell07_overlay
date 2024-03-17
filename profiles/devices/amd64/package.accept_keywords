@@ -7,13 +7,10 @@
 =app-text/scdoc-9999 **
 =dev-libs/libscfg-0.1.1 ~amd64
 =gui-apps/kanshi-1.6.0 ~amd64
-=gui-apps/wcm-9999 **
-=gui-apps/wf-shell-9999 **
+=gui-apps/wf-shell-0.8.1 ~amd64
 =gui-apps/wlr-randr-0.4.1 ~amd64
-=gui-libs/wf-config-9999 **
-=gui-libs/wlroots-9999 **
-=gui-wm/sway-9999 **
-=gui-wm/wayfire-9999 **
+=gui-wm/sway-1.9 ~amd64
+=gui-wm/wayfire-0.8.1 ~amd64
 
 # Media center
 =media-plugins/kodi-game-libretro-19.0.0 ~amd64
