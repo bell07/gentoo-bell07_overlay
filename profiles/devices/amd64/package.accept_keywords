@@ -10,7 +10,7 @@
 =gui-apps/wf-shell-0.8.1 ~amd64
 =gui-apps/wlr-randr-0.4.1 ~amd64
 =gui-wm/sway-1.9 ~amd64
-=gui-wm/wayfire-0.8.1 ~amd64
+=gui-wm/wayfire-0.8.1-r1 ~amd64
 
 # Media center
 =media-plugins/kodi-game-libretro-19.0.0 ~amd64
