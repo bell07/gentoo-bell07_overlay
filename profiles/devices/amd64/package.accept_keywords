@@ -1,6 +1,6 @@
 # Desktop
 =xfce-extra/xfce4-panel-profiles-1.0.13 ~amd64
-=x11-themes/elementary-xfce-icon-theme-0.17 ~amd64
+=x11-themes/elementary-xfce-icon-theme-0.19 ~amd64
 =app-crypt/fcrackzip-1.0 ~amd64
 
 # Wayland / Wayfire desktop - Currently WIP
