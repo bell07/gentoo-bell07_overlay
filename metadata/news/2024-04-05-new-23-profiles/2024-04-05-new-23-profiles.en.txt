@@ -1,0 +1,29 @@
+Title: Profile upgrade forced
+Author: Alexander Weber <web.alexander@web.de>
+Posted: 2024-04-05
+Revision: 2
+News-Item-Format: 2.0
+
+Display-If-Profile: bell07:my_desktop
+Display-If-Profile: bell07:my_desktop_wayfire
+Display-If-Profile: bell07:my_selinux_server
+Display-If-Profile: bell07:my_server
+
+A profile upgrade to version 23.0 is available in Gentoo. 
+I decided to update my profiles to the new gentoo profiles.
+At the same time I decided to move to merged-usr profiles.
+
+If you see this message, DO NOT UPDATE the system as usual but follow the next guides:
+
+Do the ursmerge move. This howto is not for systemd only:
+https://www.gentoo.org/support/news-items/2022-12-01-systemd-usrmerge.html
+
+For Step 1: If you system need updates with old profiles, please checkout the
+"old_profile" branch in bell07 overlay temporary for that.
+To change back to new profiles, check out again the "master" branch.
+
+Do the upgrade to the new profile
+https://www.gentoo.org/support/news-items/2024-03-22-new-23-profiles.html
+
+If you need the old profile, checkout the "old_profile" branch.
+To swap into new profile, check out the "master" branch.
