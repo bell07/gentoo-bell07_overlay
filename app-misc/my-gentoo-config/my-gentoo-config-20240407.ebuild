@@ -7,7 +7,7 @@ HOMEPAGE="https://gitlab.com/bell07/my-gentoo-config"
 
 DESCRIPTION="My configuration files with preferred settings"
 
-COMMIT="74e0055f59664fadabbb5d177b58cbb8bfefb627"
+COMMIT="3f6a8b592103b5cd3a8ccc6602ca82e59a69c108"
 
 SRC_URI="${HOMEPAGE}/-/archive/${COMMIT}/my-gentoo-config-${COMMIT}.zip -> ${P}.zip"
 RESTRICT="mirror"
