@@ -173,6 +173,7 @@ RDEPEND+=" gui? (
 	net-wireless/blueman
 	sci-calculators/galculator
 	sys-apps/baobab
+	sys-apps/xdg-desktop-portal-gtk
 	sys-auth/rtkit
 	x11-terms/xfce4-terminal
 	xfce-base/thunar
