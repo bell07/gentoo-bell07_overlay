@@ -262,8 +262,9 @@ RDEPEND+=" xfce? (
 	x11-misc/xdotool
 	x11-terms/xterm
 	x11-themes/elementary-xfce-icon-theme
-	x11-themes/xfwm4-themes
 	x11-themes/light-themes
+	x11-themes/papirus-icon-theme
+	x11-themes/xfwm4-themes
 	xfce-base/xfce4-meta
 	xfce-extra/xfce4-cpufreq-plugin
 	xfce-extra/xfce4-cpugraph-plugin
