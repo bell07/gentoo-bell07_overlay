@@ -1,4 +1,3 @@
-USE="initramfs"           # Build initramfs by default
 USE="$USE -pipewire"      # Does not build currently
 
 PORTAGE_BINHOST="http://bell.7u.org/pub/gentoo-switch/packages/"

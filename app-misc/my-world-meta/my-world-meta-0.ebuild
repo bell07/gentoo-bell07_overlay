@@ -159,6 +159,7 @@ RDEPEND+=" gaming? (
 	)
 )"
 
+
 # Base GUI, xfce or wayland/wayfire
 RDEPEND+=" gui? (
 	app-benchmarks/glmark2
@@ -173,7 +174,6 @@ RDEPEND+=" gui? (
 	net-wireless/blueman
 	sci-calculators/galculator
 	sys-apps/baobab
-	sys-apps/xdg-desktop-portal-gtk
 	sys-auth/rtkit
 	x11-terms/xfce4-terminal
 	xfce-base/thunar
@@ -193,6 +193,15 @@ RDEPEND+=" gui? (
 		gui-libs/greetd
 	)
 )"
+
+# desktop-portal  requires pipewire that does not build.
+RDEPEND+=" gui? (
+	amd64? (
+		sys-apps/xdg-desktop-portal-gtk
+	)
+)
+"
+
 
 # Media Center
 RDEPEND+=" mediacenter? (

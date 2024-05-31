@@ -8,6 +8,8 @@ app-misc/my-world-meta -wayland
 # Security hole, but this was default in the past
 x11-base/xorg-server suid
 
-
 # bell07 2024-01-26 Let generate initramfs by dracut
+sys-apps/nintendo-switch-meta initramfs
+sys-libs/gentoo-config-files initramfs
+sys-kernel/nintendo-switch-l4t-kernel initramfs
 sys-kernel/installkernel dracut
