@@ -18,7 +18,7 @@ RDEPEND="
 	virtual/jpeg:0=
 	media-libs/libpng:0=
 
-	gles2? ( media-libs/mesa[gles2?] )
+	gles2? ( media-libs/mesa )
 	drm? (
 		x11-libs/libdrm
 		media-libs/mesa[gbm(+)]
