@@ -207,7 +207,6 @@ RDEPEND+=" gui? (
 RDEPEND+=" mediacenter? (
 	media-tv/kodi
 	media-plugins/kodi-inputstream-adaptive
-	media-plugins/kodi-inputstream-ffmpegdirect
 	media-plugins/kodi-inputstream-rtmp
 	media-plugins/kodi-peripheral-joystick
 	media-plugins/kodi-pvr-hts
