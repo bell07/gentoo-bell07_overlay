@@ -1,3 +1,7 @@
 USE="$USE -pipewire"      # Does not build currently
 
 PORTAGE_BINHOST="http://bell.7u.org/pub/gentoo-switch/packages/"
+
+# 2024-07-21 Stay on Python-3.11 till all packages (onboard for example) in overlay is updated to python-3.12 usage
+PYTHON_TARGETS="-* python3_11"
+PYTHON_SINGLE_TARGET="-* python3_11"

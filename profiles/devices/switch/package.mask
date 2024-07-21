@@ -3,3 +3,6 @@ dev-lang/rust
 
 # Does not build. Use older version
 =x11-misc/touchegg-2.0.14
+
+# 2024-07-21 Needs some more dependency clarifications
+>media-tv/kodi-20
