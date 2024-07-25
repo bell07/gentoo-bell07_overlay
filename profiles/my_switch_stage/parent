@@ -1,4 +1,4 @@
-switch:nintendo_switch/17.0
+switch:nintendo_switch/23.0
 ../base/portage
 ../targets/binclient
 ../targets/buildhost

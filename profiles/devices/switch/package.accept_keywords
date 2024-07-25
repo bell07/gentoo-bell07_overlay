@@ -13,17 +13,17 @@
 =sys-block/f3-8.0-r1 ~arm64
 =sys-block/gparted-1.5.0-r1 ~arm64
 =sys-block/partimage-0.6.9-r4 ~arm64
-=sys-fs/exfatprogs-1.2.1 ~arm64
+=sys-fs/exfatprogs-1.2.4 ~arm64
 =sys-power/powertop-2.15 ~arm64
 =sys-fs/ddrescue-1.27 ~arm64
 =sys-fs/ext4magic-0.3.2-r1 ~arm64
-=x11-misc/autorandr-1.13.3 *
+=x11-misc/autorandr-1.15 *
 
 # Onscreen keyboard
 =app-accessibility/onboard-1.4.1.7 ~arm64
 
 # Audio
-=media-sound/pavucontrol-5.0-r2 ~arm64
+=media-sound/pavucontrol-5.0-r3 ~arm64
 
 # Login Manager
 =gui-libs/greetd-0.9.0 ~arm64
@@ -35,7 +35,7 @@
 =media-video/parole-4.18.0 *
 =sci-calculators/galculator-2.1.4-r2 *
 =x11-misc/menulibre-2.2.3 *
-=x11-themes/elementary-xfce-icon-theme-0.17 ~*
+=x11-themes/elementary-xfce-icon-theme-0.19 ~*
 =x11-themes/gtk-engines-murrine-0.98.2-r3 ~arm64
 =x11-themes/light-themes-20.10-r2 *
 =x11-themes/murrine-themes-0.98.11-r1 ~arm64
@@ -46,7 +46,7 @@
 =xfce-extra/xfce4-cpugraph-plugin-1.2.10 ~arm64
 =xfce-extra/xfce4-mount-plugin-1.1.6 *
 =xfce-extra/xfce4-screensaver-4.18.2 ~arm64
-=xfce-extra/xfce4-screenshooter-1.10.5 ~arm64
+=xfce-extra/xfce4-screenshooter-1.10.6 ~arm64
 =xfce-extra/xfce4-sensors-plugin-1.4.4 *
 =xfce-extra/xfce4-volumed-pulse-0.2.4 ~arm64
 =xfce-extra/xfce4-whiskermenu-plugin-2.8.3 ~arm64
@@ -80,9 +80,9 @@
 # Fonts
 =media-fonts/courier-prime-1.203 *
 =media-fonts/crosextrafonts-caladea-20130214 *
-=media-fonts/crosextrafonts-carlito-20130920 *
-=media-fonts/fonts-meta-3 *
-=media-fonts/oldstandard-2.2 *
+=media-fonts/crosextrafonts-carlito-20130920-r1 *
+=media-fonts/fonts-meta-3-r1 *
+=media-fonts/oldstandard-2.2-r1 *
 =media-fonts/open-sans-1-r1 ~arm64
 =media-fonts/powerline-symbols-20170508 *
 =media-fonts/quivira-4.1 *

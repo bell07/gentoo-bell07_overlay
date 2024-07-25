@@ -1,4 +1,4 @@
-switch:nintendo_switch/17.0/desktop/
+switch:nintendo_switch/23.0/desktop/
 ../base
 ../targets/desktop
 ../targets/desktop/wayfire
