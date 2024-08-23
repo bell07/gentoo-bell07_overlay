@@ -6,3 +6,7 @@ net-wireless/wpa_supplicant -qt5
 
 # Do not need "Browse for Zeroconf-enabled * servers" apps
 net-dns/avahi -gtk
+
+# I use native netifrc integration + and/or NetworkManager
+# https://wiki.gentoo.org/wiki/WireGuard
+net-vpn/wireguard-tools -wg-quick
