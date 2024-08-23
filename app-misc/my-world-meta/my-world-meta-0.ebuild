@@ -10,6 +10,7 @@ DESCRIPTION="My favorite software preselection - meta package"
 ### Base system ###
 # Base packages that should be on any system
 RDEPEND+="
+	app-arch/lz4
 	app-arch/p7zip
 	app-arch/unzip
 	app-editors/nano
@@ -204,12 +205,14 @@ RDEPEND+=" gui? (
 
 
 # Media Center
+# app-text/doxygen required by dev-cpp/waylandpp required by kodi
 RDEPEND+=" mediacenter? (
 	media-tv/kodi
 	media-plugins/kodi-inputstream-adaptive
 	media-plugins/kodi-inputstream-rtmp
 	media-plugins/kodi-peripheral-joystick
 	media-plugins/kodi-pvr-hts
+	app-text/doxygen
  )
 "
 

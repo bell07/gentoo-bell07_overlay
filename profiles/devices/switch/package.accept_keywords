@@ -1,5 +1,5 @@
 # Misc utils
-=app-admin/testdisk-7.1-r2 ~arm64
+=app-admin/testdisk-7.2 ~arm64
 =app-antivirus/fangfrisch-1.6.1 *
 =app-arch/xarchiver-0.5.4.21 ~arm64
 =app-benchmarks/glmark2-2023.01 *
@@ -16,7 +16,7 @@
 =sys-fs/exfatprogs-1.2.4 ~arm64
 =sys-power/powertop-2.15 ~arm64
 =sys-fs/ddrescue-1.27 ~arm64
-=sys-fs/ext4magic-0.3.2-r1 ~arm64
+=sys-fs/ext4magic-0.3.2-r2 ~arm64
 =x11-misc/autorandr-1.15 *
 
 # Onscreen keyboard
@@ -95,6 +95,4 @@
 =media-plugins/kodi-inputstream-rtmp-19.0.0 ~*
 =media-plugins/kodi-peripheral-joystick-19.0.0 ~*
 =media-plugins/kodi-pvr-hts-8.4.0 ~*
-
-
 
