@@ -18,6 +18,7 @@
 =media-plugins/kodi-peripheral-joystick-19.0.0 ~amd64
 =media-plugins/kodi-pvr-hts-8.4.0 ~amd64
 
+# Gaming
 =games-util/joystick-1.8.1 ~amd64
 
 # required by games-action/supertuxkart
@@ -28,3 +29,7 @@
 
 # required by games-emulation/mupen64plus
 =dev-python/PySDL2-0.9.16 ~amd64
+
+# 3.15 requires dev-libs/wayland-1.23 that is still testing
+=gui-wm/gamescope-3.14.22 ~amd64
+=media-libs/vkroots-0_p20240430 ~amd64
