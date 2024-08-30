@@ -72,3 +72,9 @@
 =media-fonts/quivira-4.1 *
 =media-fonts/signika-1.001 *
 =media-fonts/ubuntu-font-family-0.83-r1 ~arm64
+
+# Kodi
+=media-plugins/kodi-inputstream-adaptive-19.0.0 ~*
+=media-plugins/kodi-inputstream-rtmp-19.0.0 ~*
+=media-plugins/kodi-peripheral-joystick-19.0.0 ~*
+=media-plugins/kodi-pvr-hts-8.4.0 ~*
