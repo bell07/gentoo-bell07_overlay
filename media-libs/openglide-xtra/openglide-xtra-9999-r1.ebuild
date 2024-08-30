@@ -25,7 +25,8 @@ RDEPEND="virtual/glu
 	)
 	!media-libs/openglide"
 
-DEPEND="${RDEPEND}"
+DEPEND="${RDEPEND}
+		x11-base/xorg-proto"
 
 EGIT_REPO_URI="https://github.com/kjliew/qemu-xtra"
 EGIT_BRANCH="master"
