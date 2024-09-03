@@ -8,6 +8,8 @@
 =dev-libs/libscfg-0.1.1 ~amd64
 =gui-apps/kanshi-1.7.0 ~amd64
 =gui-apps/wlr-randr-0.4.1 ~amd64
+=gui-wm/gamescope-3.15.1 ~amd64
+=media-libs/vkroots-0_p20240430 ~amd64
 
 # Media center
 =media-plugins/kodi-game-libretro-19.0.0 ~amd64
@@ -30,6 +32,3 @@
 # required by games-emulation/mupen64plus
 =dev-python/PySDL2-0.9.16 ~amd64
 
-# 3.15 requires dev-libs/wayland-1.23 that is still testing
-=gui-wm/gamescope-3.14.22 ~amd64
-=media-libs/vkroots-0_p20240430 ~amd64

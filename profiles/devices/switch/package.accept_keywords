@@ -12,6 +12,7 @@
 =sys-fs/ddrescue-1.28 ~arm64
 =sys-fs/ext4magic-0.3.2-r2 ~arm64
 =x11-misc/autorandr-1.15 *
+=x11-drivers/xf86-input-joystick-1.6.4 ~arm64
 
 # Onscreen keyboard
 =app-accessibility/onboard-1.4.1.7 ~arm64
@@ -62,15 +63,15 @@
 =media-libs/libsfml-2.6.0 ~arm64
 
 # Fonts
-=media-fonts/courier-prime-1.203 *
-=media-fonts/crosextrafonts-caladea-20130214 *
-=media-fonts/crosextrafonts-carlito-20130920-r1 *
-=media-fonts/fonts-meta-3-r1 *
-=media-fonts/oldstandard-2.2-r1 *
+=media-fonts/courier-prime-1.203 ~arm64
+=media-fonts/crosextrafonts-caladea-20130214  ~arm64
+=media-fonts/crosextrafonts-carlito-20130920-r1  ~arm64
+=media-fonts/fonts-meta-3-r1  ~arm64
+=media-fonts/oldstandard-2.2-r1  ~arm64
 =media-fonts/open-sans-1-r1 ~arm64
-=media-fonts/powerline-symbols-20170508 *
-=media-fonts/quivira-4.1 *
-=media-fonts/signika-1.001 *
+=media-fonts/powerline-symbols-20170508  ~arm64
+=media-fonts/quivira-4.1  ~arm64
+=media-fonts/signika-1.001  ~arm64
 =media-fonts/ubuntu-font-family-0.83-r1 ~arm64
 
 # Kodi
