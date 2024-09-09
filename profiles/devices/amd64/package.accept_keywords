@@ -4,7 +4,6 @@
 =app-crypt/fcrackzip-1.0 ~amd64
 
 # Wayland / Wayfire desktop - Currently WIP
-=app-text/scdoc-9999 **
 =dev-libs/libscfg-0.1.1 ~amd64
 =gui-apps/kanshi-1.7.0 ~amd64
 =gui-apps/wlr-randr-0.4.1 ~amd64
