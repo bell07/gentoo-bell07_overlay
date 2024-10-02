@@ -20,4 +20,4 @@ USE="$USE -xscreensaver" # Only required on workstation with personal data.
 
 
 # My preferred languages. Ask me if you nee additional languages in my precompiled packages
-L10N="-* en de"
+L10N="-* en en-US de de-DE"
