@@ -27,7 +27,7 @@ x11-libs/libXres
 "
 
 RDEPEND="${DEPEND}
-gui-wm/gamescope"
+gui-wm/gamescope[libei]"
 
 S="${WORKDIR}/opengamepadui"
 
