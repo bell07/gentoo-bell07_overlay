@@ -16,6 +16,7 @@ RDEPEND+="
 	app-editors/nano
 	app-misc/mc
 	app-misc/screen
+	app-misc/tmux
 	net-fs/cifs-utils
 	net-misc/iperf
 	net-misc/openssh
