@@ -11,7 +11,7 @@
 =sys-power/powertop-2.15 ~arm64
 =sys-fs/ddrescue-1.28 ~arm64
 =sys-fs/ext4magic-0.3.2-r2 ~arm64
-=x11-misc/autorandr-1.15 *
+=x11-misc/autorandr-1.15-r1 *
 =x11-drivers/xf86-input-joystick-1.6.4 ~arm64
 
 # Onscreen keyboard
@@ -47,7 +47,7 @@
 =xfce-extra/xfce4-taskmanager-1.5.7 ~arm64
 
 # Games launcher
-=games-util/gamehub-0.16.3.2 ~*
+=games-util/gamehub-0.16.3.2-r1 ~*
 
 # required by games-arcade/supertux
 =dev-games/physfs-3.0.2-r1 ~arm64
@@ -73,9 +73,3 @@
 =media-fonts/quivira-4.1  ~arm64
 =media-fonts/signika-1.001  ~arm64
 =media-fonts/ubuntu-font-family-0.83-r1 ~arm64
-
-# Kodi
-=media-plugins/kodi-inputstream-adaptive-19.0.0 ~*
-=media-plugins/kodi-inputstream-rtmp-19.0.0 ~*
-=media-plugins/kodi-peripheral-joystick-19.0.0 ~*
-=media-plugins/kodi-pvr-hts-8.4.0 ~*
