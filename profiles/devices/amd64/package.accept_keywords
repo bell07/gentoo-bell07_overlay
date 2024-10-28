@@ -7,17 +7,15 @@
 =dev-libs/libscfg-0.1.1 ~amd64
 =gui-apps/kanshi-1.7.0 ~amd64
 =gui-apps/wlr-randr-0.4.1 ~amd64
-=gui-wm/gamescope-3.15.5 ~amd64
+=gui-wm/gamescope-3.15.13 ~amd64
 =media-libs/vkroots-0_p20240430 ~amd64
 
 # Media center
-=media-plugins/kodi-game-libretro-19.0.0 ~amd64
-=media-plugins/kodi-game-libretro-snes9x-1.60.0.20 ~amd64
-=media-plugins/kodi-inputstream-adaptive-19.0.0 ~amd64
-=media-plugins/kodi-inputstream-ffmpegdirect-19.0.0 ~amd64
-=media-plugins/kodi-inputstream-rtmp-19.0.0 ~amd64
-=media-plugins/kodi-peripheral-joystick-19.0.0 ~amd64
-=media-plugins/kodi-pvr-hts-8.4.0 ~amd64
+=media-plugins/kodi-inputstream-adaptive-21.5.5 ~amd64
+=media-plugins/kodi-inputstream-rtmp-21.1.0 ~amd64
+=media-plugins/kodi-peripheral-joystick-21.1.18 ~amd64
+=media-plugins/kodi-pvr-hts-21.2.5 ~amd64
+=media-plugins/kodi-pvr-iptvsimple-21.9.1 ~amd64
 
 # Gaming
 =games-util/joystick-1.8.1 ~amd64

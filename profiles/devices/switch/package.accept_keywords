@@ -26,7 +26,7 @@
 # XFCE
 =dev-util/meld-3.22.0-r2 ~arm64
 =sci-calculators/galculator-2.1.4-r2 *
-=x11-misc/menulibre-2.2.3 *
+=x11-misc/menulibre-2.4.0 *
 =x11-themes/elementary-xfce-icon-theme-0.19 ~*
 =x11-themes/gtk-engines-murrine-0.98.2-r3 ~arm64
 =x11-themes/light-themes-20.10-r2 *
@@ -38,7 +38,7 @@
 =xfce-extra/xfce4-cpugraph-plugin-1.2.10 ~arm64
 =xfce-extra/xfce4-mount-plugin-1.1.6 *
 =xfce-extra/xfce4-screensaver-4.18.3 ~arm64
-=xfce-extra/xfce4-screenshooter-1.10.6 ~arm64
+=xfce-extra/xfce4-screenshooter-1.11.1 ~arm64
 =xfce-extra/xfce4-sensors-plugin-1.4.4 *
 =xfce-extra/xfce4-volumed-pulse-0.2.4 ~arm64
 =xfce-extra/xfce4-whiskermenu-plugin-2.8.3 ~arm64
