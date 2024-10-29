@@ -16,17 +16,12 @@ HOMEPAGE="https://gitlab.com/evlaV/linux-integration"
 # Needed for zstd compression of the patch
 BDEPEND="$(unpacker_src_uri_depends)"
 
-SRC_URI="https://gitlab.com/evlaV/linux-integration/-/archive/frog/6.5/linux-integration-frog-6.5.zip -> linux-neptune-6.5.zip"
+EXTRAVERSION="-valve22"
+SRC_URI="https://gitlab.com/evlaV/linux-integration/-/archive/${PV}${EXTRAVERSION}/linux-integration-${PV}${EXTRAVERSION}.zip -> linux-neptune-${PV}${EXTRAVERSION}.zip"
 RESTRICT="nomirror"
-S="${WORKDIR}"/linux-"${PVR}""${EXTRAVERSION}"
+S="${WORKDIR}"/linux-integration-"${PV}${EXTRAVERSION}"
 
 KEYWORDS="~amd64"
-
-src_unpack() {
-	default
-	mv "${WORKDIR}/linux-integration-frog-6.5" "$S"
-}
-
 
 pkg_setup() {
 	ewarn
