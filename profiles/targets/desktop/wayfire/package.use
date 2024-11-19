@@ -4,9 +4,6 @@ xfce-base/thunar -trash-panel-plugin
 # Required by wayfire
 gui-libs/wlroots x11-backend
 
-# required by firefox
-gui-libs/wlroots tinywl
-
 # XWayland
 dev-cpp/cairomm X
 dev-cpp/gtkmm X
