@@ -173,6 +173,7 @@ RDEPEND+=" gui? (
 	gui-libs/display-manager-init
 	media-fonts/fonts-meta
 	media-gfx/ristretto
+	net-fs/autofs
 	net-wireless/blueman
 	sci-calculators/galculator
 	sys-apps/baobab
