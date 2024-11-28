@@ -7,7 +7,6 @@
 =sys-apps/gsmartcontrol-1.1.4-r1 *
 =sys-block/f3-8.0-r1 ~arm64
 =sys-block/gparted-1.6.0-r1 ~arm64
-=sys-boot/woeusb-ng-0.2.12 ~arm64
 =sys-fs/exfatprogs-1.2.6 ~arm64
 =sys-power/powertop-2.15 ~arm64
 =sys-fs/ddrescue-1.28 ~arm64
