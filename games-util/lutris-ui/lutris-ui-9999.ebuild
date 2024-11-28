@@ -5,15 +5,13 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{10..13} )
 
-inherit python-single-r1 xdg desktop
+inherit python-single-r1 xdg desktop git-r3
 
 DESCRIPTION="Simple pygame based Lutris frontend"
 HOMEPAGE="https://github.com/bell07/${PN}"
 
-COMMIT="bf02016372c3cef11593997d5f184717f6b8ea13"
-
-SRC_URI="https://github.com/bell07/${PN}/archive/${COMMIT}.zip -> ${P}.zip"
-RESTRICT="mirror"
+EGIT_REPO_URI="https://github.com/bell07/${PN}"
+EGIT_BRANCH="main"
 
 LICENSE="GPL-3+"
 KEYWORDS="amd64"
@@ -27,9 +25,6 @@ RDEPEND="
 		dev-python/pygame[${PYTHON_USEDEP}]
 		dev-python/pyxdg[${PYTHON_USEDEP}]
 		')"
-
-
-S="${WORKDIR}/${PN}-${COMMIT}"
 
 src_install() {
 	# Install python code
