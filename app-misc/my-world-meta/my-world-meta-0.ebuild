@@ -99,7 +99,7 @@ RDEPEND+=" admin? (
 	amd64? (
 		sys-apps/memtest86+
 		!minimal? (
-			sys-boot/woeusb
+			sys-boot/woeusb-ng
 			app-crypt/chntpw
 		)
 
