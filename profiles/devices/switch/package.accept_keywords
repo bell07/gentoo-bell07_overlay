@@ -4,6 +4,7 @@
 =app-misc/evtest-1.35 ~arm64
 =games-util/joystick-1.8.1 ~*
 =net-analyzer/nettop-0.2.3-r2 ~arm64
+=net-fs/autofs-5.1.9-r1 ~arm64
 =sys-apps/gsmartcontrol-1.1.4-r1 *
 =sys-block/f3-8.0-r1 ~arm64
 =sys-block/gparted-1.6.0-r1 ~arm64
