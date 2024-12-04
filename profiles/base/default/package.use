@@ -10,7 +10,3 @@ net-dns/avahi -gtk
 # I use native netifrc integration + and/or NetworkManager
 # https://wiki.gentoo.org/wiki/WireGuard
 net-vpn/wireguard-tools -wg-quick
-
-# Prefer app-text/mandoc instead of sys-apps/man-db
-# The sys-apps/man-db provide cron-job that is not compatible to selunx (su usage)
-app-text/mandoc system-man
