@@ -75,9 +75,5 @@
 =media-fonts/signika-1.001  ~arm64
 =media-fonts/ubuntu-font-family-0.83-r1 ~arm64
 
-# Stable on amd64 and uses python-3.12
-=www-client/firefox-128.4.0-r1  ~arm64
-=dev-libs/nss-3.106 ~arm64
-
 # Testing version with python-3.12 enabled
 =sys-libs/glibc-2.35-r11 ~arm64
