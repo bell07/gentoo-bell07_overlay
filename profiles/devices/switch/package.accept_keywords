@@ -1,3 +1,6 @@
+# Use slower version with vulkan enabled
+=sys-libs/jetson-tx1-drivers-32.7.1-r2  ~arm64
+
 # Misc utils
 =app-admin/testdisk-7.2 ~arm64
 =app-benchmarks/glmark2-2023.01 *

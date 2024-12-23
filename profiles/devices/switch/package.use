@@ -2,9 +2,6 @@
 sys-apps/nintendo-switch-meta bootstack kernel-bin wifi
 app-misc/my-world-meta gaming
 
-# wlroots does not build currently
-app-misc/my-world-meta -wayland
-
 # Security hole, but this was default in the past
 x11-base/xorg-server suid
 
