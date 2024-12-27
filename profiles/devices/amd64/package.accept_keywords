@@ -19,13 +19,13 @@
 =media-plugins/kodi-inputstream-rtmp-21.1.0 ~amd64
 =media-plugins/kodi-peripheral-joystick-21.1.18 ~amd64
 =media-plugins/kodi-pvr-hts-21.2.5 ~amd64
-=media-plugins/kodi-pvr-iptvsimple-21.9.1 ~amd64
+=media-plugins/kodi-pvr-iptvsimple-21.10.0 ~amd64
 
 # Gaming / Game dependencies
 =games-util/joystick-1.8.1 ~amd64
 =dev-libs/angelscript-2.37.0 ~amd64
 =dev-libs/libfmt-11.0.2 ~amd64
-=dev-libs/teakra-20220224 ~amd64
+=dev-libs/teakra-20220224-r1 ~amd64
 =dev-python/moddb-0.12.0 ~amd64
 =dev-python/pypresence-4.3.0 ~amd64
 =dev-python/pysdl2-0.9.16 ~amd64
@@ -35,6 +35,3 @@
 =media-libs/libspng-0.7.4 ~amd64
 =media-libs/openglide-xtra-9999-r1 ~amd64
 =sys-libs/libudev-compat-186-r1 ~amd64
-
-# Uses new ffmpeg-6
-=media-video/vlc-3.0.21-r1
