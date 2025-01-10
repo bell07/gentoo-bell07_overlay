@@ -1,17 +1,21 @@
-EAPI="7"
-KEYWORDS="amd64 arm64"
-SLOT="0"
+# Copyright 1999-2024 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+EAPI="8"
+
+inherit git-r3
 
 IUSE="binary gaming +portage wayland xfce X l10n_de"
 HOMEPAGE="https://gitlab.com/bell07/my-gentoo-config"
 
 DESCRIPTION="My configuration files with preferred settings"
 
-COMMIT="1fb3d6094995e76e529dd192503e139dec47f63a"
+EGIT_REPO_URI="https://gitlab.com/bell07/${PN}"
+EGIT_BRANCH="main"
 
-SRC_URI="${HOMEPAGE}/-/archive/${COMMIT}/my-gentoo-config-${COMMIT}.zip -> ${P}.zip"
-RESTRICT="mirror"
-S="${WORKDIR}/my-gentoo-config-${COMMIT}"
+LICENSE="GPL-3+"
+KEYWORDS="amd64"
+SLOT="0"
 
 src_install() {
 	insinto /etc
