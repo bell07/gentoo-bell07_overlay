@@ -246,18 +246,15 @@ RDEPEND+=" workstation? (
 
 ### By Desktop ###
 ## Wayland base packages, that should be on any device with graphical interface (WIP)
-## Mako required to fulfill virtual/notification-daemon. The wf-shell panel provide own notification client
+## The wf-shell panel provide own notification client, but still buggy. Use x11-misc/dunst instead that works in wayland too
 ## xeyes is for testing apps if wayland native or xwayland
 RDEPEND+=" wayland? (
-	gui-apps/kanshi
-	gui-apps/mako
 	gui-apps/wf-shell
 	gui-apps/wcm
-	gui-apps/wlr-randr
 	gui-wm/wayfire
 	sys-power/acpilight
 	sys-power/upower
-
+	x11-misc/dunst
 	X? ( x11-apps/xeyes )
 )"
 
