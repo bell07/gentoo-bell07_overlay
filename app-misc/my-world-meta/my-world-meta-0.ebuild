@@ -165,6 +165,7 @@ RDEPEND+=" gaming? (
 # Base GUI, xfce or wayland/wayfire
 RDEPEND+=" gui? (
 	app-benchmarks/glmark2
+	app-benchmarks/vkmark
 	app-arch/xarchiver
 	app-editors/mousepad
 	dev-util/catfish

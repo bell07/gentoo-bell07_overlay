@@ -10,7 +10,7 @@ EGIT_BRANCH="master"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="amd64 ~arm"
+KEYWORDS="amd64 arm"
 IUSE="drm wayland X"
 
 COMMON_DEPEND="
