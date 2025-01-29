@@ -9,10 +9,14 @@ PYTHON_COMPAT=( python3_{8..12} )
 
 inherit distutils-r1 gnome2-utils xdg
 
+
+V2=${PV#*.*.*.}
+V1=${PV%$V2}
+VERSION=${V1%.}-$V2
+
 DESCRIPTION="An onscreen keyboard useful for tablet PC users and for mobility impaired users"
 HOMEPAGE="https://launchpad.net/onboard"
-SRC_URI="https://github.com/dr-ni/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
-
+SRC_URI="https://github.com/dr-ni/${PN}/archive/refs/tags/v${VERSION}.tar.gz -> ${PN}-${VERSION}.tar.gz"
 
 # po/* are licensed under BSD 3-clause
 LICENSE="GPL-3+ BSD"
@@ -47,6 +51,8 @@ RDEPEND="${COMMON_DEPEND}
 	x11-libs/libxkbfile"
 
 RESTRICT="mirror test"
+
+S="${WORKDIR}/${PN}-${VERSION}"
 
 src_prepare() {
 	default
