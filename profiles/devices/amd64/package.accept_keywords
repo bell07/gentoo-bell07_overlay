@@ -3,9 +3,12 @@
 =app-accessibility/onboard-1.4.2.1-r1 ~amd64
 
 # Desktop
-=xfce-extra/xfce4-panel-profiles-1.0.14 ~amd64
-=x11-themes/elementary-xfce-icon-theme-0.19 ~amd64
 =app-crypt/fcrackzip-1.0 ~amd64
+=gui-apps/labwc-tweaks-0_pre20240905
+=gui-apps/lswt-2.0.0
+=gui-wm/labwc-0.8.2
+=x11-themes/elementary-xfce-icon-theme-0.19 ~amd64
+=xfce-extra/xfce4-panel-profiles-1.0.14 ~amd64
 
 # Media center
 =media-plugins/kodi-inputstream-adaptive-21.5.9 ~amd64
@@ -15,6 +18,7 @@
 =media-plugins/kodi-pvr-iptvsimple-21.10.0 ~amd64
 
 # Gaming / Game dependencies
+=app-emulation/wine-staging-10.0 ~amd64
 =games-util/joystick-1.8.1 ~amd64
 =gui-wm/gamescope-3.16.1 ~amd64
 =dev-libs/angelscript-2.37.0 ~amd64

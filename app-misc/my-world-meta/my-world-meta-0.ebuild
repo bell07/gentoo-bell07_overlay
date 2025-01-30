@@ -271,6 +271,7 @@ RDEPEND+=" workstation? (
 ## xeyes is for testing apps if wayland native or xwayland
 RDEPEND+=" wayland? (
 	gui-apps/labwc-tweaks
+	gui-apps/lswt
 	gui-wm/labwc
 	X? ( x11-apps/xeyes )
 )"
