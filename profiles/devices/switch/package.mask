@@ -6,3 +6,6 @@ dev-lang/rust
 
 # 2024-07-21 Needs some more dependency clarifications
 >media-tv/kodi-20
+
+# 2024-01-2025 Requires QT6
+>games-emulation/dolphin-2400

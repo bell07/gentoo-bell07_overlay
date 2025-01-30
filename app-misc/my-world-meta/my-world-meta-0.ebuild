@@ -162,8 +162,9 @@ RDEPEND+=" gaming? (
 )"
 
 
-# Base GUI, xfce or wayland/wayfire
+# Base GUI (xfce) X or wayland
 RDEPEND+=" gui? (
+	app-admin/sudo
 	app-benchmarks/glmark2
 	app-benchmarks/vkmark
 	app-arch/xarchiver
@@ -179,18 +180,37 @@ RDEPEND+=" gui? (
 	sci-calculators/galculator
 	sys-apps/baobab
 	sys-auth/rtkit
+	sys-power/acpilight
+	x11-misc/menulibre
 	x11-terms/xfce4-terminal
+	x11-themes/elementary-xfce-icon-theme
+	x11-themes/light-themes
+	x11-themes/papirus-icon-theme
 	xfce-base/thunar
 	xfce-base/thunar-volman
 	xfce-base/tumbler
+	xfce-base/xfce4-meta
 	xfce-extra/thunar-archive-plugin
 	xfce-extra/thunar-media-tags-plugin
+	xfce-extra/xfce4-cpufreq-plugin
+	xfce-extra/xfce4-cpugraph-plugin
+	xfce-extra/xfce4-mount-plugin
+	xfce-extra/xfce4-netload-plugin
+	xfce-extra/xfce4-notifyd
+	xfce-extra/xfce4-panel-profiles
+	xfce-extra/xfce4-sensors-plugin
+	xfce-extra/xfce4-taskmanager
+	xfce-extra/xfce4-whiskermenu-plugin
 	|| ( www-client/firefox www-client/firefox-bin )
 
 	networkmanager? ( gnome-extra/nm-applet )
 
 	pulseaudio? (
 		media-sound/pavucontrol
+	)
+
+	multiuser? (
+		x11-misc/lightdm
 	)
 
 	!multiuser? (
@@ -245,54 +265,30 @@ RDEPEND+=" workstation? (
 	media-sound/easytag
 )"
 
-### By Desktop ###
+
 ## Wayland base packages, that should be on any device with graphical interface (WIP)
-## The wf-shell panel provide own notification client, but still buggy. Use x11-misc/dunst instead that works in wayland too
+## labwc is used as xfce4 compositor till xfwm is ported
 ## xeyes is for testing apps if wayland native or xwayland
 RDEPEND+=" wayland? (
-	gui-apps/wf-shell
-	gui-apps/wcm
-	gui-wm/wayfire
-	sys-power/acpilight
-	sys-power/upower
-	x11-misc/dunst
+	gui-apps/labwc-tweaks
+	gui-wm/labwc
 	X? ( x11-apps/xeyes )
 )"
 
 
-# X and XFCE base packages, that should be on any device with graphical interface
-RDEPEND+=" xfce? (
-	app-admin/sudo
+# X and not wayland ready XFCE base packages, that should be on any device with graphical interface
+RDEPEND+=" X? (
 	x11-apps/xinput
 	x11-apps/xkill
 	x11-apps/xrandr
 	x11-base/xorg-server
-	x11-misc/autorandr
-	x11-misc/menulibre
 	x11-misc/wmctrl
 	x11-misc/xdotool
 	x11-terms/xterm
-	x11-themes/elementary-xfce-icon-theme
-	x11-themes/light-themes
-	x11-themes/papirus-icon-theme
-	x11-themes/xfwm4-themes
-	xfce-base/xfce4-meta
-	xfce-extra/xfce4-cpufreq-plugin
-	xfce-extra/xfce4-cpugraph-plugin
-	xfce-extra/xfce4-mount-plugin
-	xfce-extra/xfce4-netload-plugin
-	xfce-extra/xfce4-notifyd
-	xfce-extra/xfce4-panel-profiles
-	xfce-extra/xfce4-screenshooter
-	xfce-extra/xfce4-sensors-plugin
-	xfce-extra/xfce4-taskmanager
-	xfce-extra/xfce4-whiskermenu-plugin
 
+	x11-themes/xfwm4-themes
+	xfce-extra/xfce4-screenshooter
 	pulseaudio? (
 		xfce-extra/xfce4-pulseaudio-plugin
-	)
-
-	multiuser? (
-		x11-misc/lightdm
 	)
 )"
