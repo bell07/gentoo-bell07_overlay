@@ -14,7 +14,7 @@ EGIT_REPO_URI="https://gitlab.com/bell07/${PN}"
 EGIT_BRANCH="main"
 
 LICENSE="GPL-3+"
-KEYWORDS="amd64"
+KEYWORDS="amd64 arm64"
 SLOT="0"
 
 src_install() {
