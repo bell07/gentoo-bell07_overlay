@@ -14,7 +14,7 @@
 =media-plugins/kodi-inputstream-adaptive-21.5.9 ~amd64
 =media-plugins/kodi-inputstream-rtmp-21.1.2 ~amd64
 =media-plugins/kodi-peripheral-joystick-21.1.22 ~amd64
-=media-plugins/kodi-pvr-hts-21.2.5 ~amd64
+=media-plugins/kodi-pvr-hts-21.2.6 ~amd64
 =media-plugins/kodi-pvr-iptvsimple-21.10.0 ~amd64
 
 # Gaming / Game dependencies
