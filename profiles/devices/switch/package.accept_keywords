@@ -4,7 +4,6 @@
 # Misc utils
 =app-admin/testdisk-7.2 ~arm64
 =app-benchmarks/glmark2-2023.01 *
-=app-benchmarks/vkmark-9999 **
 =app-misc/evtest-1.35 ~arm64
 =games-util/joystick-1.8.1 ~*
 =net-analyzer/nettop-0.2.3-r2 ~arm64
@@ -13,7 +12,7 @@
 =sys-block/f3-8.0-r1 ~arm64
 =sys-block/gparted-1.6.0-r1 ~arm64
 =sys-fs/exfatprogs-1.2.6 ~arm64
-=sys-power/acpilight-1.2-r4 **
+=sys-power/acpilight-1.2-r4 *
 =sys-power/powertop-2.15 ~arm64
 =sys-fs/ddrescue-1.28 ~arm64
 =sys-fs/ext4magic-0.3.2-r2 ~arm64

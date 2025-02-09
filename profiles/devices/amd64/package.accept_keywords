@@ -15,7 +15,7 @@
 =media-plugins/kodi-inputstream-rtmp-21.1.2 ~amd64
 =media-plugins/kodi-peripheral-joystick-21.1.22 ~amd64
 =media-plugins/kodi-pvr-hts-21.2.6 ~amd64
-=media-plugins/kodi-pvr-iptvsimple-21.10.0 ~amd64
+=media-plugins/kodi-pvr-iptvsimple-21.10.1 ~amd64
 
 # Gaming / Game dependencies
 =app-emulation/wine-staging-10.0 ~amd64
