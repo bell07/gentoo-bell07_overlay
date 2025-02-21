@@ -19,9 +19,6 @@
 =x11-misc/autorandr-1.15-r1 *
 =x11-drivers/xf86-input-joystick-1.6.4 ~arm64
 
-# Onscreen keyboard
-=app-accessibility/onboard-1.4.2 ~arm64
-
 # Audio
 =media-sound/pavucontrol-5.0-r4 ~arm64
 

@@ -1,6 +1,5 @@
 
 =sys-boot/woeusb-ng-0.2.12 ~amd64
-=app-accessibility/onboard-1.4.2.1-r1 ~amd64
 
 # Desktop
 =app-crypt/fcrackzip-1.0 ~amd64
