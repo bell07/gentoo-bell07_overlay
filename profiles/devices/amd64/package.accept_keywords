@@ -6,7 +6,7 @@
 =gui-apps/labwc-tweaks-0_pre20240905
 =gui-apps/lswt-2.0.0
 =gui-wm/labwc-0.8.2
-=x11-themes/elementary-xfce-icon-theme-0.19 ~amd64
+=x11-themes/elementary-xfce-icon-theme-0.21-r1 ~amd64
 =xfce-extra/xfce4-panel-profiles-1.0.14 ~amd64
 
 # Media center
@@ -14,20 +14,19 @@
 =media-plugins/kodi-inputstream-rtmp-21.1.2 ~amd64
 =media-plugins/kodi-peripheral-joystick-21.1.22 ~amd64
 =media-plugins/kodi-pvr-hts-21.2.6 ~amd64
-=media-plugins/kodi-pvr-iptvsimple-21.10.1 ~amd64
+=media-plugins/kodi-pvr-iptvsimple-21.10.2 ~amd64
 
 # Gaming / Game dependencies
-=app-emulation/wine-staging-10.0 ~amd64
+=app-emulation/wine-staging-10.2 ~amd64
 =games-util/joystick-1.8.1 ~amd64
 =gui-wm/gamescope-3.16.1 ~amd64
 =dev-libs/angelscript-2.37.0 ~amd64
 =dev-libs/teakra-20220224-r1 ~amd64
 =dev-python/moddb-0.12.0 ~amd64
 =dev-python/pypresence-4.3.0 ~amd64
-=dev-python/pysdl2-0.9.16 ~amd64
+=dev-python/pysdl2-0.9.17 ~amd64
 =net-libs/libcurl-debian-4 ~amd64
 =media-libs/iir1-1.9.4 ~amd64
-=media-libs/libspng-0.7.4 ~amd64
 =media-libs/openglide-xtra-9999-r1 ~amd64
 =media-libs/vkroots-0_p20240430 ~amd64
 =sys-libs/libudev-compat-186-r1 ~amd64
