@@ -45,6 +45,7 @@ RDEPEND+=" bell07-config? ( app-misc/my-gentoo-config )"
 
 # Additional packages for non minimal systems
 # sys-fs/fuse:0 is for AppImage support
+# net-dns/bind contain the tools like nslookup
 RDEPEND+=" !minimal? (
 	app-admin/logrotate
 	app-admin/syslog-ng
@@ -60,7 +61,7 @@ RDEPEND+=" !minimal? (
 	app-text/dos2unix
 	dev-vcs/git
 	net-analyzer/nettop
-	net-dns/bind-tools
+	net-dns/bind
 	net-misc/chrony
 	sys-apps/lm-sensors
 	sys-apps/mlocate
