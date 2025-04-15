@@ -1,12 +1,10 @@
-# Remove xfce desktop dependencies
-xfce-base/thunar -trash-panel-plugin
-
 # Required by wayfire
 gui-libs/wlroots x11-backend
 
 # XWayland
 dev-cpp/cairomm X
 dev-cpp/gtkmm X
+dev-python/pycairo X
 gui-wm/wayfire X
 gui-libs/wlroots X
 media-libs/freetype X
@@ -18,7 +16,9 @@ x11-libs/gtk+ X
 x11-libs/libxkbcommon X
 
 # X only
+# dev-qt/qtgui-5.15.16
 dev-qt/qtgui -accessibility
+# vlc-3.0.21_p20250217
 media-video/vlc -vaapi
 
 # Wine is still not ready for wayland only

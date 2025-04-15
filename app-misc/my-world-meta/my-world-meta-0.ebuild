@@ -2,7 +2,7 @@ EAPI="7"
 KEYWORDS="amd64 arm64"
 SLOT="0"
 
-IUSE="admin +bell07-config cdr gaming gui minimal mediacenter multiuser networkmanager pulseaudio vaapi video_cards_intel vulkan wayland workstation X xfce wifi"
+IUSE="admin +bell07-config cdr gaming gui kde minimal mediacenter multiuser networkmanager pulseaudio vaapi video_cards_intel vulkan wayland workstation X xfce wifi"
 HOMEPAGE="https://github.com/bell07/gentoo-bell07_overlay"
 
 DESCRIPTION="My favorite software preselection - meta package"
@@ -168,41 +168,48 @@ RDEPEND+=" gui? (
 	app-admin/sudo
 	app-benchmarks/glmark2
 	app-benchmarks/vkmark
-	app-arch/xarchiver
-	app-editors/mousepad
-	dev-util/catfish
 	dev-util/meld
 	games-util/joystick
 	gui-libs/display-manager-init
 	media-fonts/fonts-meta
-	media-gfx/ristretto
 	net-fs/autofs
 	net-wireless/blueman
-	sci-calculators/galculator
-	sys-apps/baobab
 	sys-auth/rtkit
 	sys-power/acpilight
-	x11-misc/menulibre
-	x11-terms/xfce4-terminal
-	x11-themes/elementary-xfce-icon-theme
-	x11-themes/light-themes
-	x11-themes/papirus-icon-theme
-	xfce-base/thunar
-	xfce-base/thunar-volman
-	xfce-base/tumbler
-	xfce-base/xfce4-meta
-	xfce-extra/thunar-archive-plugin
-	xfce-extra/thunar-media-tags-plugin
-	xfce-extra/xfce4-cpufreq-plugin
-	xfce-extra/xfce4-cpugraph-plugin
-	xfce-extra/xfce4-mount-plugin
-	xfce-extra/xfce4-netload-plugin
-	xfce-extra/xfce4-notifyd
-	xfce-extra/xfce4-panel-profiles
-	xfce-extra/xfce4-sensors-plugin
-	xfce-extra/xfce4-taskmanager
-	xfce-extra/xfce4-whiskermenu-plugin
 	|| ( www-client/firefox www-client/firefox-bin )
+
+	kde? (
+		kde-plasma/plasma-meta
+	)
+
+	xfce? (
+		app-arch/xarchiver
+		app-editors/mousepad
+		dev-util/catfish
+		media-gfx/ristretto
+		sci-calculators/galculator
+		sys-apps/baobab
+		x11-misc/menulibre
+		x11-terms/xfce4-terminal
+		x11-themes/elementary-xfce-icon-theme
+		x11-themes/light-themes
+		x11-themes/papirus-icon-theme
+		xfce-base/thunar
+		xfce-base/thunar-volman
+		xfce-base/tumbler
+		xfce-base/xfce4-meta
+		xfce-extra/thunar-archive-plugin
+		xfce-extra/thunar-media-tags-plugin
+		xfce-extra/xfce4-cpufreq-plugin
+		xfce-extra/xfce4-cpugraph-plugin
+		xfce-extra/xfce4-mount-plugin
+		xfce-extra/xfce4-netload-plugin
+		xfce-extra/xfce4-notifyd
+		xfce-extra/xfce4-panel-profiles
+		xfce-extra/xfce4-sensors-plugin
+		xfce-extra/xfce4-taskmanager
+		xfce-extra/xfce4-whiskermenu-plugin
+	)
 
 	networkmanager? ( gnome-extra/nm-applet )
 

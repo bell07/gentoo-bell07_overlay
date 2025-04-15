@@ -63,3 +63,6 @@ net-print/hplip qt5
 
 # Xfce default apps
 xfce-base/xfce4-meta archive editor image search
+
+# If both qt flags are enabled,the build fails. Prefer qt6
+media-video/mediaelch -qt5

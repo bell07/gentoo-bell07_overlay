@@ -1,6 +1,7 @@
 switch:nintendo_switch/23.0/desktop/
 ../base
 ../targets/desktop
+../targets/desktop/x11
 ../targets/desktop/xfce
 ../targets/binclient
 ../devices/switch

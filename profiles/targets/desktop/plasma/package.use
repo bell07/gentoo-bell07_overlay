@@ -1,0 +1,5 @@
+# Keep display manager selection in my-world-meta
+kde-plasma/plasma-meta -display-manager -sddm
+
+# dependency required by "kde-frameworks/kdnssd-6.10.0::gentoo[zeroconf]"
+net-dns/avahi mdnsresponder-compat

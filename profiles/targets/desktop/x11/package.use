@@ -1,0 +1,6 @@
+# Needed for xauth to generate auth files correctly
+x11-base/xorg-server xcsecurity
+
+# Disabled in wayland profile
+dev-qt/qtgui accessibility
+media-video/vlc vaapi

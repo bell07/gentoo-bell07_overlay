@@ -1,8 +1,9 @@
-gentoo:default/linux/amd64/23.0/desktop
+gentoo:default/linux/amd64/23.0/desktop/plasma
 ../base
 ../targets/binclient/official
 ../targets/desktop
 ../targets/desktop/wayland
 ../targets/desktop/x11
 ../targets/desktop/xfce
+../targets/desktop/plasma
 ../devices/amd64

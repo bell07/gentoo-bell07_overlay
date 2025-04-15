@@ -1,10 +1,12 @@
 # My transition settings for devices with graphical interface, like workstation or gaming device
-# Profile contains both settings: xfce with X and wayfire with wayland.
-# Profile is used before mirgration to wayland is complete
+# Profile contains both settings: xfce with X and wayland
 amd64 my_desktop stable
 
-# My default wayland settings for devices with graphical interface, like workstation or gaming device
-amd64 my_desktop_wayfire stable
+# My default wayland only settings for devices with graphical interface, like workstation or gaming device
+amd64 my_desktop_wayland stable
+
+# Experimental Desktop with Plasma, but xfce still included for testing
+amd64 my_desktop_plasma stable
 
 # My selinux secured server
 amd64 my_selinux_server stable
