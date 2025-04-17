@@ -10,7 +10,7 @@
 =xfce-extra/xfce4-panel-profiles-1.0.15-r1 ~amd64
 
 # Media center
-=media-plugins/kodi-inputstream-adaptive-21.5.10 ~amd64
+=media-plugins/kodi-inputstream-adaptive-21.5.11 ~amd64
 =media-plugins/kodi-inputstream-rtmp-21.1.2 ~amd64
 =media-plugins/kodi-peripheral-joystick-21.1.22 ~amd64
 =media-plugins/kodi-pvr-hts-21.2.6 ~amd64
