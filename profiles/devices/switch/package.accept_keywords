@@ -12,7 +12,7 @@
 =sys-block/f3-8.0-r1 ~arm64
 =sys-block/gparted-1.6.0-r1 ~arm64
 =sys-fs/exfatprogs-1.2.6 ~arm64
-=sys-power/acpilight-1.2-r4 *
+=sys-power/acpilight-1.2-r5 *
 =sys-power/powertop-2.15 ~arm64
 =sys-fs/ddrescue-1.28 ~arm64
 =sys-fs/ext4magic-0.3.2-r2 ~arm64
