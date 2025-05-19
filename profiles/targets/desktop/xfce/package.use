@@ -1,2 +1,5 @@
 # XFCE defaults, disabled for wayland - reenabled for xfce
 xfce-base/thunar trash-panel-plugin
+
+# Wayland only xfce requires this too until xfwm4 is ported to wayland
+xfce-base/libxfce4ui X

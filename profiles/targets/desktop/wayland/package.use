@@ -1,10 +1,8 @@
-# Required by wayfire
-gui-libs/wlroots x11-backend
-
 # XWayland
 dev-cpp/cairomm X
 dev-cpp/gtkmm X
 dev-python/pycairo X
+gui-wm/labwc X
 gui-wm/wayfire X
 gui-libs/wlroots X
 media-libs/freetype X
@@ -14,6 +12,7 @@ media-libs/mesa X
 x11-libs/cairo X
 x11-libs/gtk+ X
 x11-libs/libxkbcommon X
+x11-libs/pango X
 
 # X only
 # dev-qt/qtgui-5.15.16
