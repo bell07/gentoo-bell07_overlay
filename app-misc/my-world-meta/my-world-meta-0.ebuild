@@ -218,7 +218,8 @@ RDEPEND+=" gui? (
 	)
 
 	multiuser? (
-		x11-misc/lightdm
+		X? ( x11-misc/lightdm )
+		!X? ( x11-misc/sddm )
 	)
 
 	!multiuser? (
@@ -266,6 +267,7 @@ RDEPEND+=" workstation? (
 	media-gfx/gimp
 	media-sound/grip
 	media-video/vlc
+	net-print/cups-meta
 	net-print/hplip
 	net-print/hplip-plugin
 	media-gfx/simple-scan
@@ -278,9 +280,12 @@ RDEPEND+=" workstation? (
 ## labwc is used as xfce4 compositor till xfwm is ported
 ## xeyes is for testing apps if wayland native or xwayland
 RDEPEND+=" wayland? (
+	app-misc/wayland-utils
+	gui-apps/kanshi
 	gui-apps/lswt
+	gui-apps/wlr-randr
 	gui-wm/labwc
-	X? ( x11-apps/xeyes )
+	x11-apps/xeyes
 )"
 
 
