@@ -191,8 +191,7 @@ RDEPEND+=" gui? (
 		sys-apps/baobab
 		x11-misc/menulibre
 		x11-terms/xfce4-terminal
-		x11-themes/elementary-xfce-icon-theme
-		x11-themes/light-themes
+		x11-themes/arc-theme
 		x11-themes/papirus-icon-theme
 		xfce-base/thunar
 		xfce-base/thunar-volman
