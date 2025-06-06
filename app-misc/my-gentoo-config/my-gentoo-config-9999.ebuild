@@ -5,7 +5,7 @@ EAPI="8"
 
 inherit git-r3
 
-IUSE="binary gaming +portage wayland xfce X l10n_de"
+IUSE="binary greetd gaming +portage wayfire X l10n_de"
 HOMEPAGE="https://gitlab.com/bell07/my-gentoo-config"
 
 DESCRIPTION="My configuration files with preferred settings"
@@ -16,6 +16,18 @@ EGIT_BRANCH="main"
 LICENSE="GPL-3+"
 KEYWORDS="amd64 arm64"
 SLOT="0"
+
+RDEPEND+=" portage? (
+	app-portage/eix
+	app-portage/smart-live-rebuild
+)"
+
+src_prepare() {
+	SINGLE_USER="$(id -nu 1000)"
+	sed -i "s:player:$SINGLE_USER:g" "${S}"/greetd/config.toml
+
+	eapply_user
+}
 
 src_install() {
 	insinto /etc
@@ -33,23 +45,23 @@ src_install() {
 			insinto /etc/portage
 			doins -r portage/binrepos.conf
 		fi
+		dobin portage/gentoo-update.sh
 	fi
 
-	if use xfce; then
-		exeinto /etc/my-session-scripts
-		doexe session-scripts/my-xfce-session.sh
+	if use greetd; then
+		exeinto /etc/greetd
+		doexe greetd/my-session.sh
+		insinto /etc/greetd
+		doins greetd/config.toml
 	fi
 
-	if use wayland; then
-		exeinto /etc/my-session-scripts
-		doexe session-scripts/my-wayland-session.sh
-
-		insinto /usr/share/wayland-sessions/
-		doins session-scripts/my-wayland-session.desktop
-
+	if use wayfire; then
 		insinto /etc/skel/.config
 		doins wayfire/wayfire.ini
 		doins wayfire/wf-shell.ini
+
+		insinto /usr/share/wayland-sessions/
+		doins wayfire/wayfire.desktop
 	fi
 
 	if use X && use l10n_de; then
