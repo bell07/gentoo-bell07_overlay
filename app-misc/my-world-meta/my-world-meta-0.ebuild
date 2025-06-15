@@ -160,6 +160,10 @@ RDEPEND+=" gaming? (
 	!amd64? (
 		games-util/gamehub
 	)
+	
+	wayland? (
+		gui-wm/gamescope
+	)
 )"
 
 
@@ -278,13 +282,17 @@ RDEPEND+=" workstation? (
 ## Wayland base packages, that should be on any device with graphical interface (WIP)
 ## labwc is used as xfce4 compositor till xfwm is ported
 ## xeyes is for testing apps if wayland native or xwayland
+## ydotool: Simulate keyboard buttons to trigger actions, configured in labwc for button
+
 RDEPEND+=" wayland? (
 	app-misc/wayland-utils
 	gui-apps/kanshi
 	gui-apps/lswt
+	gui-apps/swaybg
 	gui-apps/wlr-randr
 	gui-wm/labwc
 	x11-apps/xeyes
+	x11-misc/ydotool
 )"
 
 
