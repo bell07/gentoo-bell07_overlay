@@ -4,7 +4,7 @@
 # Desktop
 =app-crypt/fcrackzip-1.0 ~amd64
 =gui-apps/lswt-2.0.0
-=gui-wm/labwc-0.8.4
+=gui-wm/labwc-0.8.4-r1
 =x11-themes/elementary-xfce-icon-theme-0.21-r1 ~amd64
 =xfce-extra/xfce4-panel-profiles-1.1.1 ~amd64
 
@@ -16,7 +16,7 @@
 =media-plugins/kodi-pvr-iptvsimple-21.10.2 ~amd64
 
 # Gaming / Game dependencies
-=app-emulation/wine-staging-10.9 ~amd64
+=app-emulation/wine-staging-10.10 ~amd64
 =games-util/joystick-1.8.1 ~amd64
 =gui-wm/gamescope-3.16.2 ~amd64
 =dev-libs/angelscript-2.37.0 ~amd64
