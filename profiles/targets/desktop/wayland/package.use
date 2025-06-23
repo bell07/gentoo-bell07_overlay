@@ -11,6 +11,7 @@ media-libs/libglvnd X
 media-libs/mesa X
 x11-libs/cairo X
 x11-libs/gtk+ X
+gui-libs/gtk X
 x11-libs/libxkbcommon X
 x11-libs/pango X
 
