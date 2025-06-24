@@ -29,7 +29,8 @@ src_prepare() {
 	SINGLE_LANGUAGE="${L10N:-en}"
 	sed -i 's:"XkbLayout" "en":"XkbLayout" "'$SINGLE_LANGUAGE'":g' "${S}"/xorg.conf.d/10-my-keyboard.conf
 	sed -i "s:XKB_DEFAULT_LAYOUT=us:XKB_DEFAULT_LAYOUT=$SINGLE_LANGUAGE:g" "${S}"/xfce4/labwc/environment
-
+	sed -i "s:xkb_layout = en:xkb_layout = $SINGLE_LANGUAGE:g" "${S}"/wayfire/wayfire.ini
+	
 	eapply_user
 }
 
