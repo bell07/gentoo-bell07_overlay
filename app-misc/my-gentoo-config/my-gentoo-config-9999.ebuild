@@ -67,9 +67,6 @@ src_install() {
 		insinto /etc/skel/.config/
 		doins wayfire/wayfire.ini
 		doins wayfire/wf-shell.ini
-
-		insinto /usr/share/wayland-sessions/
-		doins wayfire/wayfire.desktop
 	fi
 
 	if use wayland && use xfce; then
