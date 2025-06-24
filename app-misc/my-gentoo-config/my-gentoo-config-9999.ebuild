@@ -63,7 +63,7 @@ src_install() {
 	fi
 
 	if use wayfire; then
-		insinto /etc/skel/.config/wayfire
+		insinto /etc/skel/.config/
 		doins wayfire/wayfire.ini
 		doins wayfire/wf-shell.ini
 
