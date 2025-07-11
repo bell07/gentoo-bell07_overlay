@@ -10,6 +10,7 @@ inherit distutils-r1 gnome2-utils xdg
 
 DESCRIPTION="An onscreen keyboard useful for tablet PC users and for mobility impaired users"
 HOMEPAGE="https://launchpad.net/onboard"
+MY_PV="${PV/_p/-}"
 SRC_URI="https://github.com/dr-ni/${PN}/archive/refs/tags/${MY_PV}.tar.gz -> ${PN}-${MY_PV}.tar.gz" 
 S="${WORKDIR}/${PN}-${MY_PV}"
 # po/* are licensed under BSD 3-clause
