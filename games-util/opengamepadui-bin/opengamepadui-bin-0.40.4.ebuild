@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v3
 
 EAPI="8"
-inherit udev
+inherit udev xdg
 
 DESCRIPTION="Game launcher and overlay designed with a gamepad native experience in mind."
 HOMEPAGE="https://opengamepadui.readthedocs.io"
@@ -38,12 +38,4 @@ src_compile() {
 src_install() {
 	emake PREFIX="${D}"/usr INSTALL_PREFIX="${EROOT}"/usr install
 	rm "${D}"/usr/lib/systemd/user/systemd-sysext-updater.service
-}
-
-pkg_postinst() {
-	udev_reload
-}
-
-pkg_postrm() {
-	udev_reload
 }
