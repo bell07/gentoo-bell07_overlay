@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -6,6 +6,7 @@ EAPI=8
 DISTUTILS_USE_PEP517=setuptools
 DISTUTILS_EXT=1
 PYTHON_COMPAT=( python3_{8..13} )
+
 inherit distutils-r1 gnome2-utils xdg
 
 DESCRIPTION="An onscreen keyboard useful for tablet PC users and for mobility impaired users"
@@ -47,11 +48,17 @@ RDEPEND="${COMMON_DEPEND}
 
 RESTRICT="mirror test"
 
-src_prepare() {
-	default
+python_prepare_all() {
 	# Patch documentation paths
 	einfo "Patch documentation path in ${S}/setup.py"
 	sed -i 's:share/doc/onboard:share/doc/'${P}':g' "${S}/setup.py"
+	gnome2_environment_reset
+	distutils-r1_python_prepare_all
+}
+
+src_compile() {
+	export FAKEROOTKEY=gentoo-ebuild
+	distutils-r1_src_compile
 }
 
 pkg_postinst() {
