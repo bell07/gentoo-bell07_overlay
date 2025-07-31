@@ -1,7 +1,7 @@
 # Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v3
 
-EAPI=7
+EAPI=8
 
 DESCRIPTION="The Secret Chronicles of Dr. M."
 HOMEPAGE="https://secretchronicles.org/"
@@ -18,13 +18,14 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="+expat"
 
-RDEPEND="media-libs/libsfml
-	<dev-games/cegui-0.9[opengl,devil]
-	expat? ( dev-games/cegui[expat] )
-	!expat? ( dev-games/cegui[xml] )
-	media-libs/libpng
+RDEPEND="
 	dev-libs/libpcre
-	dev-cpp/libxmlpp:2.6"
+	dev-cpp/libxmlpp:2.6
+	media-libs/devil
+	<media-libs/libsfml-3
+	media-libs/libpng
+	virtual/opengl
+"
 
 DEPEND="${RDEPEND}
 	dev-libs/boost"

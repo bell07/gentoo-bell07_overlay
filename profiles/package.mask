@@ -10,3 +10,6 @@ net-wireless/rtl88x2bu
 
 # 30.01.2024 Abadoned. See abadon notes in readme and use lutris
 app-emulation/winemgr
+
+# 31.07.2025 Is in overlay for tsc game, but tsc download own version for compiling
+dev-games/cegui
