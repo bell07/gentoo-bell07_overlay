@@ -13,3 +13,7 @@ app-emulation/winemgr
 
 # 31.07.2025 Is in overlay for tsc game, but tsc download own version for compiling
 dev-games/cegui
+
+# 01.08.2025 Initial ebuild. Current state is the client is able to connect but not to show RDP Desktop :-(
+# Masked because of does not work for me yet
+net-misc/omnissa-horizon-client
