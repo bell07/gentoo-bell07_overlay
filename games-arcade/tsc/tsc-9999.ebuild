@@ -22,6 +22,8 @@ RDEPEND="
 	dev-libs/libpcre
 	dev-cpp/libxmlpp:2.6
 	media-libs/devil
+	media-libs/glew
+	media-libs/glm
 	<media-libs/libsfml-3
 	media-libs/libpng
 	virtual/opengl
