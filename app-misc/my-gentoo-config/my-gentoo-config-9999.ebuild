@@ -5,7 +5,7 @@ EAPI="8"
 
 inherit git-r3
 
-IUSE="binary gaming greetd +portage wayfire wayland X xfce l10n_de"
+IUSE="binary +ccache gaming greetd +portage wayfire wayland X xfce l10n_de"
 HOMEPAGE="https://gitlab.com/bell07/my-gentoo-config"
 
 DESCRIPTION="My configuration files with preferred settings"
@@ -30,7 +30,7 @@ src_prepare() {
 	sed -i 's:"XkbLayout" "en":"XkbLayout" "'$SINGLE_LANGUAGE'":g' "${S}"/xorg.conf.d/10-my-keyboard.conf
 	sed -i "s:XKB_DEFAULT_LAYOUT=us:XKB_DEFAULT_LAYOUT=$SINGLE_LANGUAGE:g" "${S}"/xfce4/labwc/environment
 	sed -i "s:xkb_layout = en:xkb_layout = $SINGLE_LANGUAGE:g" "${S}"/wayfire/wayfire.ini
-	
+
 	eapply_user
 }
 
@@ -60,6 +60,17 @@ src_install() {
 		if use binary; then
 			insinto /etc/portage
 			doins -r portage/binrepos.conf
+		fi
+
+		if use ccache; then
+			insinto /etc
+			doins portage/ccache/ccache.conf
+
+			insinto /etc/portage/env
+			doins portage/ccache/env/enable-ccache.conf
+
+			insinto /etc/portage/package.env
+			doins portage/ccache/package.env/ccache-packages.env
 		fi
 	fi
 
