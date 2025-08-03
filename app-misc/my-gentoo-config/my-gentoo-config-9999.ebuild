@@ -18,9 +18,10 @@ KEYWORDS="amd64 arm64"
 SLOT="0"
 
 RDEPEND+=" portage? (
-	app-portage/eix
-	app-portage/smart-live-rebuild
-)"
+		app-portage/eix
+		app-portage/smart-live-rebuild
+		ccache? ( dev-util/ccache )
+		)"
 
 src_prepare() {
 	SINGLE_USER="$(id -nu 1000)"
