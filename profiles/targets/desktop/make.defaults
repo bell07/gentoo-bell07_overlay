@@ -23,6 +23,7 @@ USE="$USE widevine"     # DRM
 USE="$USE midi fluidsynth" # Some old games
 USE="$USE vpx"          # required to play some HTML5 videos
 USE="$USE theora"       # Webcam
+USE="$USE libass"       # Subtitles
 
 # File systems
 USE="$USE fat hfs ntfs udf"
@@ -37,5 +38,6 @@ USE="$USE oauth-gtk4"         # Cloud auth
 USE="$USE gtk4 qt6"           # My preference order is gtk4, qt6, gtk3, qt5
 USE="$USE gdk-pixbuf"         # Image loading for GTK+
 USE="$USE widgets"            # hplip and some other QT software requires it
+USE="$USE fontconfig"         # configured fonts
 
 SANE_BACKENDS="-* hp net"

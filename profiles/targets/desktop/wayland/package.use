@@ -18,8 +18,9 @@ x11-libs/pango X
 # X only
 # dev-qt/qtgui-5.15.16
 dev-qt/qtgui -accessibility
-# vlc-3.0.21_p20250217
-media-video/vlc -vaapi
+
+# vlc-3.0.21_p20250217-r3 - No output without X
+media-video/vlc X
 
 # Wine is still not ready for wayland only
 app-emulation/wine-staging X xcomposite xinerama
