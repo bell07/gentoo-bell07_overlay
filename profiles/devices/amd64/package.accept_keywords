@@ -3,8 +3,8 @@
 
 # Desktop
 =app-crypt/fcrackzip-1.0 ~amd64
-=gui-apps/lswt-2.0.0
-=gui-wm/labwc-0.9.0
+=gui-apps/lswt-2.0.0 ~amd64
+=gui-wm/labwc-0.9.1 ~amd64
 =xfce-extra/xfce4-panel-profiles-1.1.1 ~amd64
 
 # Media center

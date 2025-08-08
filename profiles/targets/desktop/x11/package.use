@@ -4,3 +4,6 @@ x11-base/xorg-server xcsecurity
 # Disabled in wayland profile
 dev-qt/qtgui accessibility
 media-video/vlc vaapi
+
+# Allow wlroots based window managers to run in X11 window
+gui-libs/wlroots x11-backend
