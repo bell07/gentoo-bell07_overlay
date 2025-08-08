@@ -3,3 +3,6 @@ xfce-base/thunar trash-panel-plugin
 
 # Wayland only xfce requires this too until xfwm4 is ported to wayland
 xfce-base/libxfce4ui X
+
+# Required by xfce-base/xfce4-panel-4.20 / dev-libs/libayatana-appindicator-0.5.93
+dev-libs/libdbusmenu gtk3

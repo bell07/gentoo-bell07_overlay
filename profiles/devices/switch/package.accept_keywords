@@ -4,14 +4,15 @@
 # Misc utils
 =app-admin/testdisk-7.2 ~arm64
 =app-benchmarks/glmark2-2023.01 *
+=app-benchmarks/vkmark-9999 **
 =app-misc/evtest-1.35 ~arm64
 =games-util/joystick-1.8.1 ~*
 =net-analyzer/nettop-0.2.3-r2 ~arm64
-=net-fs/autofs-5.1.9-r1 ~arm64
+=net-fs/autofs-5.1.9-r2 ~arm64
 =sys-apps/gsmartcontrol-1.1.4-r1 *
 =sys-block/f3-8.0-r1 ~arm64
 =sys-block/gparted-1.6.0-r1 ~arm64
-=sys-fs/exfatprogs-1.2.6 ~arm64
+=sys-fs/exfatprogs-1.2.9 ~arm64
 =sys-power/acpilight-1.2-r5 *
 =sys-power/powertop-2.15 ~arm64
 =sys-fs/ddrescue-1.28 ~arm64
@@ -26,32 +27,33 @@
 =gui-libs/greetd-0.10.3-r1 ~arm64
 
 # XFCE
-=dev-util/meld-3.22.0-r2 ~arm64
+=dev-util/meld-3.22.2-r1 ~arm64
 =sci-calculators/galculator-2.1.4-r2 ~arm64
 =x11-misc/menulibre-2.4.0 *
+=x11-themes/arc-theme-20221218-r1 ~arm64
 =x11-themes/elementary-xfce-icon-theme-0.21-r1 ~*
 =x11-themes/gtk-engines-murrine-0.98.2-r3 ~arm64
 =x11-themes/light-themes-20.10-r2 *
 =x11-themes/murrine-themes-0.98.11-r1 ~arm64
 =x11-themes/xfwm4-themes-4.10.0-r2 *
-=xfce-extra/thunar-archive-plugin-0.5.3 ~arm64
-=xfce-extra/thunar-media-tags-plugin-0.5.0 *
-=xfce-extra/xfce4-cpufreq-plugin-1.2.9 ~arm64
-=xfce-extra/xfce4-cpugraph-plugin-1.2.11 ~arm64
-=xfce-extra/xfce4-mount-plugin-1.1.7 *
+=xfce-extra/thunar-archive-plugin-0.6.0 ~arm64
+=xfce-extra/thunar-media-tags-plugin-0.6.0 *
+=xfce-extra/xfce4-cpufreq-plugin-1.3.0 ~arm64
+=xfce-extra/xfce4-cpugraph-plugin-1.3.0 ~arm64
+=xfce-extra/xfce4-mount-plugin-1.2.0 *
 =xfce-extra/xfce4-screensaver-4.18.4 ~arm64
 =xfce-extra/xfce4-screenshooter-1.11.1 ~arm64
 =xfce-extra/xfce4-sensors-plugin-1.4.5 *
 =xfce-extra/xfce4-volumed-pulse-0.2.5 ~arm64
-=xfce-extra/xfce4-whiskermenu-plugin-2.9.2 ~arm64
-=xfce-extra/xfce4-netload-plugin-1.4.2 *
-=xfce-extra/xfce4-panel-profiles-1.0.15-r1 ~*
-=xfce-extra/xfce4-taskmanager-1.5.8 ~arm64
+=xfce-extra/xfce4-whiskermenu-plugin-2.10.0 ~arm64
+=xfce-extra/xfce4-netload-plugin-1.5.0 *
+=xfce-extra/xfce4-panel-profiles-1.1.1 ~*
+=xfce-extra/xfce4-taskmanager-1.6.0-r1 ~arm64
 
 
 
 # Games launcher
-=games-util/gamehub-0.16.3.2-r1 ~*
+=games-util/gamehub-0.16.3.2-r2 ~*
 
 # required by games-arcade/supertux
 =dev-games/physfs-3.2.0 ~arm64
