@@ -35,24 +35,24 @@ src_prepare() {
 	cd "${WORKDIR}"/Omnissa-Horizon-Client-"${PV}"-"${VER2}".x64
 	# Patch lib dir
 	sed -i 's:/usr/lib/:/usr/lib64/:g' usr/bin/*
-	
+
 	eapply_user
 }
 
 src_install() {
 	cd "${WORKDIR}"/Omnissa-Horizon-Client-"${PV}"-"${VER2}".x64/usr
 
-	for binfile in bin/*; do 
+	for binfile in bin/*; do
 		dobin "${binfile}"
 	done
 
 	insinto /usr/lib64
-	doins lib/libclientSdkCPrimitive.so 
+	doins lib/libclientSdkCPrimitive.so
 	doins -r lib/omnissa
 	exeinto /usr/lib64/omnissa/horizon/bin/
-	for binfile in lib/omnissa/horizon/bin/*; do 
+	for binfile in lib/omnissa/horizon/bin/*; do
 		doexe "${binfile}"
-	done	
+	done
 
 	insinto /usr/share
 	doins -r share/applications
@@ -60,7 +60,7 @@ src_install() {
 	doins -r share/locale
 	doins -r share/pixmaps
 	#doins -r share/X11
-	
+
 	dodoc -r share/doc
 
 	cd "${WORKDIR}"/Omnissa-Horizon-PCoIP-"${PV}"-"${VER2}".x64/usr
@@ -68,10 +68,7 @@ src_install() {
 	doins lib/libpcoip_client.so
 	doins -r lib/omnissa
 	doins -r lib/pcoip
-}
-pkg_postinst() {
-	ewarn "This ebuild is not working for me"
-	ewarn "Tried Horizon Blast and PCoIP"
-	ewarn "If you find solution, please create issue at my overlay and let me know"
-	ewarn "https://github.com/bell07/gentoo-bell07_overlay"
+
+	exeinto /usr/lib64/omnissa/horizon/client
+	doexe lib/omnissa/horizon/client/horizon-protocol
 }
