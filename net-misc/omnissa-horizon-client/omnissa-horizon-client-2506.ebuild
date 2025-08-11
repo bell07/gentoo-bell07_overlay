@@ -68,7 +68,11 @@ src_install() {
 	doins lib/libpcoip_client.so
 	doins -r lib/omnissa
 	doins -r lib/pcoip
+    insinto /usr/lib64/omnissa/horizon/client                                                                                                                                                                                                                 
+    insopts -m0775                                                                                                                                                                                                                                            
+    doins lib/omnissa/horizon/client/horizon-protocol 
 }
+
 pkg_postinst() {
 	ewarn "This ebuild is not working for me"
 	ewarn "Tried Horizon Blast and PCoIP"
