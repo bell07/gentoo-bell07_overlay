@@ -37,7 +37,9 @@ DEPEND="
 	dev-util/vulkan-headers"
 
 BDEPEND="
-	dev-util/wayland-scanner
+	wayland? (
+		dev-util/wayland-scanner
+	)
 "
 
 src_configure() {
