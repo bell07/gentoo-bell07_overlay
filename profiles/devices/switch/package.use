@@ -1,6 +1,7 @@
 # Adjust meta settings
 sys-apps/nintendo-switch-meta bootstack kernel-bin wifi
 app-misc/my-world-meta gaming
+app-misc/my-gentoo-config greetd
 
 # Security hole, but this was default in the past
 x11-base/xorg-server suid
