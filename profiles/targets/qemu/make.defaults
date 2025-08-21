@@ -1,2 +1,2 @@
 # Compiling inside qemu chroot reqire this
-FEATURES="$FEATURES -pid-sandbox"
+FEATURES="$FEATURES -buildpkg -ipc-sandbox -network-sandbox"
