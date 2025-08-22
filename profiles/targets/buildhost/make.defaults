@@ -1,4 +1,4 @@
-FEATURES="binpkg-multi-instance buildpkg"
+FEATURES="$FEATURES binpkg-multi-instance buildpkg"
 
 USE="bindist"        # License restrictions by default, but you can rebuild byself
 
