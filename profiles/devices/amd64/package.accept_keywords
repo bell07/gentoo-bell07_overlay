@@ -15,7 +15,8 @@
 =media-plugins/kodi-pvr-iptvsimple-21.10.2 ~amd64
 
 # Gaming / Game dependencies
-=app-emulation/wine-staging-10.12 ~amd64
+=app-emulation/wine-staging-10.13 ~amd64
+=app-emulation/winetricks-20250102-r1 ~amd64
 =games-util/joystick-1.8.1 ~amd64
 =gui-wm/gamescope-3.16.15-r1 ~amd64
 =dev-libs/angelscript-2.37.0 ~amd64

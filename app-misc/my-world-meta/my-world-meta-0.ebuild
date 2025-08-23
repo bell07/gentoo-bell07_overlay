@@ -11,7 +11,7 @@ DESCRIPTION="My favorite software preselection - meta package"
 # Base packages that should be on any system
 RDEPEND+="
 	app-arch/lz4
-	app-arch/p7zip
+	app-arch/7zip
 	app-arch/unzip
 	app-editors/nano
 	app-misc/mc
@@ -102,10 +102,6 @@ RDEPEND+=" admin? (
 		!minimal? (
 			sys-boot/woeusb-ng
 			app-crypt/chntpw
-		)
-
-		xfce? (
-			sys-boot/unetbootin
 		)
 	)
 
