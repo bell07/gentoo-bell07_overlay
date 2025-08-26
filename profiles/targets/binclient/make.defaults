@@ -1,4 +1,4 @@
-FEATURES="getbinpkg"
+FEATURES="$FEATURES getbinpkg"
 
 EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --binpkg-respect-use=y"
 EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --usepkg-exclude=sys-kernel/*-kernel --usepkg-exclude=sys-kernel/vanilla-kernel"

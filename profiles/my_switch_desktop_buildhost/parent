@@ -3,6 +3,6 @@ switch:nintendo_switch/23.0/desktop/
 ../targets/desktop
 ../targets/desktop/x11
 ../targets/desktop/xfce
-../targets/buildhost
 ../targets/qemu
+../targets/buildhost
 ../devices/switch
