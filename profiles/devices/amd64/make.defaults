@@ -1,8 +1,10 @@
 USE="lto pgo"                               # Profile guided optimizations and link time optimizations
 USE="$USE dist-kernel -initramfs -dracut"   # gentoo-kernel usage
+EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --usepkg-exclude=sys-kernel/*-kernel"
 
 COMMON_CFLAGS="-O2 -march=native -fomit-frame-pointer -pipe"
 CFLAGS="${COMMON_CFLAGS}"
 CXXFLAGS="${COMMON_CFLAGS}"
 FCFLAGS="${COMMON_CFLAGS}"
 FFLAGS="${COMMON_CFLAGS}"
+
