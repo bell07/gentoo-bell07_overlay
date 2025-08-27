@@ -1,0 +1,2 @@
+# No ccache required if binclient
+app-misc/my-gentoo-config -ccache
