@@ -314,4 +314,5 @@ src_install() {
 	doins -r "${S}"/rootfs/usr
 	dobin "${S}"/target/release/inputplumber
 	newbin "${S}"/target/release/generate generate-generate
+	doinitd "${FILESDIR}"/inputplumber
 }

@@ -1,0 +1,28 @@
+#!/sbin/openrc-run
+# Copyright 1999-2025 Gentoo Authors
+# Distributed under the terms of the GNU General Public License, v2 or later
+
+PIDFILE=/var/run/inputplumber.pid
+LOGFILE=/var/run/inputplumber.log
+
+start() {
+	ebegin "starting inputplumber"
+        start-stop-daemon \
+                --start \
+		--background \
+		--quiet \
+		--make-pidfile \
+                --pidfile "${PIDFILE}" \
+                --exec "/usr/bin/inputplumber" \
+		--stderr "${LOGFILE}"
+        eend $?
+}
+
+stop() {
+	ebegin "stopping inputplumber"
+	start-stop-daemon \
+		--stop \
+		--signal HUP \
+		--pidfile "${PIDFILE}"
+	eend $?
+}
