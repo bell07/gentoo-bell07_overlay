@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>web.alexander@web.de</email>
+    <name>Alexander Weber</name>
+  </maintainer>
+  <longdescription>"On-screen keyboard for wlroots that sucks less</longdescription>
+  <use>
+    <flag name="mobintl">Build wvkbd-mobintl, the mobile international layout variant (default)</flag>
+    <flag name="deskintl">Build wvkbd-deskintl, the desktop international layout variant</flag>
+  </use>
+</pkgmetadata>

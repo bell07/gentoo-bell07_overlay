@@ -11,7 +11,8 @@ S="${WORKDIR}/${PN}-${PV}"
 LICENSE="MIT GPL-3+"
 SLOT="0"
 KEYWORDS="amd64 arm64"
-IUSE="deskintl"
+IUSE="+mobintl deskintl"
+REQUIRED_USE="^^ ( mobintl deskintl )"
 
 COMMON_DEPEND="dev-libs/wayland
 	x11-libs/cairo
@@ -27,6 +28,8 @@ RESTRICT="mirror test"
 
 src_prepare() {
 	sed -i 's:^PREFIX = .*:PREFIX = /usr:g' "${S}/config.mk"
+
+	use mobintl && sed -i 's:^LAYOUT = .*:LAYOUT = mobintl:g' "${S}/config.mk"
 	use deskintl && sed -i 's:^LAYOUT = .*:LAYOUT = deskintl:g' "${S}/config.mk"
 
 	default
