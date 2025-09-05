@@ -5,6 +5,9 @@
 PIDFILE=/var/run/inputplumber.pid
 LOGFILE=/var/run/inputplumber.log
 
+depend() {
+	need dbus
+}
 start() {
 	ebegin "starting inputplumber"
         start-stop-daemon \
