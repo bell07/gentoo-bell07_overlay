@@ -90,9 +90,10 @@ RDEPEND+=" admin? (
 	net-analyzer/traceroute
 	net-misc/whois
 	sys-apps/gptfdisk
+	sys-apps/system-chroot
 	sys-block/f3
 	sys-block/partimage
-	sys-apps/system-chroot
+	sys-fs/btrfs-progs
 	sys-fs/ddrescue
 	sys-fs/ext4magic
 	www-client/lynx
