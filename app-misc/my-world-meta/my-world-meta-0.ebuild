@@ -52,6 +52,7 @@ RDEPEND+=" !minimal? (
 	app-arch/unrar
 	app-eselect/eselect-repository
 	app-misc/evtest
+	app-misc/neofetch
 	app-portage/cpuid2cpuflags
 	app-portage/genlop
 	app-portage/gentoolkit
@@ -139,19 +140,18 @@ RDEPEND+=" cdr? (
 # Lutris requires desktop-portal that requires pipewire that does not build.
 # Use gamehub instead.
 RDEPEND+=" gaming? (
+	games-arcade/supertux
 	games-action/supertuxkart
+	games-emulation/dosbox-staging
+	games-emulation/dosbox-x
+	media-libs/openglide-xtra
 	amd64? (
 		app-emulation/dxvk
 		app-emulation/vkd3d-proton
 		app-emulation/wine-proton
 		app-emulation/wine-staging
 		app-emulation/winetricks
-		games-emulation/dosbox-staging
-		games-emulation/dosbox-x
 		games-util/gamemode
-		media-libs/openglide-xtra
-
-		games-arcade/supertux
 		games-util/lutris
 	)
 	!amd64? (
