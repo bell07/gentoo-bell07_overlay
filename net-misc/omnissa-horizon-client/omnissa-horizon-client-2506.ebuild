@@ -4,7 +4,7 @@
 EAPI=8
 
 DESCRIPTION="Omnissa Horizon Client for Linux"
-HOMEPAGE="https://www.omnissa.com/products/horizon-8/"
+HOMEPAGE="https://www.omnissa.com/products/horizon-8/ https://customerconnect.omnissa.com/downloads/info/slug/virtual_desktop_and_apps/omnissa_horizon_clients/8"
 # Horizon blast does not work"
 
 VER1="CART26FQ2_LIN_2506"
@@ -22,6 +22,7 @@ S="${WORKDIR}"
 inherit xdg
 
 RDEPEND="media-libs/libva-compat[X]
+=dev-libs/libxml2-2.13*
 x11-libs/libvdpau
 "
 
