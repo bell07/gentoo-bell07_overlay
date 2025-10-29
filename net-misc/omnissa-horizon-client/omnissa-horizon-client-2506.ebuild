@@ -22,8 +22,8 @@ S="${WORKDIR}"
 inherit xdg
 
 RDEPEND="media-libs/libva-compat[X]
-=dev-libs/libxml2-2.13*
 x11-libs/libvdpau
+dev-libs/libxml2-compat
 "
 
 src_unpack() {
