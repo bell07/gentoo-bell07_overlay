@@ -21,6 +21,6 @@ dev-qt/qtgui -accessibility
 
 # Wine is still not ready for wayland only
 app-emulation/wine-staging X xcomposite xinerama
-app-emulation/wine-proton xcomposite xinerama
+app-emulation/wine-proton X xcomposite xinerama
 media-libs/vulkan-loader X
 dev-util/vulkan-tools X
