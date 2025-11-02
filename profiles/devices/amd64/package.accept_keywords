@@ -14,12 +14,12 @@
 # Media center
 =media-plugins/kodi-inputstream-adaptive-21.5.16 ~amd64
 =media-plugins/kodi-inputstream-rtmp-21.1.2 ~amd64
-=media-plugins/kodi-peripheral-joystick-21.1.22 ~amd64
+=media-plugins/kodi-peripheral-joystick-21.1.23 ~amd64
 =media-plugins/kodi-pvr-hts-21.2.6 ~amd64
 =media-plugins/kodi-pvr-iptvsimple-21.10.2 ~amd64
 
 # Gaming / Game dependencies
-=app-emulation/wine-staging-10.17 ~amd64
+=app-emulation/wine-staging-10.18 ~amd64
 =app-emulation/winetricks-20250102-r1 ~amd64
 =games-util/joystick-1.8.1 ~amd64
 =gui-wm/gamescope-3.16.17 ~amd64
