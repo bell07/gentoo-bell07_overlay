@@ -47,6 +47,7 @@ games-emulation/retroarch-assets ozone xmb
 # Required by misc gaming software
 dev-qt/qtwebchannel qml
 sys-libs/zlib minizip
+virtual/zlib minizip
 
 # Required by www-client/firefox
 media-libs/libvpx postproc
