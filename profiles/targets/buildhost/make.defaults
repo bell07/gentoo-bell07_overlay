@@ -14,4 +14,4 @@ EMERGE_DEFAULT_OPTS="$EMERGE_DEFAULT_OPTS \
 
 BINPKG_FORMAT="gpkg"
 
-MAKEOPTS="-j6"                         # Useful for local distcc (I think so)
+MAKEOPTS="-j16"                         # Useful for local distcc (I think so)
