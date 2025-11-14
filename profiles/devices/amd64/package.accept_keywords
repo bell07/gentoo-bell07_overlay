@@ -7,12 +7,12 @@
 =gui-apps/lswt-2.0.0 ~amd64
 =gui-apps/kanshi-1.8.0-r1 ~amd64
 =gui-apps/wlr-randr-0.4.1 ~amd64
-=gui-wm/labwc-0.9.1 ~amd64
+=gui-wm/labwc-0.9.2 ~amd64
 =xfce-extra/xfce4-panel-profiles-1.1.1-r1 ~amd64
 
 
 # Media center
-=media-plugins/kodi-inputstream-adaptive-21.5.16 ~amd64
+=media-plugins/kodi-inputstream-adaptive-21.5.17 ~amd64
 =media-plugins/kodi-inputstream-rtmp-21.1.2 ~amd64
 =media-plugins/kodi-peripheral-joystick-21.1.23 ~amd64
 =media-plugins/kodi-pvr-hts-21.2.6 ~amd64
