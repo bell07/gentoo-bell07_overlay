@@ -1,2 +1,0 @@
-# Masked because of does not build. My de
-dev-games/cegui xml
