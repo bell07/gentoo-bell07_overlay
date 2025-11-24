@@ -52,7 +52,7 @@ RDEPEND+=" !minimal? (
 	app-arch/unrar
 	app-eselect/eselect-repository
 	app-misc/evtest
-	app-misc/neofetch
+	app-misc/fastfetch
 	app-portage/cpuid2cpuflags
 	app-portage/genlop
 	app-portage/gentoolkit
