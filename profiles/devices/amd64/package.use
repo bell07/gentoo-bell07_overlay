@@ -3,3 +3,7 @@ sys-kernel/gentoo-sources symlink
 
 # Enable uefi build by default for memtest
 sys-apps/memtest86+ -bios64 uefi64
+
+# use new wow64 implementation
+app-emulation/wine-staging -abi_x86_32 wow64
+app-emulation/wine-proton -abi_x86_32 wow64
