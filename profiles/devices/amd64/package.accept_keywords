@@ -12,7 +12,7 @@
 
 
 # Media center
-=media-plugins/kodi-inputstream-adaptive-21.5.17 ~amd64
+=media-plugins/kodi-inputstream-adaptive-21.5.18 ~amd64
 =media-plugins/kodi-inputstream-rtmp-21.1.2 ~amd64
 =media-plugins/kodi-peripheral-joystick-21.1.23 ~amd64
 =media-plugins/kodi-pvr-hts-21.2.6 ~amd64
