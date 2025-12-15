@@ -5,7 +5,7 @@ SLOT="0"
 HOMEPAGE="https://github.com/bell07/bashscripts-kernel_cfg"
 DESCRIPTION='Kernel configuration snippets (eselect version)'
 
-COMMIT="cdd7241ea1608231d3e99bfc4990d2628d32d189"
+COMMIT="c7cd66710fcd9bd1ee9dcce6d0016e924e14a7dd"
 
 SRC_URI="${HOMEPAGE}/archive/${COMMIT}.zip -> ${P}.zip"
 
