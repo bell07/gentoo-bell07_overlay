@@ -1,0 +1,3 @@
+# Security hole, but this was default in the past
+x11-base/xorg-server suid
+

@@ -50,6 +50,16 @@
 =xfce-extra/xfce4-panel-profiles-1.1.1-r1 ~*
 =xfce-extra/xfce4-taskmanager-1.6.0-r1 ~arm64
 
+# Wayland
+=dev-libs/libscfg-0.2.0 ~arm64
+=gui-apps/kanshi-1.8.0-r1 ~arm64
+=gui-apps/lswt-2.0.0 ~*
+=gui-apps/wlr-randr-0.4.1 ~arm64
+=gui-wm/gamescope-3.16.19 ~*
+=gui-wm/labwc-0.9.3-r1 ~*
+=media-libs/vkroots-0_p20240430 ~*
+=x11-misc/ydotool-1.0.4-r4 *
+
 # Games launcher
 =games-util/gamehub-0.16.3.2-r2 ~*
 
@@ -86,3 +96,9 @@
 =media-fonts/quivira-4.1  ~arm64
 =media-fonts/signika-1.001  ~arm64
 =media-fonts/ubuntu-font-family-0.83-r1 ~arm64
+
+# Kodi
+=media-plugins/kodi-inputstream-adaptive-21.5.18 ~*
+=media-plugins/kodi-inputstream-rtmp-21.1.2 ~*
+=media-plugins/kodi-peripheral-joystick-21.1.23 ~*
+=media-plugins/kodi-pvr-hts-21.2.6 ~*
