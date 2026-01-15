@@ -32,7 +32,6 @@ USE="$USE fat hfs ntfs udf"
 USE="$USE opencv"
 
 # My default software support
-USE="$USE gimp ocr"           # Mostly for xsane
 USE="$USE java"               # Mostly for libreoffice
 USE="$USE oauth-gtk4"         # Cloud auth
 USE="$USE gtk4 qt6"           # My preference order is gtk4, qt6, gtk3, qt5
