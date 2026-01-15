@@ -1,0 +1,7 @@
+gentoo:default/linux/arm64/23.0/desktop
+../base
+../targets/desktop
+../targets/desktop/wayland
+../targets/desktop/xfce
+../targets/binclient
+../devices/rpi4

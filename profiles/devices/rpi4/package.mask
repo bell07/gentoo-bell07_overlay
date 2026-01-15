@@ -1,0 +1,2 @@
+# Prefer the precompiled dev-lang/rust-bin
+dev-lang/rust

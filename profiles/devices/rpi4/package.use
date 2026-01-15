@@ -1,0 +1,8 @@
+# Adjust meta settings
+app-misc/my-world-meta gaming mediacenter
+app-misc/my-gentoo-config greetd -ccache
+
+# dependency required by "games-emulation/dosbox-x-2025.12.01::guru"
+media-libs/libsdl2 X
+media-libs/libsdl X
+

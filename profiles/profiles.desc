@@ -22,3 +22,9 @@ arm64 my_switch_desktop_buildhost stable
 
 # Build minimal stage3 for Switch
 arm64 my_switch_stage stable
+
+# Raspberry PI media center and retro gaming device profile. Requres genpi64 overlay
+arm64 my_rpi4_desktop stable
+
+# Build binary packages in qemu-chroot for raspberry PI4
+arm64 my_rpi4_desktop_buildhost stable
