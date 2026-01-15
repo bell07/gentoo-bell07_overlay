@@ -28,7 +28,7 @@
 
 # XFCE
 =dev-util/meld-3.22.2-r1 ~arm64
-=sci-calculators/galculator-2.1.4-r2 ~arm64
+=sci-calculators/qalculate-gtk-5.8.2 ~arm64
 =x11-misc/menulibre-2.4.0 *
 =x11-themes/arc-theme-20221218-r1 ~arm64
 =x11-themes/elementary-xfce-icon-theme-0.21-r1 ~*
@@ -62,6 +62,10 @@
 
 # Games launcher
 =games-util/gamehub-0.16.3.2-r2 ~*
+=games-util/lutris-0.5.19 ~*
+=dev-python/evdev-1.9.2 ~arm64
+=dev-python/pypresence-4.6.1 ~*
+=dev-python/moddb-0.13.0 ~*
 
 # required by games-arcade/supertux
 =dev-games/physfs-3.2.0 ~arm64
