@@ -2,7 +2,7 @@ EAPI="7"
 KEYWORDS="amd64 arm64"
 SLOT="0"
 
-IUSE="admin +bell07-config cdr gaming gui kde minimal mediacenter multiuser networkmanager pulseaudio vaapi video_cards_intel vulkan wayland workstation X xfce wifi"
+IUSE="admin +bell07-config bluetooth cdr gaming gui kde minimal mediacenter multiuser networkmanager nsw pulseaudio vaapi video_cards_intel vulkan wayland workstation X xfce wifi"
 HOMEPAGE="https://github.com/bell07/gentoo-bell07_overlay"
 
 DESCRIPTION="My favorite software preselection - meta package"
@@ -152,12 +152,10 @@ RDEPEND+=" gaming? (
 		app-emulation/wine-staging
 		app-emulation/winetricks
 		games-util/gamemode
-		games-util/lutris
 	)
-	!amd64? (
-		games-util/gamehub
-	)
-	
+	nsw? ( games-util/gamehub )
+	!nsw? ( games-util/lutris )
+
 	wayland? (
 		gui-wm/gamescope
 	)
@@ -174,7 +172,7 @@ RDEPEND+=" gui? (
 	gui-libs/display-manager-init
 	media-fonts/fonts-meta
 	net-fs/autofs
-	net-wireless/blueman
+	bluetooth? ( net-wireless/blueman )
 	sys-auth/rtkit
 	sys-power/acpilight
 	|| ( www-client/firefox www-client/firefox-bin )
@@ -188,7 +186,7 @@ RDEPEND+=" gui? (
 		app-editors/mousepad
 		dev-util/catfish
 		media-gfx/ristretto
-		sci-calculators/galculator
+		sci-calculators/qalculate-gtk
 		sys-apps/baobab
 		x11-misc/menulibre
 		x11-terms/xfce4-terminal
@@ -227,9 +225,9 @@ RDEPEND+=" gui? (
 	)
 )"
 
-# desktop-portal  requires pipewire that does not build.
+# desktop-portal - requires pipewire that does not build on switch.
 RDEPEND+=" gui? (
-	amd64? (
+	!nsw? (
 		sys-apps/xdg-desktop-portal-gtk
 	)
 )
@@ -303,9 +301,8 @@ RDEPEND+=" X? (
 	x11-misc/xdotool
 	x11-terms/xterm
 
-	x11-themes/xfwm4-themes
-	xfce-extra/xfce4-screenshooter
-	pulseaudio? (
-		xfce-extra/xfce4-pulseaudio-plugin
+	xfce? (
+		x11-themes/xfwm4-themes
+		xfce-extra/xfce4-screenshooter
 	)
 )"
