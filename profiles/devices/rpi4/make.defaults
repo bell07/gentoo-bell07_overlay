@@ -4,7 +4,7 @@ PORTAGE_BINHOST="http://bell.7u.org/pub/gentoo-rpi4/packages/"
 CFLAGS="-mcpu=cortex-a72 -Os -fomit-frame-pointer -pipe"
 CXXFLAGS="${CFLAGS}"
 
-CPU_FLAGS_ARM="edsp neon thumb vfp vfpv3 vfpv4 vfp-d32 crc32 v4 v5 v6 v7 v8 thumb2"
+CPU_FLAGS_ARM="edsp neon neon-fp16 thumb vfp vfpv3 vfpv4 vfp-d32 crc32 asimd v4 v5 v6 v7 v8 thumb2"
 
 VIDEO_CARDS="v3d vc4"
 
