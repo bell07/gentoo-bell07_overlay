@@ -10,3 +10,6 @@ net-dns/avahi -gtk
 # I use native netifrc integration + and/or NetworkManager
 # https://wiki.gentoo.org/wiki/WireGuard
 net-vpn/wireguard-tools -wg-quick
+
+# Required for net-misc/moonlight
+media-libs/libsdl2 kms

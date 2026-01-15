@@ -66,6 +66,7 @@
 =dev-python/evdev-1.9.2 ~arm64
 =dev-python/pypresence-4.6.1 ~*
 =dev-python/moddb-0.13.0 ~*
+=net-misc/moonlight-6.1.0-r3 ~arm64
 
 # required by games-arcade/supertux
 =dev-games/physfs-3.2.0 ~arm64
