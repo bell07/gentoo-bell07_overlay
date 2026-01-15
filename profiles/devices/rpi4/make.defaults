@@ -1,7 +1,7 @@
 PORTAGE_BINHOST="http://bell.7u.org/pub/gentoo-rpi4/packages/"
 
 # https://wiki.gentoo.org/wiki/Raspberry_Pi4_64_Bit_Install#Configuring_Portage
-CFLAGS="-mcpu=cortex-a72 -Os -fomit-frame-pointer -pipe"
+CFLAGS="-mcpu=cortex-a72+crc -O2 -fomit-frame-pointer -pipe"
 CXXFLAGS="${CFLAGS}"
 
 CPU_FLAGS_ARM="edsp neon neon-fp16 thumb vfp vfpv3 vfpv4 vfp-d32 crc32 asimd v4 v5 v6 v7 v8 thumb2"
