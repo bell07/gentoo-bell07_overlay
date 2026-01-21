@@ -1,4 +1,5 @@
 USE="$USE -pipewire"      # Does not build currently
 USE="$USE -wayland"       # probably it will never happen
+USE="$USE nsw"            # Nintendo Switch adjustments
 
 PORTAGE_BINHOST="http://bell.7u.org/pub/gentoo-switch/packages/"

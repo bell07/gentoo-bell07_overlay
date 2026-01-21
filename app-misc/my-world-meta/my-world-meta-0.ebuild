@@ -145,7 +145,6 @@ RDEPEND+=" gaming? (
 	games-emulation/dosbox-staging
 	games-emulation/dosbox-x
 	media-libs/openglide-xtra
-	net-misc/moonlight
 	amd64? (
 		app-emulation/dxvk
 		app-emulation/vkd3d-proton
@@ -155,8 +154,10 @@ RDEPEND+=" gaming? (
 		games-util/gamemode
 	)
 	nsw? ( games-util/gamehub )
-	!nsw? ( games-util/lutris )
-
+	!nsw? (
+		games-util/lutris
+		net-misc/moonlight
+	)
 	wayland? (
 		gui-wm/gamescope
 	)
