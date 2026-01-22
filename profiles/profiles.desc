@@ -5,6 +5,9 @@ amd64 my_desktop stable
 # My default wayland only settings for devices with graphical interface, like workstation or gaming device
 amd64 my_desktop_wayland stable
 
+# Same as above, but using official binhost for binary packages
+amd64 my_desktop_wayland_bin stable
+
 # Experimental Desktop with Plasma, but xfce still included for testing
 amd64 my_desktop_plasma stable
 
