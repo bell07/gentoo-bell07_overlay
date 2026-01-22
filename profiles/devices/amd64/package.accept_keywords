@@ -1,4 +1,7 @@
+# System
+=app-portage/no-distcc-env-9999 **
 
+# Misc
 =sys-boot/woeusb-ng-0.2.12-r1 ~amd64
 
 # Desktop
@@ -9,7 +12,6 @@
 =gui-apps/wlr-randr-0.4.1 ~amd64
 =gui-wm/labwc-0.9.3-r1 ~amd64
 =xfce-extra/xfce4-panel-profiles-1.1.1-r1 ~amd64
-
 
 # Media center
 =media-plugins/kodi-inputstream-adaptive-21.5.18 ~amd64

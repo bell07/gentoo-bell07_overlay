@@ -5,7 +5,7 @@ EAPI="8"
 
 inherit git-r3
 
-IUSE="binary +ccache gaming greetd +portage wayfire wayland X xfce l10n_de"
+IUSE="binary +ccache distcc gaming greetd +portage wayfire wayland X xfce l10n_de"
 HOMEPAGE="https://gitlab.com/bell07/my-gentoo-config"
 
 DESCRIPTION="My configuration files with preferred settings"
@@ -22,6 +22,7 @@ RDEPEND+=" portage? (
 		app-portage/smart-live-rebuild
 		ccache? ( dev-util/ccache )
 		)"
+RDEPEND+=" distcc? ( app-portage/no-distcc-env )"
 
 src_prepare() {
 	SINGLE_USER="$(id -nu 1000)"
