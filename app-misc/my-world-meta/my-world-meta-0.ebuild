@@ -90,7 +90,9 @@ RDEPEND+=" admin? (
 	app-misc/evtest
 	net-analyzer/traceroute
 	net-misc/whois
+	sys-apps/dmidecode
 	sys-apps/gptfdisk
+	sys-apps/hdparm
 	sys-apps/system-chroot
 	sys-block/f3
 	sys-block/partimage
@@ -140,6 +142,8 @@ RDEPEND+=" cdr? (
 # Lutris requires desktop-portal that requires pipewire that does not build.
 # Use gamehub instead.
 RDEPEND+=" gaming? (
+        app-benchmarks/glmark2
+        app-benchmarks/vkmark
 	games-arcade/supertux
 	games-action/supertuxkart
 	games-emulation/dosbox-staging
