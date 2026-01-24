@@ -21,8 +21,11 @@ RDEPEND+=" portage? (
 		app-portage/eix
 		app-portage/smart-live-rebuild
 		ccache? ( dev-util/ccache )
+		distcc? (
+			sys-devel/distcc
+			app-portage/no-distcc-env
+			)
 		)"
-RDEPEND+=" distcc? ( app-portage/no-distcc-env )"
 
 src_prepare() {
 	SINGLE_USER="$(id -nu 1000)"
