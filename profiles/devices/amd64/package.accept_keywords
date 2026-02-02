@@ -8,7 +8,7 @@
 =app-crypt/fcrackzip-1.0 ~amd64
 =dev-libs/libscfg-0.2.0 ~amd64
 =gui-apps/lswt-2.0.0 ~amd64
-=gui-apps/kanshi-1.8.0-r1 ~amd64
+=gui-apps/kanshi-1.9.0 ~amd64
 =gui-apps/wlr-randr-0.4.1 ~amd64
 =gui-wm/labwc-0.9.3-r1 ~amd64
 =xfce-extra/xfce4-panel-profiles-1.1.1-r1 ~amd64
@@ -21,7 +21,7 @@
 =media-plugins/kodi-pvr-iptvsimple-21.10.2 ~amd64
 
 # Gaming / Game dependencies
-=app-emulation/wine-staging-11.0 ~amd64
+=app-emulation/wine-staging-11.1 ~amd64
 =app-emulation/winetricks-20250102-r1 ~amd64
 =games-util/joystick-1.8.1 ~amd64
 =gui-wm/gamescope-3.16.19 ~amd64
