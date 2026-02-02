@@ -17,19 +17,25 @@ CRATES="
 	anstyle-query@1.1.5
 	anstyle-wincon@3.0.11
 	anstyle@1.0.13
+	anyhow@1.0.100
 	arrayvec@0.7.6
 	async-broadcast@0.7.2
 	async-recursion@1.1.1
 	async-trait@0.1.89
+	atomic@0.6.1
 	autocfg@1.5.0
+	base64@0.22.1
 	bindgen@0.71.1
+	bit-set@0.5.3
+	bit-vec@0.6.3
 	bitflags@1.3.2
 	bitflags@2.10.0
 	bitvec@1.0.1
+	block-buffer@0.10.4
 	bumpalo@3.19.1
 	bytecount@0.6.9
+	bytemuck@1.24.0
 	bytes@1.11.0
-	cassowary@0.3.0
 	castaway@0.2.4
 	cc@1.2.51
 	cexpr@0.6.0
@@ -37,25 +43,34 @@ CRATES="
 	cfg_aliases@0.2.1
 	chrono@0.4.42
 	clang-sys@1.8.1
-	clap@4.5.53
-	clap_builder@4.5.53
-	clap_complete@4.5.63
+	clap@4.5.54
+	clap_builder@4.5.54
+	clap_complete@4.5.65
 	clap_derive@4.5.49
 	clap_lex@0.7.6
 	colorchoice@1.0.4
 	colored@3.0.0
-	compact_str@0.8.1
+	compact_str@0.9.0
 	concurrent-queue@2.5.0
+	convert_case@0.10.0
 	core-foundation-sys@0.8.7
 	core-foundation@0.10.0
+	cpufeatures@0.2.17
 	crc32fast@1.5.0
 	crossbeam-utils@0.8.21
-	crossterm@0.28.1
+	crossterm@0.29.0
 	crossterm_winapi@0.9.1
+	crypto-common@0.1.7
+	csscolorparser@0.6.2
 	darling@0.20.11
 	darling_core@0.20.11
 	darling_macro@0.20.11
+	deltae@0.3.2
 	deranged@0.5.5
+	derive_more-impl@2.1.1
+	derive_more@2.1.1
+	digest@0.10.7
+	document-features@0.2.12
 	dyn-clone@1.0.20
 	either@1.15.0
 	endi@1.1.1
@@ -65,13 +80,18 @@ CRATES="
 	env_logger@0.11.8
 	equivalent@1.0.2
 	errno@0.3.14
+	euclid@0.22.11
 	event-listener-strategy@0.5.4
 	event-listener@5.4.1
+	fancy-regex@0.11.0
 	fastrand@2.3.0
+	filedescriptor@0.8.3
 	find-msvc-tools@0.1.6
+	finl_unicode@1.4.0
+	fixedbitset@0.4.2
 	flate2@1.1.5
 	fnv@1.0.7
-	foldhash@0.1.5
+	foldhash@0.2.0
 	funty@2.0.0
 	futures-channel@0.3.31
 	futures-core@0.3.31
@@ -83,10 +103,10 @@ CRATES="
 	futures-task@0.3.31
 	futures-util@0.3.31
 	futures@0.3.31
+	generic-array@0.14.7
 	getrandom@0.3.4
 	glob-match@0.2.1
 	glob@0.3.3
-	hashbrown@0.15.5
 	hashbrown@0.16.1
 	heck@0.5.0
 	hermit-abi@0.3.9
@@ -107,21 +127,28 @@ CRATES="
 	io-lifetimes@2.0.4
 	is_terminal_polyfill@1.70.2
 	itertools@0.13.0
+	itertools@0.14.0
 	itoa@1.0.17
 	jiff-static@0.2.17
 	jiff@0.2.17
 	js-sys@0.3.83
+	kasuari@0.4.11
+	lab@0.11.0
+	lazy_static@1.5.0
 	libc@0.2.178
 	libiio-sys@0.4.1
 	libudev-sys@0.1.4
 	libudev@0.3.0
+	line-clipping@0.3.5
 	linux-raw-sys@0.11.0
-	linux-raw-sys@0.4.15
+	litrs@1.0.0
 	lock_api@0.4.14
 	log@0.4.29
-	lru@0.12.5
+	lru@0.16.2
+	mac_address@1.1.8
 	mach2@0.4.3
 	memchr@2.7.6
+	memmem@0.1.1
 	memoffset@0.7.1
 	memoffset@0.9.1
 	minimal-lexical@0.2.1
@@ -132,18 +159,28 @@ CRATES="
 	nix@0.30.1
 	nom@7.1.3
 	num-conv@0.1.0
+	num-derive@0.4.2
 	num-traits@0.2.19
 	num_threads@0.1.7
 	once_cell@1.21.3
 	once_cell_polyfill@1.70.2
+	ordered-float@4.6.0
 	ordered-stream@0.2.0
 	packed_struct@0.10.1
 	packed_struct_codegen@0.10.1
-	papergrid@0.14.0
+	papergrid@0.17.0
 	parking@2.2.1
 	parking_lot@0.12.5
 	parking_lot_core@0.9.12
-	paste@1.0.15
+	pest@2.8.4
+	pest_derive@2.8.4
+	pest_generator@2.8.4
+	pest_meta@2.8.4
+	phf@0.11.3
+	phf_codegen@0.11.3
+	phf_generator@0.11.3
+	phf_macros@0.11.3
+	phf_shared@0.11.3
 	pin-project-lite@0.2.16
 	pin-utils@0.1.0
 	pkg-config@0.3.32
@@ -155,55 +192,71 @@ CRATES="
 	proc-macro-error-attr2@2.0.0
 	proc-macro-error2@2.0.1
 	proc-macro2@1.0.104
-	procfs-core@0.17.0
-	procfs@0.17.0
+	procfs-core@0.18.0
+	procfs@0.18.0
 	quote@1.0.40
 	r-efi@5.3.0
 	radium@0.7.0
+	rand@0.8.5
 	rand@0.9.2
 	rand_chacha@0.9.0
+	rand_core@0.6.4
 	rand_core@0.9.3
-	ratatui@0.29.0
+	ratatui-core@0.1.0
+	ratatui-crossterm@0.1.0
+	ratatui-macros@0.7.0
+	ratatui-termwiz@0.1.0
+	ratatui-widgets@0.3.0
+	ratatui@0.30.0
 	redox_syscall@0.5.18
+	ref-cast-impl@1.0.25
+	ref-cast@1.0.25
 	regex-automata@0.4.13
 	regex-syntax@0.8.8
 	regex@1.12.2
 	rustc-hash@2.1.1
-	rustix@0.38.44
+	rustc_version@0.4.1
 	rustix@1.1.3
 	rustversion@1.0.22
 	ryu@1.0.22
-	schemars@0.8.22
-	schemars_derive@0.8.22
+	schemars@1.2.0
+	schemars_derive@1.2.0
 	scopeguard@1.2.0
+	semver@1.0.27
 	serde@1.0.228
 	serde_core@1.0.228
 	serde_derive@1.0.228
 	serde_derive_internals@0.29.1
-	serde_json@1.0.148
+	serde_json@1.0.149
 	serde_repr@0.1.20
 	serde_yaml@0.9.34+deprecated
 	serialport@4.8.1
+	sha2@0.10.9
 	shlex@1.3.0
 	signal-hook-mio@0.2.5
 	signal-hook-registry@1.4.8
 	signal-hook@0.3.18
 	simd-adler32@0.3.8
 	simple_logger@5.1.0
+	siphasher@1.0.1
 	slab@0.4.11
 	smallvec@1.15.1
 	socket2@0.6.1
 	socketpair@0.19.8
 	static_assertions@1.1.0
 	strsim@0.11.1
-	strum@0.26.3
-	strum_macros@0.26.4
+	strum@0.27.2
+	strum_macros@0.27.2
 	syn@1.0.109
 	syn@2.0.111
-	tabled@0.18.0
-	tabled_derive@0.10.0
+	tabled@0.20.0
+	tabled_derive@0.11.0
 	tap@1.0.1
 	tempfile@3.24.0
+	terminfo@0.9.0
+	termios@0.3.3
+	termwiz@0.23.3
+	testing_table@0.3.0
 	thiserror-impl@1.0.69
 	thiserror-impl@2.0.17
 	thiserror@1.0.69
@@ -212,13 +265,15 @@ CRATES="
 	time-macros@0.2.24
 	time@0.3.44
 	tokio-macros@2.6.0
-	tokio@1.48.0
+	tokio@1.49.0
 	toml_datetime@0.7.5+spec-1.1.0
 	toml_edit@0.23.10+spec-1.0.0
 	toml_parser@1.0.6+spec-1.1.0
 	tracing-attributes@0.1.31
 	tracing-core@0.1.36
 	tracing@0.1.44
+	typenum@1.19.0
+	ucd-trie@0.1.7
 	udev@0.9.3
 	uds_windows@1.1.0
 	uhid-virt@0.0.8
@@ -226,20 +281,27 @@ CRATES="
 	unescaper@0.1.8
 	unicode-ident@1.0.22
 	unicode-segmentation@1.12.0
-	unicode-truncate@1.1.0
-	unicode-width@0.1.14
-	unicode-width@0.2.0
+	unicode-truncate@2.0.0
+	unicode-width@0.2.2
 	unsafe-libyaml@0.2.11
 	utf8parse@0.2.2
 	uuid@1.19.0
 	version-compare@0.2.1
+	version_check@0.9.5
 	vte@0.14.1
+	vtparse@0.6.2
 	wasi@0.11.1+wasi-snapshot-preview1
 	wasip2@1.0.1+wasi-0.2.4
 	wasm-bindgen-macro-support@0.2.106
 	wasm-bindgen-macro@0.2.106
 	wasm-bindgen-shared@0.2.106
 	wasm-bindgen@0.2.106
+	wezterm-bidi@0.2.3
+	wezterm-blob-leases@0.1.1
+	wezterm-color-types@0.3.0
+	wezterm-dynamic-derive@0.1.1
+	wezterm-dynamic@0.2.1
+	wezterm-input-types@0.1.0
 	winapi-i686-pc-windows-gnu@0.4.0
 	winapi-x86_64-pc-windows-gnu@0.4.0
 	winapi@0.3.9
@@ -283,7 +345,7 @@ CRATES="
 	winnow@0.7.14
 	wit-bindgen@0.46.0
 	wyz@0.5.1
-	xdg@2.5.2
+	xdg@3.0.0
 	zbus@5.12.0
 	zbus_macros@5.12.0
 	zbus_names@4.2.0
@@ -311,7 +373,10 @@ SRC_URI="
 
 LICENSE="GPL-3+"
 # Dependent crate licenses
-LICENSE+=" Apache-2.0 BSD ISC MIT MPL-2.0 Unicode-DFS-2016 ZLIB"
+LICENSE+="
+	Apache-2.0 BSD ISC MIT MPL-2.0 Unicode-3.0 Unicode-DFS-2016 WTFPL-2
+	ZLIB
+"
 SLOT="0"
 KEYWORDS="~amd64"
 
