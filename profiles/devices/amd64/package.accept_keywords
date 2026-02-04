@@ -10,6 +10,7 @@
 =gui-apps/lswt-2.0.0 ~amd64
 =gui-apps/kanshi-1.9.0 ~amd64
 =gui-apps/wlr-randr-0.4.1 ~amd64
+=gui-libs/libsfdo-0.1.4 ~amd64
 =gui-wm/labwc-0.9.3-r1 ~amd64
 =xfce-extra/xfce4-panel-profiles-1.1.1-r1 ~amd64
 

@@ -24,3 +24,6 @@ app-emulation/wine-staging X xcomposite xinerama
 app-emulation/wine-proton X xcomposite xinerama
 media-libs/vulkan-loader X
 dev-util/vulkan-tools X
+
+# Show application icons in menus
+gui-wm/labwc icons
