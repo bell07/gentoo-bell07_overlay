@@ -34,7 +34,7 @@ USE="$USE opencv"
 # My default software support
 USE="$USE java"               # Mostly for libreoffice
 USE="$USE oauth-gtk4"         # Cloud auth
-USE="$USE gtk4 qt6"           # My preference order is gtk4, qt6, gtk3, qt5
+USE="$USE gtk4 qt6"           # My preference order is gtk4, qt6, gtk3
 USE="$USE gdk-pixbuf"         # Image loading for GTK+
 USE="$USE widgets"            # hplip and some other QT software requires it
 USE="$USE fontconfig"         # configured fonts
