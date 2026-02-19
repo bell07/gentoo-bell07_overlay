@@ -25,6 +25,7 @@ RDEPEND+=" portage? (
 			sys-devel/distcc
 			app-portage/no-distcc-env
 			)
+		amd64? ( app-admin/eclean-kernel )
 		)"
 
 src_prepare() {
