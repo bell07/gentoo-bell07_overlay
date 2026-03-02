@@ -210,6 +210,7 @@ RDEPEND+=" gui? (
 		xfce-extra/xfce4-netload-plugin
 		xfce-extra/xfce4-notifyd
 		xfce-extra/xfce4-panel-profiles
+		xfce-extra/xfce4-screenshooter
 		xfce-extra/xfce4-sensors-plugin
 		xfce-extra/xfce4-taskmanager
 		xfce-extra/xfce4-whiskermenu-plugin
@@ -309,6 +310,5 @@ RDEPEND+=" X? (
 
 	xfce? (
 		x11-themes/xfwm4-themes
-		xfce-extra/xfce4-screenshooter
 	)
 )"
