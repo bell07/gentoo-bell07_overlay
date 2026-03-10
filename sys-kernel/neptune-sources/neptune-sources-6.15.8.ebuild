@@ -16,7 +16,7 @@ HOMEPAGE="https://gitlab.com/evlaV/linux-integration"
 # Needed for zstd compression of the patch
 BDEPEND="$(unpacker_src_uri_depends)"
 
-EXTRAVERSION="-valve22"
+EXTRAVERSION="-valve1"
 SRC_URI="https://gitlab.com/evlaV/linux-integration/-/archive/${PV}${EXTRAVERSION}/linux-integration-${PV}${EXTRAVERSION}.zip -> linux-neptune-${PV}${EXTRAVERSION}.zip"
 RESTRICT="nomirror"
 S="${WORKDIR}"/linux-integration-"${PV}${EXTRAVERSION}"
@@ -28,7 +28,7 @@ pkg_setup() {
 	ewarn "${PN} is *not* supported by the Gentoo Kernel Project in any way."
 	ewarn
 	ewarn "The original kernel configuration can be found at:"
-	ewarn "https://gitlab.com/evlaV/jupiter-PKGBUILD/-/tree/master/linux-neptune-65"
+	ewarn "https://gitlab.com/evlaV/jupiter-PKGBUILD/-/tree/master/linux-neptune-615"
 	ewarn
 	kernel-2_pkg_setup
 }
