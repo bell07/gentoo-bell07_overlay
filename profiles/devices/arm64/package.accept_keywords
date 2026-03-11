@@ -52,17 +52,18 @@
 
 # Wayland
 =dev-libs/libscfg-0.2.0 ~arm64
+=gui-libs/libsfdo-0.1.4 ~arm64
 =gui-apps/kanshi-1.8.0-r1 ~arm64
 =gui-apps/lswt-2.0.0 ~*
 =gui-apps/wlr-randr-0.4.1 ~arm64
 =gui-wm/gamescope-3.16.19 ~*
-=gui-wm/labwc-0.9.3-r1 ~*
+=gui-wm/labwc-0.9.5 ~*
 =media-libs/vkroots-0_p20240430 ~*
 =x11-misc/ydotool-1.0.4-r4 *
 
 # Games launcher
 =games-util/gamehub-0.16.3.2-r2 ~*
-=games-util/lutris-0.5.19 ~*
+=games-util/lutris-0.5.22-r1 ~*
 =dev-python/evdev-1.9.2 ~arm64
 =dev-python/pypresence-4.6.1 ~*
 =dev-python/moddb-0.13.0 ~*
