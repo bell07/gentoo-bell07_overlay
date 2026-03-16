@@ -11,3 +11,6 @@ sys-apps/nintendo-switch-meta initramfs
 sys-libs/gentoo-config-files initramfs
 sys-kernel/nintendo-switch-l4t-kernel initramfs
 sys-kernel/installkernel dracut
+
+# same as switch overlay - avoid overriding
+net-misc/moonlight -drm -vaapi -vulkan

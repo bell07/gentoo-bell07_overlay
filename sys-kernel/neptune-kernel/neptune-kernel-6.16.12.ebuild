@@ -6,7 +6,7 @@ EAPI=8
 KERNEL_IUSE_GENERIC_UKI=1
 
 inherit kernel-build toolchain-funcs
-PATCH_PV=${PV%_p*}
+
 PATCHSET=linux-gentoo-patches-6.16.12
 
 CONFIG_VER="616"
@@ -38,7 +38,6 @@ QA_FLAGS_IGNORED="
 "
 
 src_prepare() {
-	local patch
 	eapply "${WORKDIR}/${PATCHSET}"
 
 	default

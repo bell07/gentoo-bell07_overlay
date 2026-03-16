@@ -56,8 +56,8 @@
 =gui-apps/kanshi-1.8.0-r1 ~arm64
 =gui-apps/lswt-2.0.0 ~*
 =gui-apps/wlr-randr-0.4.1 ~arm64
-=gui-wm/gamescope-3.16.19 ~*
-=gui-wm/labwc-0.9.5 ~*
+=gui-wm/gamescope-3.16.22 ~*
+=gui-wm/labwc-0.9.6 ~*
 =media-libs/vkroots-0_p20240430 ~*
 =x11-misc/ydotool-1.0.4-r4 *
 

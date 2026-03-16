@@ -11,7 +11,7 @@
 =gui-apps/kanshi-1.9.0 ~amd64
 =gui-apps/wlr-randr-0.5.0 ~amd64
 =gui-libs/libsfdo-0.1.4 ~amd64
-=gui-wm/labwc-0.9.5 ~amd64
+=gui-wm/labwc-0.9.6 ~amd64
 =xfce-extra/xfce4-panel-profiles-1.1.1-r1 ~amd64
 
 # Media center
@@ -22,10 +22,10 @@
 =media-plugins/kodi-pvr-iptvsimple-21.10.2 ~amd64
 
 # Gaming / Game dependencies
-=app-emulation/wine-staging-11.3 ~amd64
+=app-emulation/wine-staging-11.4 ~amd64
 =app-emulation/winetricks-20250102-r1 ~amd64
 =games-util/joystick-1.8.1 ~amd64
-=gui-wm/gamescope-3.16.20 ~amd64
+=gui-wm/gamescope-3.16.22 ~amd64
 =dev-libs/angelscript-2.38.0 ~amd64
 =dev-libs/teakra-20220224-r1 ~amd64
 =dev-python/moddb-0.13.0 ~amd64

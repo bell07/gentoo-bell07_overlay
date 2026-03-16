@@ -64,3 +64,6 @@ net-print/hplip qt5
 
 # Xfce default apps
 xfce-base/xfce4-meta archive editor image search
+
+# There is no reason for windowed mode with moonlight
+net-misc/moonlight embedded
