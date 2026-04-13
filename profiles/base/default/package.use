@@ -5,7 +5,7 @@ app-admin/sudo -sendmail
 net-wireless/wpa_supplicant -gui
 
 # Do not need "Browse for Zeroconf-enabled * servers" apps
-net-dns/avahi -gtk
+net-dns/avahi -gtk -qt
 
 # I use native netifrc integration + and/or NetworkManager
 # https://wiki.gentoo.org/wiki/WireGuard
@@ -16,3 +16,6 @@ media-libs/libsdl2 kms
 
 # Required for app-benchmarks/vkmark
 sys-libs/zlib minizip
+
+# 2026-04-13 Required by net-fs/samba
+net-libs/ngtcp2 gnutls
