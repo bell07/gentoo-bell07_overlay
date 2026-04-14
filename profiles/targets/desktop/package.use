@@ -1,11 +1,11 @@
-# Enhance user limits for gaming
-app-misc/my-gentoo-config gaming
-
 # Keepassxc plugins
 app-admin/keepassxc autotype browser
 
 # Prefer xarchiver UI
 app-arch/p7zip -wxwidgets
+
+# Required by gnome-extra/nm-applet-1.36.0::gentoo[appindicator]
+dev-libs/libdbusmenu gtk3
 
 # Gui "gitk"
 dev-vcs/git tk
@@ -17,6 +17,7 @@ media-fonts/fonts-meta ms
 media-libs/opencv -qt6 -opengl
 www-client/google-chrome -qt6
 www-client/microsoft-edge -qt6
+app-office/libreoffice gtk4 -gtk3 -qt6
 
 # Pipewire sound server by default
 media-sound/pulseaudio -daemon
