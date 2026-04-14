@@ -17,6 +17,12 @@ amd64 my_selinux_server stable
 # Server basis profile
 amd64 my_server stable
 
+# Media center on BBEN MN9 Intel HDMI Stick
+amd64 my_bben_mn9 stable
+
+# Buildhost for BBEN MN9 Intel HDMI Stick
+amd64 my_bben_mn9_buildhost stable
+
 # Nintendo Switch gaming device profile. Requres switch overlay
 arm64 my_switch_desktop stable
 
