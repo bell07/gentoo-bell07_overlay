@@ -1,2 +1,5 @@
 # https://wiki.gentoo.org/wiki/Binary_package_quickstart
 FEATURES="$FEATURES binpkg-request-signature"
+
+# Do not use precompiled kernel
+EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --usepkg-exclude=sys-kernel/*-kernel"
