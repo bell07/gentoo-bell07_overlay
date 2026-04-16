@@ -17,7 +17,7 @@ media-fonts/fonts-meta ms
 media-libs/opencv -qt6 -opengl
 www-client/google-chrome -qt6
 www-client/microsoft-edge -qt6
-app-office/libreoffice gtk4 -gtk3 -qt6
+app-office/libreoffice -qt6
 
 # Pipewire sound server by default
 media-sound/pulseaudio -daemon

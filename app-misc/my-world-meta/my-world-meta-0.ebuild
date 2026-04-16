@@ -156,7 +156,6 @@ RDEPEND+=" gaming? (
 		app-emulation/wine-proton
 		app-emulation/wine-staging
 		app-emulation/winetricks
-		games-util/gamemode
 	)
 	nsw? ( games-util/gamehub )
 	!nsw? (
@@ -169,6 +168,7 @@ RDEPEND+=" gaming? (
 
 
 # Base GUI (xfce) X or wayland
+# desktop-portal - requires pipewire that does not build on switch.
 RDEPEND+=" gui? (
 	app-admin/sudo
 	app-benchmarks/glmark2
@@ -182,6 +182,10 @@ RDEPEND+=" gui? (
 	sys-auth/rtkit
 	sys-power/acpilight
 	|| ( www-client/firefox www-client/firefox-bin )
+
+	amd64? (
+		games-util/gamemode
+	)
 
 	kde? (
 		kde-plasma/plasma-meta
@@ -230,16 +234,11 @@ RDEPEND+=" gui? (
 	!multiuser? (
 		gui-libs/greetd
 	)
-)"
 
-# desktop-portal - requires pipewire that does not build on switch.
-RDEPEND+=" gui? (
 	!nsw? (
 		sys-apps/xdg-desktop-portal-gtk
 	)
-)
-"
-
+)"
 
 # Media Center
 # app-text/doxygen required by dev-cpp/waylandpp required by kodi
@@ -295,6 +294,11 @@ RDEPEND+=" wayland? (
 	gui-wm/labwc
 	x11-apps/xeyes
 	x11-misc/ydotool
+	!xfce? ( 
+		!kde? (
+			x11-terms/kitty
+		)
+	)
 )"
 
 
