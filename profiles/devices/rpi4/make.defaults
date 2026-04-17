@@ -6,6 +6,6 @@ CXXFLAGS="${CFLAGS}"
 
 CPU_FLAGS_ARM="edsp neon neon-fp16 thumb vfp vfpv3 vfpv4 vfp-d32 crc32 asimd v4 v5 v6 v7 v8 thumb2"
 
-VIDEO_CARDS="v3d vc4"
+VIDEO_CARDS="-* v3d vc4"
 
 USE="pi4"
