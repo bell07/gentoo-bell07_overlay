@@ -68,3 +68,6 @@ xfce-base/xfce4-meta archive editor image search
 
 # There is no reason for windowed mode with moonlight
 net-misc/moonlight embedded
+
+# Use own ffmpeg in chromium
+www-client/chromium ffmpeg-chromium
