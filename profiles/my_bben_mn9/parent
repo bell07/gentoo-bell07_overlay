@@ -1,5 +1,5 @@
 gentoo:default/linux/amd64/23.0/desktop
 ../base
-../targets/desktop/x11
+../targets/desktop/wayland
 ../targets/binclient
 ../devices/bben_mn9
