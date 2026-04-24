@@ -190,7 +190,6 @@ RDEPEND+=" gui? (
 	)
 
 	xfce? (
-		app-arch/xarchiver
 		app-editors/mousepad
 		dev-util/catfish
 		media-gfx/ristretto
@@ -219,9 +218,12 @@ RDEPEND+=" gui? (
 
 	!kde? (
 		sci-calculators/qalculate-gtk
+		app-arch/xarchiver
 		!xfce? (
 			cdr? ( app-cdr/graveman )
+			app-editors/leafpad
 			gui-apps/mako
+			media-gfx/geeqie
 		)
 	)
 
