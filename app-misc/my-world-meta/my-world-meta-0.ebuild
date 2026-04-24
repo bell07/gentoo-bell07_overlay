@@ -130,10 +130,6 @@ RDEPEND+=" admin? (
 RDEPEND+=" cdr? (
 	app-cdr/bin2iso
 	app-cdr/cuetools
-	gui? (
-		app-cdr/isomaster
-		app-cdr/xfburn
-	)
 )"
 
 # Base GUI, xfce or wayland/wayfire
@@ -169,6 +165,7 @@ RDEPEND+=" gaming? (
 
 # Base GUI (xfce) X or wayland
 # desktop-portal - requires pipewire that does not build on switch.
+# gui-apps/mako simple virtual/notification-daemon alternative
 RDEPEND+=" gui? (
 	app-admin/sudo
 	app-benchmarks/glmark2
@@ -178,10 +175,11 @@ RDEPEND+=" gui? (
 	gui-libs/display-manager-init
 	media-fonts/fonts-meta
 	net-fs/autofs
-	bluetooth? ( net-wireless/blueman )
+	sys-apps/baobab
 	sys-auth/rtkit
 	sys-power/acpilight
 	|| ( www-client/firefox www-client/firefox-bin )
+	bluetooth? ( net-wireless/blueman )
 
 	amd64? (
 		games-util/gamemode
@@ -196,8 +194,6 @@ RDEPEND+=" gui? (
 		app-editors/mousepad
 		dev-util/catfish
 		media-gfx/ristretto
-		sci-calculators/qalculate-gtk
-		sys-apps/baobab
 		x11-misc/menulibre
 		x11-terms/xfce4-terminal
 		x11-themes/arc-theme
@@ -218,6 +214,15 @@ RDEPEND+=" gui? (
 		xfce-extra/xfce4-sensors-plugin
 		xfce-extra/xfce4-taskmanager
 		xfce-extra/xfce4-whiskermenu-plugin
+		cdr? ( app-cdr/xfburn )
+	)
+
+	!kde? (
+		sci-calculators/qalculate-gtk
+		!xfce? (
+			cdr? ( app-cdr/graveman )
+			gui-apps/mako
+		)
 	)
 
 	networkmanager? ( gnome-extra/nm-applet )
