@@ -1,6 +1,4 @@
 gentoo:default/linux/amd64/23.0/desktop
 ../base
-../targets/desktop
 ../targets/desktop/wayland
-../targets/desktop/xfce
 ../devices/amd64
