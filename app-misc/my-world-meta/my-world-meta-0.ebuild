@@ -2,7 +2,7 @@ EAPI="7"
 KEYWORDS="amd64 arm64"
 SLOT="0"
 
-IUSE="admin +bell07-config bluetooth cdr gaming gui kde minimal mediacenter multiuser networkmanager nsw pulseaudio vaapi video_cards_intel vulkan wayland workstation X xfce wifi"
+IUSE="admin +bell07-config bluetooth cdr gaming gui kde minimal mediacenter multiuser networkmanager nsw pulseaudio sfw-desktop vaapi video_cards_intel vulkan wayland workstation X xfce wifi"
 HOMEPAGE="https://github.com/bell07/gentoo-bell07_overlay"
 
 DESCRIPTION="My favorite software preselection - meta package"
@@ -189,10 +189,23 @@ RDEPEND+=" gui? (
 		kde-plasma/plasma-meta
 	)
 
+	sfw-desktop? (
+		gui-wm/sfw-desktop
+		app-arch/xarchiver
+		sci-calculators/qalculate-gtk
+		x11-terms/kitty
+		app-editors/leafpad
+		gui-apps/mako
+		media-gfx/geeqie
+		cdr? ( app-cdr/graveman )
+	)
+
 	xfce? (
+		app-arch/xarchiver
 		app-editors/mousepad
 		dev-util/catfish
 		media-gfx/ristretto
+		sci-calculators/qalculate-gtk
 		x11-misc/menulibre
 		x11-terms/xfce4-terminal
 		x11-themes/arc-theme
@@ -214,17 +227,6 @@ RDEPEND+=" gui? (
 		xfce-extra/xfce4-taskmanager
 		xfce-extra/xfce4-whiskermenu-plugin
 		cdr? ( app-cdr/xfburn )
-	)
-
-	!kde? (
-		sci-calculators/qalculate-gtk
-		app-arch/xarchiver
-		!xfce? (
-			cdr? ( app-cdr/graveman )
-			app-editors/leafpad
-			gui-apps/mako
-			media-gfx/geeqie
-		)
 	)
 
 	networkmanager? ( gnome-extra/nm-applet )

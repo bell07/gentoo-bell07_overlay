@@ -10,7 +10,7 @@ SLOT="0"
 
 IUSE="l10n_de"
 
-HOMEPAGE="TODO"
+HOMEPAGE="https://gitlab.com/bell07/${PN}"
 
 DESCRIPTION="Simple Floating Windows Desktop (sfw-desktop)"
 
@@ -18,16 +18,9 @@ EGIT_REPO_URI="https://gitlab.com/bell07/${PN}"
 EGIT_BRANCH="master"
 
 RDEPEND="
-gnome-extra/nm-applet
 gui-wm/labwc
-gui-apps/gtklock
-gui-apps/kanshi
 gui-apps/sfwbar
 gui-apps/wlogout
-media-libs/libpulse
-sys-auth/elogind
-sys-power/acpilight
-x11-misc/pcmanfm-qt
 "
 
 
@@ -49,14 +42,33 @@ src_install() {
 	
 	insinto /usr/share/wayland-sessions/
 	doins session/sfw-desktop.desktop
-	
-	# Labwc config
-	insinto /etc/xdg
-	doins -r labwc
 
-	# Other tools
-	insinto /etc/xdg/sfw-desktop
-	for file in tool-configs/*; do
-		doins "$file"
-	done
+	insinto /etc
+	doins -r wlogout
+	
+	insinto /etc/xdg
+	doins -r kanshi
+	doins -r labwc
+	doins -r sfwbar
 }
+
+pkg_postinst() {
+	elog "sfw-desktop uses next software, if installed"
+	elog ""
+	elog "gnome-extra/nm-applet: Tray icon to configure Network interfaces."
+	elog " If you do not like to install it, try the the sfwbar network plugin"
+	elog ""
+	elog "gui-apps/gtklock: Lock screen"
+	elog ""
+	elog "gui-apps/kanshi: Display configuration"
+	elog ""
+	elog "sys-power/acpilight: Display brightness"
+	elog ""
+	elog "x11-misc/pcmanfm-qt: Display Icons and Background"
+	elog " or"
+	elog "gui-apps/swaybg: Background only without icons"
+	elog ""
+	elog "x11-terms/kitty: Terminal emulator"
+	elog ""
+}
+
