@@ -39,13 +39,13 @@ src_install() {
 
 	exeinto /etc/xdg/sfw-desktop
 	doexe session/sfw-session
-	
+
 	insinto /usr/share/wayland-sessions/
 	doins session/sfw-desktop.desktop
 
 	insinto /etc
 	doins -r wlogout
-	
+
 	insinto /etc/xdg
 	doins -r kanshi
 	doins -r labwc
@@ -69,6 +69,11 @@ pkg_postinst() {
 	elog "gui-apps/swaybg: Background only without icons"
 	elog ""
 	elog "x11-terms/kitty: Terminal emulator"
+	elog ""
+	elog "gui-apps/mako: Notification daemon"
+	elog " If you do not like to install it, try the the sfwbar notification plugin"
+	elog ""
+	elog "gui-apps/grim + gui-apps/wl-clipboard : Screenshoter on print button"
 	elog ""
 }
 

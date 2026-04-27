@@ -190,13 +190,16 @@ RDEPEND+=" gui? (
 	)
 
 	sfw-desktop? (
-		gui-wm/sfw-desktop
 		app-arch/xarchiver
+		app-editors/leafpad
+		gui-apps/grim
+		gui-apps/mako
+		gui-apps/wl-clipboard
+		gui-wm/sfw-desktop
+		media-gfx/geeqie
 		sci-calculators/qalculate-gtk
 		x11-terms/kitty
-		app-editors/leafpad
-		gui-apps/mako
-		media-gfx/geeqie
+
 		cdr? ( app-cdr/graveman )
 	)
 
