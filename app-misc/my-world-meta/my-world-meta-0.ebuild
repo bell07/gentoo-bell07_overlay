@@ -30,6 +30,7 @@ RDEPEND+="
 	sys-process/htop
 	sys-process/iotop
 	sys-process/lsof
+	x11-terms/kitty-terminfo
 "
 
 # amd64 only base packages
