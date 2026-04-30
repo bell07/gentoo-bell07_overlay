@@ -37,7 +37,7 @@ RDEPEND+="
 RDEPEND+=" amd64? (
 	app-misc/resolve-march-native
 	sys-boot/efibootmgr
-	sys-kernel/gentoo-kernel
+	|| ( sys-kernel/gentoo-kernel sys-kernel/neptune-kernel )
 	sys-kernel/kernel-cfg
 )"
 
@@ -194,7 +194,7 @@ RDEPEND+=" gui? (
 		app-arch/xarchiver
 		app-editors/leafpad
 		gui-apps/grim
-		gui-apps/mako
+		x11-misc/dunst
 		gui-apps/wl-clipboard
 		gui-wm/sfw-desktop
 		media-gfx/geeqie
