@@ -194,11 +194,12 @@ RDEPEND+=" gui? (
 		app-arch/xarchiver
 		app-editors/leafpad
 		gui-apps/grim
-		x11-misc/dunst
+		gui-apps/swayidle
 		gui-apps/wl-clipboard
 		gui-wm/sfw-desktop
 		media-gfx/geeqie
 		sci-calculators/qalculate-gtk
+		x11-misc/dunst
 		x11-terms/kitty
 
 		cdr? ( app-cdr/graveman )

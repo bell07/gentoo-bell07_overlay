@@ -8,7 +8,7 @@ inherit git-r3
 KEYWORDS="amd64 arm64"
 SLOT="0"
 
-IUSE="l10n_de"
+IUSE="l10n_de upower"
 
 HOMEPAGE="https://gitlab.com/bell07/${PN}"
 
@@ -21,6 +21,7 @@ RDEPEND="
 gui-wm/labwc
 gui-apps/sfwbar
 gui-apps/wlogout
+upower? ( sys-power/upower )
 "
 
 
@@ -39,6 +40,8 @@ src_install() {
 
 	exeinto /etc/xdg/sfw-desktop
 	doexe session/sfw-session
+
+	use upower && doexe session/battery-safe-shutdown.sh
 
 	insinto /usr/share/wayland-sessions/
 	doins session/sfw-desktop.desktop
@@ -60,6 +63,8 @@ pkg_postinst() {
 	elog ""
 	elog "gui-apps/gtklock: Lock screen"
 	elog ""
+	elog "gui-apps/swayidle: call gtklock if idle"
+	elog ""
 	elog "gui-apps/kanshi: Display configuration"
 	elog ""
 	elog "sys-power/acpilight: Display brightness"
@@ -70,7 +75,7 @@ pkg_postinst() {
 	elog ""
 	elog "x11-terms/kitty: Terminal emulator"
 	elog ""
-	elog "gui-apps/mako: Notification daemon"
+	elog "x11-misc/dunst: Notification daemon"
 	elog " If you do not like to install it, try the the sfwbar notification plugin"
 	elog ""
 	elog "gui-apps/grim + gui-apps/wl-clipboard : Screenshoter on print button"
