@@ -194,6 +194,7 @@ RDEPEND+=" gui? (
 		app-arch/xarchiver
 		app-editors/leafpad
 		gui-apps/grim
+		gui-apps/slurp
 		gui-apps/swayidle
 		gui-apps/wl-clipboard
 		gui-wm/sfw-desktop

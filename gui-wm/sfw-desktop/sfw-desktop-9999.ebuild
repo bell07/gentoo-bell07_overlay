@@ -78,7 +78,7 @@ pkg_postinst() {
 	elog "x11-misc/dunst: Notification daemon"
 	elog " If you do not like to install it, try the the sfwbar notification plugin"
 	elog ""
-	elog "gui-apps/grim + gui-apps/wl-clipboard : Screenshoter on print button"
+	elog "gui-apps/grim + gui-apps/slurp + gui-apps/wl-clipboard : Screenshoter on print button"
 	elog ""
 }
 
