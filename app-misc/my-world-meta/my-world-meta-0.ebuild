@@ -139,8 +139,8 @@ RDEPEND+=" cdr? (
 # Lutris requires desktop-portal that requires pipewire that does not build.
 # Use gamehub instead.
 RDEPEND+=" gaming? (
-        app-benchmarks/glmark2
-        app-benchmarks/vkmark
+	app-benchmarks/glmark2
+	app-benchmarks/vkmark
 	games-arcade/supertux
 	games-action/supertuxkart
 	games-emulation/dosbox-staging
@@ -202,6 +202,10 @@ RDEPEND+=" gui? (
 		sci-calculators/qalculate-gtk
 		x11-misc/dunst
 		x11-terms/kitty
+		|| (
+			x11-misc/pcmanfm-qt
+			( x11-misc/pcmanfm gui-apps/swaybg )
+		)
 
 		cdr? ( app-cdr/graveman )
 	)
