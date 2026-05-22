@@ -1,4 +1,4 @@
-# Copyright 1999-2026 Gentoo Authors
+# Copyright 2020-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="8"
@@ -9,6 +9,8 @@ K_NOSETEXTRAVERSION="1"
 inherit kernel-2 unpacker
 detect_version
 detect_arch
+KERNELVERSION="${PV%.*}"
+VALVEVERSION="${PV##*.}"
 
 DESCRIPTION="The Kernel Sources for Valve SteamDeck"
 HOMEPAGE="https://github.com/evlaV/linux-integration"
@@ -16,12 +18,12 @@ HOMEPAGE="https://github.com/evlaV/linux-integration"
 # Needed for zstd compression of the patch
 BDEPEND="$(unpacker_src_uri_depends)"
 
-EXTRAVERSION="-valve10"
-SRC_URI="https://github.com/evlaV/linux-integration/archive/refs/tags/${PV}${EXTRAVERSION}.zip -> linux-neptune-${PV}${EXTRAVERSION}.zip"
+EXTRAVERSION="-valve${VALVEVERSION}"
+SRC_URI="https://github.com/evlaV/linux-integration/archive/refs/tags/${KERNELVERSION}-valve${VALVEVERSION}.zip -> linux-neptune-${PV}.zip"
 RESTRICT="nomirror"
-S="${WORKDIR}"/linux-integration-"${PV}${EXTRAVERSION}"
+S="${WORKDIR}"/linux-integration-"${KERNELVERSION}"-valve"${VALVEVERSION}"
 
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 
 pkg_setup() {
 	ewarn
