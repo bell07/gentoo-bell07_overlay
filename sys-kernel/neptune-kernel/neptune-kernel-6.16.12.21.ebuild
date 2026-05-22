@@ -8,7 +8,7 @@ KERNEL_IUSE_GENERIC_UKI=1
 inherit kernel-build toolchain-funcs
 
 PATCHSET=linux-gentoo-patches-6.16.12
-CONFIG_COMMIT="a2f829961e63edd08964d8473fb2e88774a5778a"
+CONFIG_COMMIT="65783138f5ff70d19aeb55f2de3432ccf64c2121"
 
 DESCRIPTION="The Kernel for Valve SteamDeck built with Gentoo patches"
 HOMEPAGE="https://github.com/evlaV/linux-integration"
