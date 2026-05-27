@@ -1,19 +1,24 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
 DISTUTILS_EXT=1
-PYTHON_COMPAT=( python3_{8..13} )
+PYTHON_COMPAT=( python3_{8..14} )
 
 inherit distutils-r1 gnome2-utils xdg
 
 DESCRIPTION="An onscreen keyboard useful for tablet PC users and for mobility impaired users"
-HOMEPAGE="https://launchpad.net/onboard"
-MY_PV="${PV/_p/-}"
-SRC_URI="https://github.com/onboard-osk/${PN}/archive/refs/tags/${MY_PV}.tar.gz -> ${PN}-${MY_PV}.tar.gz"
-S="${WORKDIR}/${PN}-${MY_PV}"
+HOMEPAGE="https://launchpad.net/onboard https://github.com/onboard-osk/onboard"
+
+VER1="${PV%.*}"
+VER2="${PV##*.}"
+UPSTREAM_VER="${VER1}-${VER2}"
+
+SRC_URI="https://github.com/onboard-osk/${PN}/archive/refs/tags/v${UPSTREAM_VER}.tar.gz -> ${PN}-v${UPSTREAM_VER}.tar.gz"
+
+S="${WORKDIR}/${PN}-${UPSTREAM_VER}"
 # po/* are licensed under BSD 3-clause
 LICENSE="GPL-3+ BSD"
 SLOT="0"
