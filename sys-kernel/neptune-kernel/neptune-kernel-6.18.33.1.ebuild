@@ -7,7 +7,7 @@ KERNEL_IUSE_GENERIC_UKI=1
 
 inherit kernel-build toolchain-funcs
 
-PATCHSET=linux-gentoo-patches-6.18.32_p1
+PATCHSET=linux-gentoo-patches-6.18.33_p1
 CONFIG_COMMIT="4028c694e3f0492c75a65b75cbca7bf10ddb2ec5"
 DEVICE_ARCH=${CHOST%%-*}
 
@@ -42,7 +42,6 @@ QA_FLAGS_IGNORED="
 "
 
 src_prepare() {
-	rm "${WORKDIR}/${PATCHSET}"/0013-net-skbuff-propagate-shared-frag-marker-through-frag.patch
 	eapply "${WORKDIR}/${PATCHSET}"
 
 	default
