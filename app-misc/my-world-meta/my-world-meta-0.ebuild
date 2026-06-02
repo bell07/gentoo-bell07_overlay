@@ -94,6 +94,7 @@ RDEPEND+=" admin? (
 	sys-apps/dmidecode
 	sys-apps/gptfdisk
 	sys-apps/hdparm
+	sys-apps/arch-chroot
 	sys-apps/system-chroot
 	sys-block/f3
 	sys-block/partimage
