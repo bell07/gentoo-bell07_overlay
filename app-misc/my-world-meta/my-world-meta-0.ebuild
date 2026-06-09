@@ -309,9 +309,7 @@ RDEPEND+=" wayland? (
 	app-misc/wayland-utils
 	gui-apps/kanshi
 	gui-apps/lswt
-	gui-apps/swaybg
 	gui-apps/wlr-randr
-	gui-wm/labwc
 	x11-apps/xeyes
 	x11-misc/ydotool
 	!xfce? ( 
