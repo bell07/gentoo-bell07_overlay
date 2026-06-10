@@ -238,6 +238,7 @@ RDEPEND+=" gui? (
 		xfce-extra/xfce4-taskmanager
 		xfce-extra/xfce4-whiskermenu-plugin
 		cdr? ( app-cdr/xfburn )
+		wayland? ( gui-wm/labwc )
 	)
 
 	networkmanager? ( gnome-extra/nm-applet )
