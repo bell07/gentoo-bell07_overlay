@@ -2,7 +2,7 @@ EAPI="7"
 KEYWORDS="amd64 arm64"
 SLOT="0"
 
-IUSE="admin +bell07-config bluetooth cdr gaming gui kde minimal mediacenter multiuser networkmanager nsw pulseaudio sfw-desktop vaapi video_cards_intel vulkan wayland workstation X xfce wifi"
+IUSE="admin +bell07-config bluetooth cdr gaming gui minimal mediacenter multiuser networkmanager nsw pulseaudio sfw-desktop vaapi video_cards_intel vulkan wayland workstation X xfce wifi"
 HOMEPAGE="https://github.com/bell07/gentoo-bell07_overlay"
 
 DESCRIPTION="My favorite software preselection - meta package"
@@ -72,16 +72,54 @@ RDEPEND+=" !minimal? (
 	sys-power/powertop
 )"
 
+# CD recorder software
+RDEPEND+=" cdr? (
+	app-cdr/bin2iso
+	app-cdr/cuetools
+)"
+
 # Advanced Audio setup
 RDEPEND+=" pulseaudio? (
 	media-sound/alsa-utils
 )"
 
+# VA-API
+RDEPEND+=" vaapi? (
+	media-video/libva-utils
+	video_cards_intel? (
+		media-libs/libva-intel-media-driver
+	)
+)"
+
 # Vulkan tools for vulkan
 RDEPEND+=" vulkan? ( dev-util/vulkan-tools )"
 
+## Wayland base packages, that should be on any device with graphical interface (WIP)
+## labwc is used as xfce4 compositor till xfwm is ported
+## xeyes is for testing apps if wayland native or xwayland
+## ydotool: Simulate keyboard buttons to trigger actions, configured in labwc for button
+RDEPEND+=" wayland? (
+	app-misc/wayland-utils
+	gui-apps/kanshi
+	gui-apps/lswt
+	gui-apps/wlr-randr
+	x11-apps/xeyes
+	x11-misc/ydotool
+)"
+
 # Minimal wifi settings
 RDEPEND+=" wifi? ( !networkmanager? ( net-misc/netifrc net-wireless/wpa_supplicant ) )"
+
+# X and not wayland ready XFCE base packages, that should be on any device with graphical interface
+RDEPEND+=" X? (
+	x11-apps/xinput
+	x11-apps/xkill
+	x11-apps/xrandr
+	x11-base/xorg-server
+	x11-misc/wmctrl
+	x11-misc/xdotool
+	x11-terms/xterm
+)"
 
 
 ### By role ###
@@ -128,12 +166,6 @@ RDEPEND+=" admin? (
 	)
 )"
 
-# CD recorder software
-RDEPEND+=" cdr? (
-	app-cdr/bin2iso
-	app-cdr/cuetools
-)"
-
 # Base GUI, xfce or wayland/wayfire
 # Note:
 # Supertux does not build on switch, therefore excluded from arm64.
@@ -165,7 +197,7 @@ RDEPEND+=" gaming? (
 )"
 
 
-# Base GUI (xfce) X or wayland
+# Base GUI. X or wayland. Support for local desktop session
 # desktop-portal - requires pipewire that does not build on switch.
 # gui-apps/mako simple virtual/notification-daemon alternative
 RDEPEND+=" gui? (
@@ -185,60 +217,6 @@ RDEPEND+=" gui? (
 
 	amd64? (
 		games-util/gamemode
-	)
-
-	kde? (
-		kde-plasma/plasma-meta
-	)
-
-	sfw-desktop? (
-		app-arch/xarchiver
-		app-editors/leafpad
-		gui-apps/grim
-		gui-apps/slurp
-		gui-apps/swayidle
-		gui-apps/wl-clipboard
-		gui-wm/sfw-desktop
-		media-gfx/geeqie
-		sci-calculators/qalculate-gtk
-		x11-misc/dunst
-		x11-terms/kitty
-		|| (
-			x11-misc/pcmanfm-qt
-			( x11-misc/pcmanfm gui-apps/swaybg )
-		)
-
-		cdr? ( app-cdr/graveman )
-	)
-
-	xfce? (
-		app-arch/xarchiver
-		app-editors/mousepad
-		dev-util/catfish
-		media-gfx/ristretto
-		sci-calculators/qalculate-gtk
-		x11-misc/menulibre
-		x11-terms/xfce4-terminal
-		x11-themes/arc-theme
-		x11-themes/papirus-icon-theme
-		xfce-base/thunar
-		xfce-base/thunar-volman
-		xfce-base/tumbler
-		xfce-base/xfce4-meta
-		xfce-extra/thunar-archive-plugin
-		xfce-extra/thunar-media-tags-plugin
-		xfce-extra/xfce4-cpufreq-plugin
-		xfce-extra/xfce4-cpugraph-plugin
-		xfce-extra/xfce4-mount-plugin
-		xfce-extra/xfce4-netload-plugin
-		xfce-extra/xfce4-notifyd
-		xfce-extra/xfce4-panel-profiles
-		xfce-extra/xfce4-screenshooter
-		xfce-extra/xfce4-sensors-plugin
-		xfce-extra/xfce4-taskmanager
-		xfce-extra/xfce4-whiskermenu-plugin
-		cdr? ( app-cdr/xfburn )
-		wayland? ( gui-wm/labwc )
 	)
 
 	networkmanager? ( gnome-extra/nm-applet )
@@ -270,16 +248,7 @@ RDEPEND+=" mediacenter? (
 	media-plugins/kodi-peripheral-joystick
 	media-plugins/kodi-pvr-hts
 	app-text/doxygen
- )
-"
-
-
-RDEPEND+=" vaapi? (
-	media-video/libva-utils
-	video_cards_intel? (
-		media-libs/libva-intel-media-driver
-	)
-)"
+ )"
 
 # Office Workstation
 RDEPEND+=" workstation? (
@@ -301,37 +270,59 @@ RDEPEND+=" workstation? (
 )"
 
 
-## Wayland base packages, that should be on any device with graphical interface (WIP)
-## labwc is used as xfce4 compositor till xfwm is ported
-## xeyes is for testing apps if wayland native or xwayland
-## ydotool: Simulate keyboard buttons to trigger actions, configured in labwc for button
-
-RDEPEND+=" wayland? (
-	app-misc/wayland-utils
-	gui-apps/kanshi
-	gui-apps/lswt
-	gui-apps/wlr-randr
-	x11-apps/xeyes
-	x11-misc/ydotool
-	!xfce? ( 
-		!kde? (
-			x11-terms/kitty
+### By Desktop ###
+# gui-wm/sfw-desktop contains minimal desktop. This is additional applications selection
+RDEPEND+="
+	sfw-desktop? (
+		app-arch/xarchiver
+		app-editors/leafpad
+		gui-apps/grim
+		gui-apps/slurp
+		gui-apps/swayidle
+		gui-apps/wl-clipboard
+		gui-wm/sfw-desktop
+		media-gfx/geeqie
+		sci-calculators/qalculate-gtk
+		x11-misc/dunst
+		x11-terms/kitty
+		|| (
+			x11-misc/pcmanfm-qt
+			( x11-misc/pcmanfm gui-apps/swaybg )
 		)
-	)
-)"
+
+		cdr? ( app-cdr/graveman )
+	)"
 
 
-# X and not wayland ready XFCE base packages, that should be on any device with graphical interface
-RDEPEND+=" X? (
-	x11-apps/xinput
-	x11-apps/xkill
-	x11-apps/xrandr
-	x11-base/xorg-server
-	x11-misc/wmctrl
-	x11-misc/xdotool
-	x11-terms/xterm
-
+# XFCE session. X or wayland
+RDEPEND+="
 	xfce? (
-		x11-themes/xfwm4-themes
-	)
-)"
+		app-arch/xarchiver
+		app-editors/mousepad
+		dev-util/catfish
+		media-gfx/ristretto
+		sci-calculators/qalculate-gtk
+		x11-misc/menulibre
+		x11-terms/xfce4-terminal
+		x11-themes/arc-theme
+		x11-themes/papirus-icon-theme
+		xfce-base/thunar
+		xfce-base/thunar-volman
+		xfce-base/tumbler
+		xfce-base/xfce4-meta
+		xfce-extra/thunar-archive-plugin
+		xfce-extra/thunar-media-tags-plugin
+		xfce-extra/xfce4-cpufreq-plugin
+		xfce-extra/xfce4-cpugraph-plugin
+		xfce-extra/xfce4-mount-plugin
+		xfce-extra/xfce4-netload-plugin
+		xfce-extra/xfce4-notifyd
+		xfce-extra/xfce4-panel-profiles
+		xfce-extra/xfce4-screenshooter
+		xfce-extra/xfce4-sensors-plugin
+		xfce-extra/xfce4-taskmanager
+		xfce-extra/xfce4-whiskermenu-plugin
+		cdr? ( app-cdr/xfburn )
+		wayland? ( gui-wm/labwc )
+		X? ( x11-themes/xfwm4-themes )
+	)"
