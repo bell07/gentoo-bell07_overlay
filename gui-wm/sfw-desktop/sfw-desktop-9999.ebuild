@@ -3,7 +3,7 @@
 
 EAPI="8"
 
-inherit git-r3
+inherit git-r3 optfeature
 
 KEYWORDS="amd64 arm64"
 SLOT="0"
@@ -56,29 +56,16 @@ src_install() {
 }
 
 pkg_postinst() {
-	elog "sfw-desktop uses next software, if installed"
-	elog ""
-	elog "gnome-extra/nm-applet: Tray icon to configure Network interfaces."
-	elog " If you do not like to install it, try the the sfwbar network plugin"
-	elog ""
-	elog "gui-apps/gtklock: Lock screen"
-	elog ""
-	elog "gui-apps/swayidle: call gtklock if idle"
-	elog ""
-	elog "gui-apps/kanshi: Display configuration"
-	elog ""
-	elog "sys-power/acpilight: Display brightness"
-	elog ""
-	elog "x11-misc/pcmanfm-qt: Display Icons and Background"
-	elog " or"
-	elog "gui-apps/swaybg: Background only without icons"
-	elog ""
-	elog "x11-terms/kitty: Terminal emulator"
-	elog ""
-	elog "x11-misc/dunst: Notification daemon"
-	elog " If you do not like to install it, try the the sfwbar notification plugin"
-	elog ""
-	elog "gui-apps/grim + gui-apps/slurp + gui-apps/wl-clipboard : Screenshoter on print button"
-	elog ""
+	optfeature "Tray icon to configure Network interfaces (alternative to sfwbar plugin)" gnome-extra/nm-applet
+	optfeature "Lock Screen" gui-apps/gtklock
+	optfeature "Auto-lock screen if idle" gui-apps/swayidle
+	optfeature "Display configuration" gui-apps/kanshi
+	optfeature "Display brightness" sys-power/acpilight
+	optfeature "File-Manager" x11-misc/pcmanfm-qt x11-misc/pcmanfm
+	optfeature "Desktop icons" x11-misc/pcmanfm-qt
+	optfeature "Desktop background image" x11-misc/pcmanfm-qt gui-apps/swaybg
+	optfeature "Terminal emulator" x11-terms/kitty
+	optfeature "Notification daemon (alternative to sfwbar plugin)" x11-misc/dunst
+	optfeature "Screenshoter on print button" "gui-apps/grim gui-apps/slurp gui-apps/wl-clipboard"
 }
 
