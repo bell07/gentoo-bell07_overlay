@@ -181,7 +181,7 @@ RDEPEND+=" gaming? (
 	media-libs/openglide-xtra
 	net-misc/moonlight
 	amd64? (
-		app-emulation/dxvk
+		|| ( app-emulation/dxvk app-emulation/dxvk-sarek )
 		app-emulation/vkd3d-proton
 		app-emulation/wine-proton
 		app-emulation/wine-staging
