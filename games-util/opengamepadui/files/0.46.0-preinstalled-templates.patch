@@ -1,0 +1,17 @@
+--- old/Makefile
++++ new/Makefile
+@@ -194,13 +194,7 @@
+ 		--xwayland-count 2 -- ./build/opengamepad-ui.$(TARGET_ARCH)
+ 
+ $(EXPORT_TEMPLATE):
+-	mkdir -p $(HOME)/.local/share/godot/export_templates
+-	@echo "Downloading export templates"
+-	wget $(EXPORT_TEMPLATE_URL) -O $(HOME)/.local/share/godot/export_templates/templates.zip
+-	@echo "Extracting export templates"
+-	unzip $(HOME)/.local/share/godot/export_templates/templates.zip -d $(HOME)/.local/share/godot/export_templates/
+-	rm $(HOME)/.local/share/godot/export_templates/templates.zip
+-	mv $(HOME)/.local/share/godot/export_templates/templates $(@D)
++	@echo "Skip extracting export templates"
+ 
+ .PHONY: debug 
+ debug: $(IMPORT_DIR) ## Run the project in debug mode in gamescope
