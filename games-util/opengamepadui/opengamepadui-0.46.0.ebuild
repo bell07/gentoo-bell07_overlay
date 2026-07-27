@@ -266,7 +266,8 @@ src_prepare() {
 	addpredict /dev/video0
 	addpredict /dev/video1
 	addpredict /dev/video2
-	addpredict /dev/video3	
+	addpredict /dev/video3
+	default
 }
 
 src_compile() {
