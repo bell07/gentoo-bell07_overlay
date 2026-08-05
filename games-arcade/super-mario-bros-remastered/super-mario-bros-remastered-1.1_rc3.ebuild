@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit desktop wrapper
+inherit desktop wrapper xdg
 
 DESCRIPTION="Unofficial remaster of the original game."
 HOMEPAGE="https://github.com/JHDev2006/Super-Mario-Bros.-Remastered-Public"
@@ -69,3 +69,12 @@ src_install() {
 	make_desktop_entry SMB1R 'Super Mario Bros. Remastered' "${PN}"
 	einstalldocs
 }
+
+pkg_postinst() {
+	xdg_icon_cache_update
+}
+
+pkg_postrm() {
+	xdg_icon_cache_update
+}
+
