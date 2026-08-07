@@ -251,8 +251,6 @@ S="${WORKDIR}/OpenGamepadUI-${PV}"
 
 PATCHES=("${FILESDIR}/0.46.0-preinstalled-templates.patch")
 
-
-	
 src_unpack() {
 	cargo_src_unpack
 
@@ -263,10 +261,11 @@ src_unpack() {
 }
 
 src_prepare() {
-	addpredict /dev/video0
-	addpredict /dev/video1
-	addpredict /dev/video2
-	addpredict /dev/video3
+	for i in {0..32}; do
+		addpredict /dev/video${i}
+		addpredict /dev/hidraw${i}
+		addpredict /dev/input/event${i}
+	done
 	default
 }
 
