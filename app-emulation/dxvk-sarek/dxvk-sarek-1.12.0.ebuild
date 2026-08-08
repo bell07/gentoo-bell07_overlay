@@ -24,8 +24,8 @@ else
 	KEYWORDS="-* amd64 x86"
 fi
 
-DESCRIPTION="Vulkan-based implementation of D3D9, D3D10 and D3D11 for Linux / Wine"
-HOMEPAGE="https://github.com/doitsujin/dxvk/"
+DESCRIPTION="Vulkan 1.1/1.2 based implementation of D3D3, 5, 6, 7, 8, 9, 10 and 11 for Linux/Wine/Proton."
+HOMEPAGE="https://github.com/pythonlover02/DXVK-Sarek/"
 
 # setup_dxvk.sh is no longer provided, fetch old until a better solution
 SRC_URI+=" https://raw.githubusercontent.com/doitsujin/dxvk/cd21cd7fa3b0df3e0819e21ca700b7627a838d69/setup_dxvk.sh"
