@@ -7,7 +7,7 @@ inherit desktop wrapper xdg
 
 DESCRIPTION="Unofficial remaster of the original game."
 HOMEPAGE="https://github.com/JHDev2006/Super-Mario-Bros.-Remastered-Public"
-GODOT_VERSION=4.7.1
+GODOT_VERSION=4.7.2
 
 MY_PV="${PV//_/-}"
 

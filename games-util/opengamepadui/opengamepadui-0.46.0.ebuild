@@ -208,7 +208,7 @@ inherit cargo udev xdg
 DESCRIPTION="Game launcher and overlay designed with a gamepad native experience in mind."
 HOMEPAGE="https://opengamepadui.readthedocs.io"
 
-GODOT_VERSION="4.7.1"
+GODOT_VERSION="4.7.2"
 
 SRC_URI="https://github.com/ShadowBlip/OpenGamepadUI/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
 https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}-stable/Godot_v${GODOT_VERSION}-stable_export_templates.tpz
