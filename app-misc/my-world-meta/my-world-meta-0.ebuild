@@ -281,7 +281,7 @@ RDEPEND+="
 		gui-apps/swayidle
 		gui-apps/wl-clipboard
 		gui-wm/sfw-desktop
-		media-gfx/geeqie
+		media-gfx/gthumb
 		sci-calculators/qalculate-gtk
 		x11-misc/dunst
 		x11-terms/kitty
