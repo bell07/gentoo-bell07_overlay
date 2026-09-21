@@ -12,7 +12,7 @@ detect_arch
 KERNELVERSION="${PV%.*}"
 VALVEVERSION="${PV##*.}"
 
-DESCRIPTION="The Kernel Sources for Valve SteamDeck"
+DESCRIPTION="Valve SteamOS kernel sources"
 HOMEPAGE="https://github.com/evlaV/linux-integration"
 
 # Needed for zstd compression of the patch

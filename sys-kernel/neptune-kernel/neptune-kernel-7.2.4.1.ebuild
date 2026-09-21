@@ -4,30 +4,33 @@
 EAPI=8
 
 KERNEL_IUSE_GENERIC_UKI=1
-
 inherit kernel-build toolchain-funcs
 
-PATCHSET=linux-gentoo-patches-6.16.12
-CONFIG_COMMIT="72fbf35a46ab119819203d1856f647dd7b018356"
+DEVICE_ARCH=${CHOST%%-*}
 
-DESCRIPTION="The Kernel for Valve SteamDeck built with Gentoo patches"
-HOMEPAGE="https://github.com/evlaV/linux-integration"
+PATCHSET_VER="7.1"
+PATCHSET=linux-gentoo-patches-"${PATCHSET_VER}".9
 
 KERNELVERSION="${PV%.*}"
 VALVEVERSION="${PV##*.}"
+
 CONFIGVERSION="${KERNELVERSION%.*}"
 CONFIG_VER="${CONFIGVERSION//./}"
+CONFIG_COMMIT="c41b9f0c071307b397aacb20f8379653e7bcc5a6"
+
+DESCRIPTION="Valve SteamOS kernel with Gentoo patches"
+HOMEPAGE="https://github.com/evlaV/linux-integration"
 
 SRC_URI+="
 	https://github.com/evlaV/linux-integration/archive/refs/tags/${KERNELVERSION}-valve${VALVEVERSION}.zip -> linux-neptune-${PV}.zip
-	https://distfiles.gentoo.org/pub/proj/dist-kernel/patchsets/${CONFIGVERSION}/${PATCHSET}.tar.xz
+	https://distfiles.gentoo.org/pub/proj/dist-kernel/patchsets/${PATCHSET_VER}/${PATCHSET}.tar.xz
 	https://raw.githubusercontent.com/evlaV/jupiter/${CONFIG_COMMIT}/linux-neptune-${CONFIG_VER}/config-neptune -> config-neptune-${CONFIG_VER}-${CONFIG_COMMIT}
-	https://raw.githubusercontent.com/evlaV/jupiter/${CONFIG_COMMIT}/linux-neptune-${CONFIG_VER}/config -> config-${CONFIG_VER}-${CONFIG_COMMIT}
+	https://raw.githubusercontent.com/evlaV/jupiter/${CONFIG_COMMIT}/linux-neptune-${CONFIG_VER}/config.${DEVICE_ARCH} -> config.${DEVICE_ARCH}-${CONFIG_VER}-${CONFIG_COMMIT}
 "
 RESTRICT="nomirror"
 S="${WORKDIR}"/linux-integration-"${KERNELVERSION}"-valve"${VALVEVERSION}"
 
-KEYWORDS="-* amd64"
+KEYWORDS="-* ~amd64"
 IUSE="debug"
 
 BDEPEND="
@@ -50,7 +53,7 @@ src_prepare() {
 	sed -i -e "s:^\(EXTRAVERSION =\).*:\1 ${extraversion/_/-}:" Makefile || die
 
 	# Enable default config
-	cp "${DISTDIR}/config-${CONFIG_VER}-${CONFIG_COMMIT}" .config  || die
+	cp "${DISTDIR}/config.${DEVICE_ARCH}-${CONFIG_VER}-${CONFIG_COMMIT}" .config  || die
 	cat "${DISTDIR}/config-neptune-${CONFIG_VER}-${CONFIG_COMMIT}" >> .config || die
 
 	echo "CONFIG_LOCALVERSION=\"-gentoo-dist\"" > "${T}"/version.config || die
