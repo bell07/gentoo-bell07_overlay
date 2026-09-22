@@ -256,7 +256,7 @@ RDEPEND+=" workstation? (
 	app-crypt/fcrackzip
 	|| ( app-office/libreoffice app-office/libreoffice-bin )
 	app-text/evince
-	app-text/crqt-ng
+	app-text/calibre
 	app-text/pdfarranger
 	media-gfx/gimp
 	media-sound/grip
