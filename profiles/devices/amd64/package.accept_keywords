@@ -20,7 +20,7 @@
 =xfce-extra/xfce4-panel-profiles-1.1.1-r1 ~amd64
 
 # Media center
-=media-plugins/kodi-inputstream-adaptive-21.5.24 ~amd64
+=media-plugins/kodi-inputstream-adaptive-21.5.25 ~amd64
 =media-plugins/kodi-inputstream-rtmp-21.1.2 ~amd64
 =media-plugins/kodi-peripheral-joystick-21.1.23 ~amd64
 =media-plugins/kodi-pvr-hts-21.2.6 ~amd64
@@ -30,7 +30,7 @@
 =app-emulation/wine-staging-11.18 ~amd64
 =app-emulation/winetricks-20250102-r1 ~amd64
 =games-util/joystick-1.8.1 ~amd64
-=gui-wm/gamescope-3.16.29 ~amd64
+=gui-wm/gamescope-3.16.31 ~amd64
 =dev-libs/angelscript-2.38.0 ~amd64
 =dev-libs/teakra-20220224-r1 ~amd64
 =dev-python/moddb-0.13.0 ~amd64
