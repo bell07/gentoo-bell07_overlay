@@ -4,9 +4,10 @@
 EAPI=8
 
 DESCRIPTION="Show Files from a Directory on the Desktop"
-HOMEPAGE="https://github.com/Geronymos/desktop-icons"
+#HOMEPAGE="https://github.com/Geronymos/desktop-icons"
+HOMEPAGE="https://github.com/xplshn/desktop-icons"
 
-EGIT_REPO_URI="https://github.com/Geronymos/desktop-icons"
+EGIT_REPO_URI="$HOMEPAGE"
 EGIT_BRANCH="main"
 inherit git-r3
 
