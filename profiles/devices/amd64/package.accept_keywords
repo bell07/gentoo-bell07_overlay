@@ -27,7 +27,7 @@
 =media-plugins/kodi-pvr-iptvsimple-21.10.2 ~amd64
 
 # Gaming / Game dependencies
-=app-emulation/wine-staging-11.18 ~amd64
+=app-emulation/wine-staging-11.19 ~amd64
 =app-emulation/winetricks-20250102-r1 ~amd64
 =games-util/joystick-1.8.1 ~amd64
 =gui-wm/gamescope-3.16.31 ~amd64
@@ -37,7 +37,7 @@
 =dev-python/pypresence-4.6.2 ~amd64
 =dev-python/pysdl2-0.9.17 ~amd64
 =net-libs/libcurl-debian-4 ~amd64
-=net-misc/moonlight-6.1.0-r4 ~amd64
+=net-misc/moonlight-6.2.0 ~amd64
 =media-libs/iir1-1.10.0-r1 ~amd64
 =media-libs/openglide-xtra-9999-r1 ~amd64
 =media-libs/vkroots-0_p20240430 ~amd64
