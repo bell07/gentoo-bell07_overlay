@@ -45,12 +45,11 @@ BDEPEND="
 	dev-util/glslang
 	!crossdev-mingw? ( dev-util/mingw64-toolchain[${MULTILIB_USEDEP}] )
 "
+
 PATCHES=(
 	"${FILESDIR}"/dxvk-1.10.3-wow64-setup.patch
 	"${FILESDIR}"/dxvk-2.4-d3d8-setup.patch
 )
-
-S="${WORKDIR}/DXVK-Sarek-${PV}"
 
 pkg_pretend() {
 	[[ ${MERGE_TYPE} == binary ]] && return
