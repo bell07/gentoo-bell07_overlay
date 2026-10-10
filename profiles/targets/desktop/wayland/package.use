@@ -19,7 +19,6 @@ media-libs/libva-compat X
 media-libs/mesa X
 media-libs/vulkan-loader X
 media-plugins/gst-plugins-gtk X
-media-video/vlc vaapi X
 sys-apps/dbus X
 x11-libs/cairo X
 x11-libs/gtk+ X
@@ -39,6 +38,10 @@ dev-util/vulkan-tools X
 # Show application icons in menus
 gui-wm/labwc icons
 
+# VLC in wayland work well with libplacebo
+media-video/vlc -vaapi
+
 # required by app-emulation/wine-staging-11.0::gentoo[samba]
 net-fs/samba winbind
+
 

@@ -1,6 +1,7 @@
 # Wayland related settings
-USE="$USE egl gles2 wayland xwayland"
+USE="$USE egl gles2 libplacebo wayland xwayland"
 USE="$USE appindicator"      # Modern tray
+
 
 # Disable X
 USE="$USE -X -xcb -xcomposite -xft -xinerama -xrandr -xv -xvfb"
