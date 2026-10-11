@@ -1,39 +1,45 @@
 # XWayland / X compatibility
-dev-cpp/cairomm X
-dev-cpp/gtkmm X
-dev-python/pycairo X
-dev-qt/qtbase X eglfs
-dev-qt/qtmultimedia X eglfs
-gui-libs/gtk X
-gui-libs/wlroots X
-gui-wm/labwc X
-gui-wm/wayfire X
-media-libs/freetype X
-media-libs/gst-plugins-base X
-media-libs/libepoxy X
-media-libs/libglvnd X
-media-libs/libsdl X
-media-libs/libsdl2 X
-media-libs/libva X
-media-libs/libva-compat X
-media-libs/mesa X
-media-libs/vulkan-loader X
-media-plugins/gst-plugins-gtk X
-sys-apps/dbus X
-x11-libs/cairo X
-x11-libs/gtk+ X
-x11-libs/libxkbcommon X
-x11-libs/pango X
-x11-libs/wxGTK X
 
-# Depends on qtbase
-app-emulation/virtualbox X
-
-# Wine is still not ready for wayland only
+## app-emulation/wine-proton + app-emulation/wine-staging (11)
+### Wine is still not ready for wayland only
 app-emulation/wine-staging X xcomposite xinerama
 app-emulation/wine-proton X xcomposite xinerama
 media-libs/vulkan-loader X
 dev-util/vulkan-tools X
+
+## app-office/libreoffice
+dev-cpp/cairomm X
+dev-cpp/gtkmm X
+gui-libs/gtk X
+x11-libs/cairo X
+x11-libs/gtk+ X
+x11-libs/pango X
+
+## games-emulation/dosbox-x
+media-libs/libsdl X
+media-libs/libsdl2 X
+
+## games-util/steam-launcher
+media-libs/vulkan-loader X
+media-libs/libepoxy X
+media-libs/libglvnd X
+media-libs/mesa X
+sys-apps/dbus X
+
+## media-gfx/digikam
+dev-qt/qtbase X eglfs
+dev-qt/qtmultimedia X eglfs
+x11-libs/libxkbcommon X
+media-libs/gst-plugins-base X
+media-plugins/gst-plugins-gtk X
+x11-libs/wxGTK X
+
+## net-misc/omnissa-horizon-client
+media-libs/libva X
+media-libs/libva-compat X
+
+## Depends on qtbase
+app-emulation/virtualbox X
 
 # Show application icons in menus
 gui-wm/labwc icons
