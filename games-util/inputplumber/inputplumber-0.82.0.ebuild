@@ -117,7 +117,6 @@ CRATES="
 	ident_case@1.0.1
 	indexmap@2.12.1
 	indoc@2.0.7
-	industrial-io@0.6.1
 	inotify-sys@0.1.5
 	inotify@0.11.0
 	instability@0.3.10
@@ -136,7 +135,6 @@ CRATES="
 	lab@0.11.0
 	lazy_static@1.5.0
 	libc@0.2.178
-	libiio-sys@0.4.1
 	libudev-sys@0.1.4
 	libudev@0.3.0
 	line-clipping@0.3.5
@@ -187,7 +185,6 @@ CRATES="
 	portable-atomic-util@0.2.4
 	portable-atomic@1.13.0
 	powerfmt@0.2.0
-	ppv-lite86@0.2.21
 	proc-macro-crate@3.4.0
 	proc-macro-error-attr2@2.0.0
 	proc-macro-error2@2.0.1
@@ -198,10 +195,7 @@ CRATES="
 	r-efi@5.3.0
 	radium@0.7.0
 	rand@0.8.5
-	rand@0.9.2
-	rand_chacha@0.9.0
 	rand_core@0.6.4
-	rand_core@0.9.3
 	ratatui-core@0.1.0
 	ratatui-crossterm@0.1.0
 	ratatui-macros@0.7.0
@@ -349,8 +343,6 @@ CRATES="
 	zbus@5.12.0
 	zbus_macros@5.12.0
 	zbus_names@4.2.0
-	zerocopy-derive@0.8.31
-	zerocopy@0.8.31
 	zmij@1.0.3
 	zvariant@5.8.0
 	zvariant_derive@5.8.0
