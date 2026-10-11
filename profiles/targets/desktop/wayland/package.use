@@ -1,5 +1,8 @@
-# XWayland / X compatibility
+# XWayland support
+gui-wm/labwc X
+gui-libs/wlroots X
 
+# Dependencies required by applications still dependent on X.
 ## app-emulation/wine-proton + app-emulation/wine-staging (11)
 ### Wine is still not ready for wayland only
 app-emulation/wine-staging X xcomposite xinerama
@@ -25,9 +28,6 @@ media-libs/libepoxy X
 media-libs/libglvnd X
 media-libs/mesa X
 sys-apps/dbus X
-
-## gui-wm/gamescope
-gui-libs/wlroots X
 
 ## media-gfx/digikam
 dev-qt/qtbase X eglfs
