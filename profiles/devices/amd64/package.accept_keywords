@@ -6,6 +6,7 @@
 
 # Desktop
 =app-crypt/fcrackzip-1.0 ~amd64
+=app-editors/janus-0.9.8  ~amd64
 =dev-libs/libscfg-0.2.0 ~amd64
 =gui-apps/gtklock-4.0.0
 =gui-apps/lswt-2.0.0 ~amd64

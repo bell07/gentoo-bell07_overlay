@@ -275,7 +275,7 @@ RDEPEND+=" workstation? (
 RDEPEND+="
 	sfw-desktop? (
 		app-arch/xarchiver
-		app-editors/leafpad
+		app-editors/janus
 		gui-apps/grim
 		gui-apps/slurp
 		gui-apps/swayidle
