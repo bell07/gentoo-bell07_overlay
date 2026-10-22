@@ -227,7 +227,7 @@ RDEPEND+=" gui? (
 
 	multiuser? (
 		X? ( x11-misc/lightdm )
-		!X? ( x11-misc/sddm )
+		!X? ( gui-apps/sddm )
 	)
 
 	!multiuser? (
