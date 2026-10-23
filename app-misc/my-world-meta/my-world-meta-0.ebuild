@@ -94,14 +94,15 @@ RDEPEND+=" vaapi? (
 # Vulkan tools for vulkan
 RDEPEND+=" vulkan? ( dev-util/vulkan-tools )"
 
-## Wayland base packages, that should be on any device with graphical interface (WIP)
-## labwc is used as xfce4 compositor till xfwm is ported
-## xeyes is for testing apps if wayland native or xwayland
+# Wayland base packages, that should be on any device with graphical interface
+## waypipe: graphical remote access
+## xeyes: for testing apps if wayland native or xwayland
 ## ydotool: Simulate keyboard buttons to trigger actions, configured in labwc for button
 RDEPEND+=" wayland? (
 	app-misc/wayland-utils
 	gui-apps/kanshi
 	gui-apps/lswt
+	gui-apps/waypipe
 	gui-apps/wlr-randr
 	x11-apps/xeyes
 	x11-misc/ydotool
