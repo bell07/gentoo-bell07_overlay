@@ -30,7 +30,7 @@ pkg_setup() {
 	ewarn "${PN} is *not* supported by the Gentoo Kernel Project in any way."
 	ewarn
 	ewarn "The original kernel configuration can be found at:"
-	ewarn "https://github.com/evlaV/jupiter/blob/main/linux-neptune-616"
+	ewarn "https://github.com/evlaV/jupiter/blob/main/linux-neptune-618"
 	ewarn
 	kernel-2_pkg_setup
 }

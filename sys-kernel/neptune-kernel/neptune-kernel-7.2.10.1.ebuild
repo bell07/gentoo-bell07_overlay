@@ -8,8 +8,8 @@ inherit kernel-build toolchain-funcs
 
 DEVICE_ARCH=${CHOST%%-*}
 
-PATCHSET_VER="7.1"
-PATCHSET=linux-gentoo-patches-"${PATCHSET_VER}".9
+PATCHSET_VER="7.2"
+PATCHSET=linux-gentoo-patches-"${PATCHSET_VER}".13
 
 KERNELVERSION="${PV%.*}"
 VALVEVERSION="${PV##*.}"
